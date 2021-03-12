@@ -1,0 +1,92 @@
+.mainBoxContainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.containerInner{
+    width: calc(100px + 12vw);
+    height: calc(100px + 12vw);
+    background-color: #222222;
+    z-index: +1;
+}
+
+.contentInner{
+    margin-top: 40%;
+    font-size: calc(15px + 0.8vw);
+    color:#E4E1DC;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.underLineBoxOut{
+    margin-left: -5%;
+    width: 60%;
+    margin-top: 0.5vw;
+    background-color:#F6F3EE ;
+    border: solid  #F6F3EE 2px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all ease-in-out 0.5s
+}
+
+.underLineBoxIn{
+    width: 20%;
+    margin-left: -5%;
+    margin-top: 0.5vw;
+    background-color:#F6F3EE ;
+    border: solid  #F6F3EE 2px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all ease-in-out 0.5s
+}
+
+.descriptionOut{
+    color: #E4E1DC;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: calc(5px + 1vw);
+    background-color: #222222;
+    width: calc(100px + 12vw);
+    height: calc(100px + 12vw);
+    margin-top: 2vw;
+    opacity: 0;
+    transform: translateY(calc(-100px - 12vw));
+    transition: all ease-in-out 0.5s;
+    
+}
+
+.descriptionIn{
+    width: calc(100px + 12vw);
+    height: calc(100px + 12vw);
+    background-color: #222222;
+    margin-top: 2vw;
+    opacity: 1;
+    transition: all ease-in-out 0.5s;
+    color: #E4E1DC;
+    display: flex;
+    align-items: center;
+    text-align: start;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: calc(5px + 1vw);
+}
+
+@media screen and (max-width: 768px){
+
+    .containerInner{
+        width: 200px;
+        height: 200px;
+        background-color: #222222;
+    }
+
+    .contentInner{
+        margin-top: 30%;
+        font-size: 20px;
+        color:#E4E1DC;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}

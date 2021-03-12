@@ -1,0 +1,128 @@
+
+  .contactBg{
+    height: 100vh;
+    width: 100vw; 
+  }
+  
+  .contactHeader{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: start;
+    background: rgba(0, 0, 0, 0.85);
+    height: 25vh;
+  }
+  
+  .contactHeaderContent{
+    color: snow;
+    margin-left: 5vw;
+    font-size: calc(3vw + 15px);
+    font-weight: 200;
+  }
+  
+  .contactInnerContent{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    height: 75vh;
+  }
+
+  @media screen and (max-width: 768px){
+    .contactInnerContent{
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        height: 75vh;
+        
+      }
+    .dataContainer{
+        min-width: 100vw;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+    .middleBar{
+        display: none;
+    }
+    .contactFormContainer{
+        min-width: 100vw;
+        height: 75vh;
+        padding-bottom: 2%;
+        padding-right: 5%;
+        padding-left: 5%;
+        padding-top: 2%;
+        background-color: rgba(128, 128, 128, 0.2);
+    }
+    }
+  
+  .dataContainer{
+    width: 50vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .paragraphOne{
+    font-size: calc(10px + 0.7vw);
+    margin-bottom: 3%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 7%;
+  }
+
+  .contactList{
+    font-size: calc(10px + 0.7vw);
+    margin-left: 8%;
+  }
+
+  .elementList{
+      display: flex;
+      flex-direction: row;
+  }
+
+  .boldText{
+    font-weight: 700;
+  }
+
+  .paragraphTwo{
+    font-size: calc(10px + 0.7vw);
+    margin-bottom: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 6%;
+  }
+
+  .paragraphThree{
+    font-size: calc(10px + 0.7vw);
+    margin-bottom: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+  }
+
+  .paragraphThreeInner{
+    font-size: calc(10px + 0.7vw);
+    margin-bottom: 5%;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 3%;
+  }
+  
+  .contactFormContainer{
+      width: 50vw;
+      height: 75vh;
+      padding-bottom: 2%;
+      padding-right: 5%;
+      padding-left: 5%;
+      padding-top: 2%;
+      background-color: rgba(128, 128, 128, 0.2);
+  }
+
+  .middleBar{
+    background: black;
+    border: solid black 3px;
+    border-radius: 5px;
+    width: 3px;
+    height: 45vh;
+    position: absolute;
+    bottom: 15vh;
+    margin-left: calc(50vw - 3px);
+}

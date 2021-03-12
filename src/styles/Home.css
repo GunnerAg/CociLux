@@ -1,0 +1,351 @@
+
+.homeSectionOne{
+    display: block;
+    position: relative;
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1614702931/Andrea/1_IMAGEN_PRINCIPAL_xei0xl.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: auto;
+}
+
+.titulo{
+    padding-top: 8vh;
+    padding-left: 12vw;
+    padding-right: 12vw;
+    font-size: calc(40px - 0.1vw);
+}
+
+.slogan{
+    margin-top:4%;
+    margin-left:5%;
+    font-size: calc(3vw + 10px);
+    font-weight: bold;
+}
+
+.textoExplicativo{
+    margin-top:2%;
+    margin-left:5%;
+    font-weight: 400;
+    font-size: calc(2vw + 10px);
+    letter-spacing: 0.1vw;
+  
+}
+
+/* .logoPng{
+    height: auto;
+    width: calc(100px);
+    margin-left: calc(100vw - 150px );
+    position: absolute;
+    bottom: 50px;
+} */
+
+.logoPng{
+  transform: rotate(4deg);
+  transition: all ease-in-out 1s;
+  right: 0;
+  bottom: 5%;
+  position: absolute;
+}
+
+.logoPngHiden{
+  transform: translateX(-110vw);
+  transition: all ease-in-out 1s;
+  right: 0;
+  bottom: 5%;
+  position: absolute;
+}
+
+.scrollBtn{
+  border:none;
+  background:none;
+  transform: scale(2) ;
+  height: 50px;
+  width: 50px;
+  position: fixed;
+  z-index: 100;
+  color: black;
+  bottom: 0;
+  margin-left: 50vw
+}
+
+.arrow {
+    text-align: center;
+    margin: 8% 0;
+  }
+
+.bounce {
+    -moz-animation: bounce 2s infinite;
+    -webkit-animation: bounce 2s infinite;
+    animation: bounce 2s infinite;
+}
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+  /* SECCION DOS DEL HOMEPAGE */
+
+.homeSectionTwo{
+    display: block;
+    position: relative;
+    overflow:hidden;
+    height: 100vh;
+    width: auto;
+}
+
+.homeSectionTwoBg{
+  display: block;
+  position: absolute;
+  background: url("https://res.cloudinary.com/gunnerag/image/upload/v1614716107/Andrea/2_SEGUNDA_IMAGEN_PRINCIPAL_esz2py.png");
+  height: 100%;
+  width: 100%;
+  padding-right: 38%;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+} 
+
+.slogan2{
+  font-size: calc(2vw + 10px);
+  text-align: center;
+  margin-top: calc(40px + 5vw);
+  font-weight: 500;
+  letter-spacing: 0.5vw;
+}
+
+.barraSeparacion{
+  border: solid 0.1vw black;
+  width: 25vw;
+  height: 0.01vh;
+  background: black;
+  margin-left: 30%;
+  margin-top: 5%;
+}
+
+.textoExplicativo2{
+  font-size: calc(1vw + 15px);
+  letter-spacing: 0.3vw;
+  font-weight: 500;
+  margin-top: calc(20px + 10vh);
+  text-align: start;
+  padding-left: 10vw;
+  padding-right: 30vw;
+}
+
+/* SECCION TRES DEL HOMEPAGE */
+
+.homeSectionThree{
+  display: block;
+  position: relative;
+  overflow:hidden;
+  height: 100vh;
+  width: auto;
+  color:snow
+}
+
+.homeSectionThreeBg{
+display: block;
+position: absolute;
+background: url("https://res.cloudinary.com/gunnerag/image/upload/v1615121532/Andrea/3_IMAGEN_PRINCIPAL_1_b8ukli.png");
+height: 100%;
+width: 100%;
+padding-right: 38%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+} 
+
+.barraSeparacion2{
+  border: solid 0.1vw snow;
+  width: 25vw;
+  height: 0.01vh;
+  background: snow;
+  margin-left: 4%;
+  margin-bottom: 6%;
+  margin-top: 2%;
+}
+
+.slogan3{
+  text-align:end;
+  padding-right: calc(40px + 5vw);
+  margin-top:6%;
+  margin-left:7%;
+  font-family: 'Abhaya Libre', serif;
+  font-style: normal;
+  font-size: calc(10px + 3.5vw);
+  font-weight: 500;
+  letter-spacing: 0.5vw;
+}
+
+.textoExplicativo3{
+  text-align: center;
+  font-size: calc(1.1vw + 20px);
+  margin-top: 5vh ;
+  text-align:start; 
+  font-family: 'Abhaya Libre', serif;
+  font-style: normal;
+  padding-left: calc(30px + 2.5vw);
+  padding-right: 10vw;
+  letter-spacing: 0.1vw;
+}
+
+/* SECCION CUATRO HOMEPAGE */
+
+.homeSectionFour{
+  display: block;
+  position: relative;
+  overflow:hidden;
+  height: 100vh;
+  width: auto;
+  color:snow
+}
+
+.homeSectionFourBg{
+display: block;
+position: absolute;
+background: url("https://res.cloudinary.com/gunnerag/image/upload/v1615128928/Andrea/4_IMAGEN_PRINCIPAL_s0xjsq.png");
+height: 100%;
+width: 100%;
+padding-right: 38%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+filter: brightness(50%)
+} 
+
+.slogan4{
+  color: snow;
+  margin-top: 45vh;
+  margin-left: calc(35vw - 60px);
+  margin-right: 20vw;
+  font-family: 'Abhaya Libre', serif;
+  font-style: normal;
+  font-size: calc(50px + 3.5vw);
+  transition: all ease-in-out 0.5s;
+}
+
+.bounceSlogan {
+  -moz-animation: bounce 3s infinite;
+  -webkit-animation: bounce 3s infinite;
+  animation: bounce 3s infinite;
+}
+
+
+@keyframes bounceSlogan {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+@media(hover: hover){
+  .slogan4:hover{
+    color: snow;
+    margin-top: 45vh;
+    margin-left: calc(35vw - 60px);
+    margin-right: 20vw;
+    font-family: 'Abhaya Libre', serif;
+    font-style: normal;
+    font-size: calc(50px + 3.5vw);
+    transform: scale(1.2);
+    transition: all ease-in-out 0.5s;
+    cursor: pointer;
+  }
+}
+
+
+/* INFO ACTIVE */
+.homeSectionFourActive{
+  display: block;
+  position: relative;
+  overflow:hidden;
+  height: 100vh;
+  width: auto;
+  color:snow
+}
+
+.homeSectionFourBgActive{
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-right: 38%;
+}
+
+.sectionFourHeaderActive{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgb(221, 221, 221);
+  height: 40%;
+}
+
+.sectionFourHeaderContent{
+  color: black;
+  font-size: calc(1vw + 15px);
+  letter-spacing: 0.3vw;
+  font-weight: 400;
+}
+
+.sectionFourInnerActive{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+  height: 60%;
+}
+
+
+.ImagenContainer{
+  width: 50vw;
+  background: url("https://res.cloudinary.com/gunnerag/image/upload/v1615139058/Andrea/5_IMAGEN_PRINCIPAL_yoi5sc.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.porqueNosotrosContainer{
+  width: 50vw;
+  display: flex;
+  padding-top: 5%;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+
+.porqueNosotrosTitulo{
+  color:black;
+  font-family: 'Abhaya Libre', serif;
+  font-style: normal;
+  font-size: calc(10px + 2.5vw);
+  margin-bottom: 5%;
+}
+
+.porqueNosotrosMotivo{
+  color:black;
+  font-family: 'Abhaya Libre', serif;
+  font-style: normal;
+  font-size: calc(10px + 1.2vw);
+  text-align: start;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+

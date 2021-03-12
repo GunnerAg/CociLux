@@ -1,0 +1,142 @@
+
+.backgroundImg{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(https://i.pinimg.com/originals/88/05/ea/8805ea4897eaa4a85bc453716786d340.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: sepia(40%);
+    top:0;
+    bottom:0;
+    left:0;
+    right: 0;
+    align-content: center;
+}
+
+.flexBox{
+    display: flex;
+    justify-content: center;
+}
+
+.contentContainer{
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: -3vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.errorMsg{
+    height: fit-content;
+    padding-top: 0;
+    font-size: calc(48px + 12vw);
+    color: white;
+    filter: drop-shadow(5px 10px 2px black);
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.errorMsg2{
+    height: fit-content;
+    margin-top: calc(7vw + 20px);
+    font-size: calc(24px + 5vw);
+    color: white;
+    filter: drop-shadow(5px 10px 2px black);
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.innerMsg{
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 5vw;
+    font-size: calc(16px + 2vw);
+    color: white;
+    filter: drop-shadow(5px 5px 2px black);
+    font-family: 'Akaya Telivigala', cursive;
+}
+
+.animatedContainer{
+    display: flex;
+    justify-content: center;
+}
+
+.cutleryContainer{
+    height: 15vh;
+    width: 10vw;
+}
+
+.forkPng{
+    height: 15vh;
+    width: 10vw;
+    background-image: url(https://res.cloudinary.com/gunnerag/image/upload/v1615465118/Andrea/fork_nsxb2y.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: drop-shadow(5px 10px 2px black);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.spoonPng{
+    height: 15vh;
+    width: 10vw;
+    background-image: url(https://res.cloudinary.com/gunnerag/image/upload/v1615465120/Andrea/spoon_mb5lrp.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: drop-shadow(5px 10px 2px black);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.knifePng{
+    height: 15vh;
+    width: 10vw;
+    background-image: url(https://res.cloudinary.com/gunnerag/image/upload/v1615465121/Andrea/knife_hs9uxd.png);
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: drop-shadow(5px 10px 2px black);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.rotate {
+    -moz-animation: rotate1 rotate2 10s infinite;
+    -webkit-animation: rotate 10s infinite;
+    animation: rotate 10s infinite;
+    -o-animation: rotate 10s infinite;
+}
+
+.rotate1{
+    -moz-animation: rotate1 rotate2 10s infinite;
+    -webkit-animation: rotate 10s infinite;
+    animation: rotate 10s infinite;
+    -o-animation: rotate 10s infinite;
+    animation-delay: 1s;
+}
+
+.rotate2{
+    -moz-animation: rotate1 rotate2 10s infinite;
+    -webkit-animation: rotate 10s infinite;
+    animation: rotate 10s infinite;
+    -o-animation: rotate 10s infinite;
+    animation-delay: 2s;
+}
+
+@keyframes rotate {
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(360deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+   
+}

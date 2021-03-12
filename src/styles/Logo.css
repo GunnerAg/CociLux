@@ -1,0 +1,125 @@
+
+.logo {
+    -moz-animation: logo 2s ease-in-out;
+    -webkit-animation: logo 2s ease-in-out;
+    animation: logo 2s ease-in-out;
+    -o-animation: logo 2s ease-in-out;
+}
+  
+@keyframes logo {
+  0%, 20%, 50%, 80%, 100% {
+    transform: rotate(-364deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  60% {
+    transform: rotate(-364deg);
+  }
+}
+
+.height {
+    -moz-animation: height 3s ease-in-out;
+    -webkit-animation: height 3s ease-in-out;
+    animation: height 3s ease-in-out;
+    -o-animation: height 3s ease-in-out;
+}
+
+.width {
+    -moz-animation: width 3s ease-in-out;
+    -webkit-animation: width 3s ease-in-out;
+    animation: width 3s ease-in-out;
+    -o-animation: width 3s ease-in-out;
+}
+
+@keyframes height {
+    0%, 20%, 50%, 80%, 100% {
+      height: 35px;
+    }
+    40% {
+      height: 80px;
+    }
+    60% {
+      height: 35px;
+    }
+} 
+
+@keyframes width {
+    0%, 20%, 50%, 80%, 100% {
+        width: 35px;
+    }
+    40% {
+        width: 80px;
+    }
+    60% {
+        width: 35px;
+    }
+}
+
+.logoAnimation{
+    margin-top: 20vh;
+    transform: rotate(-4deg);
+    width: 80px;
+    height: 80px;
+    opacity: 1;
+}
+
+.barOne{
+    border: solid white 1px;
+    background: white;
+    height: 1px;
+    width: 35px;
+    position: absolute;
+}
+
+.barTwo{
+    border: solid white 1px;
+    background: white;
+    height: 35px;
+    width: 1px;
+    position: absolute;
+}
+
+.barThree{
+    position:absolute;
+    background: white;
+    bottom:0;
+    right: 0;
+    border: solid white 1px;
+    height: 1px;
+    width: 35px;
+}
+
+.barFour{
+    position:absolute;
+    background: white;
+    bottom:0;
+    right: 0;
+    border: solid white 1px;
+    height: 35px;
+    width: 1px;
+}
+
+.lettering{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+.letterS{
+    font-family: 'Rubik Mono One', sans-serif;
+    font-weight: bolder;
+    font-size: 100px;
+    transform: scale(1,0.7);
+    color:rgba(2, 0, 0, 0.9);
+    position: relative;
+    top:-33px;
+    text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+}
+.letterL{
+    font-size: 90px;
+    top:-28px;
+    color:white;
+    position: absolute;
+    font-family: 'Cormorant Garamond', serif;
+}
