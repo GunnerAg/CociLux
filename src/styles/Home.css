@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
-    width: auto;
+    width: 100vw;
 }
 
 .titulo{
@@ -32,20 +32,15 @@
   
 }
 
-/* .logoPng{
-    height: auto;
-    width: calc(100px);
-    margin-left: calc(100vw - 150px );
-    position: absolute;
-    bottom: 50px;
-} */
-
 .logoPng{
-  transform: rotate(4deg);
   transition: all ease-in-out 1s;
-  right: 0;
+  right: 5%;
   bottom: 5%;
   position: absolute;
+}
+
+.logoPng>*{
+  transform: rotate(4deg);
 }
 
 .logoPngHiden{
@@ -54,6 +49,10 @@
   right: 0;
   bottom: 5%;
   position: absolute;
+}
+
+.logoPngHiden>*{
+  transform: rotate(4deg);
 }
 
 .scrollBtn{
@@ -234,6 +233,11 @@ filter: brightness(50%)
   font-family: 'Abhaya Libre', serif;
   font-style: normal;
   font-size: calc(50px + 3.5vw);
+  transition: all ease-in-out 0.5s;
+}
+
+.slogan4:hover{
+  transform: scale(1.5);
   transition: all ease-in-out 0.5s;
 }
 

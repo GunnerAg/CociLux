@@ -63,7 +63,7 @@ export default function Home(props) {
     let SectionFour= () =>{
         return (
             <>
-                <section className="homeSectionFour" ref={section4}>
+                <section className="homeSectionFour" style={{height:window.innerHeight}} ref={section4}>
                     <div className="homeSectionFourBg"> </div>
                         <motion.div style={{x:yRange5}}>
                             <h1 onClick={handleOn} className="slogan4 bounceSlogan">Quiénes somos</h1>
@@ -76,7 +76,7 @@ export default function Home(props) {
     let SectionFourActive= () =>{
         return (
             <>
-                <section className="homeSectionFourActive" ref={section4}>
+                <section className="homeSectionFourActive" style={{height:window.innerHeight}} ref={section4}>
                     <div className="homeSectionFourBgActive"> </div>
                         <div className="sectionFourHeaderActive">
                             <h5 className="sectionFourHeaderContent">En SL Luxury Kitchen Design fabricamos y realizamos cocinas a medida con variedad de diseños que buscan, principalmente, la comodidad, la estética y la funcionalidad que mejor se adapte al espacio y a sus necesidades</h5>
@@ -101,7 +101,7 @@ export default function Home(props) {
             <div className="arrow bounce"><FontAwesomeIcon icon={sectionIcon}/></div>
         </button>
 
-         <section className="homeSectionOne" ref={section1}>
+         <section className="homeSectionOne" style={{height:window.innerHeight}} ref={section1}>
             <motion.h3 className="titulo" initial={{x: -1000}} animate={{x: 0}} transition={{duration:1}} > COCILUX · Diseño de cocinas </motion.h3>
             <motion.div initial={{x: 3000}} animate={{x: 0}} transition={{duration:1}}  >
             <h1 className="slogan">LO ÚLTIMO EN ARTE Y <br></br> FUNCIONALIDAD</h1>
@@ -110,7 +110,7 @@ export default function Home(props) {
                 <div className={!props.activeBurger? "logoPng":"logoPngHiden"}><Logo /></div>:
         </section> 
 
-        <section className="homeSectionTwo" ref={section2}>
+        <section className="homeSectionTwo" style={{height:window.innerHeight}} ref={section2}>
             <div className="homeSectionTwoBg"> </div>
             
                 <motion.div style={{x:yRange1}}>
@@ -129,7 +129,7 @@ export default function Home(props) {
                 </motion.div>   
         </section>
 
-        <section className="homeSectionThree" ref={section3}>
+        <section className="homeSectionThree" style={{height:window.innerHeight}} ref={section3}>
             <div className="homeSectionThreeBg"> </div>
             <motion.div style={{x:yRange2}}>
             <h1 className="slogan3">Compromiso <br></br> Medioambiental </h1>
