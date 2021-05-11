@@ -1,0 +1,300 @@
+.polilaminados__section-one{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.polilaminados__section-one--image-container{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293036/Andrea/POLILAMINADO_pyumom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    width: 80vw;
+    height: 100vh;
+}
+.polilaminados__section-one--header{
+    background: white;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.polilaminados__section-one--header-content{
+    transform: rotate(-90deg);
+    margin-left: 5%;
+}
+
+.polilaminados__section-one--header--A{
+    font-size: 16px;
+}
+
+.polilaminados__section-one--header--B{
+    font-size: 48px;
+}
+
+/* Second section */
+
+.polilaminados__section-two{
+    width: 100vw;
+    min-height: 100vh;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background:white;
+}
+
+.polilaminados__section-two--header{
+    font-size: calc(26px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+}
+
+.polilaminados__section-two--caracteristicas{
+    font-size: calc(16px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+}
+
+.polilaminados__section-two--separation-bar{
+    width: 10vw;
+    border: solid black 1px;
+    background:black;
+}
+
+/* Third section */
+
+.polilaminados__section-three{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.polilaminados__section-three--image-container{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293036/Andrea/POLILAMINADO_pyumom.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(0.6);
+    position: absolute;
+}
+
+.polilaminados__section-three--content{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    font-size: calc(36px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+    color: white;
+    position: relative;
+    letter-spacing: 0.3vw;
+}
+
+.polilaminados__section-three--content-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.polilaminados__section-three--separation-bar{
+    width: 10vw;
+    height: 1px;
+    border: solid white 1px;
+    background:white;
+    align-self: flex-start;
+    
+}
+
+/* CANTEADOS */
+
+.polilaminados--container{
+    width: 100vw;
+    height: fit-content;
+    background: #222222
+ }
+ 
+ .polilaminados--grid{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+ }
+
+ .polilaminados--grid-unit{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 280px;
+    min-height: 280px;
+    width: 37vw;
+    height: 40vw;
+    margin: 5vw;
+    border-radius: 20px;
+}
+
+.one{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293638/Andrea/polilaminados/POLILAMINADO_11_tq9nhv.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.two{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293638/Andrea/polilaminados/POLILAMINADO_12_n3w88d.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.three{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293638/Andrea/polilaminados/POLILAMINADO_13_cvgtl8.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.four{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293638/Andrea/polilaminados/POLILAMINADO_14_p2qvfh.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.five{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293638/Andrea/polilaminados/POLILAMINADO_15_vmvbeb.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.six{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293638/Andrea/polilaminados/POLILAMINADO_16_np4cem.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.seven{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293639/Andrea/polilaminados/POLILAMINADO_17_f59sh3.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.eight{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293639/Andrea/polilaminados/POLILAMINADO_18_kfidx6.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.nine{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293639/Andrea/polilaminados/POLILAMINADO_19_w1fg3j.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.ten{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293640/Andrea/polilaminados/POLILAMINADO_20_n8apqh.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+.eleven{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620293640/Andrea/polilaminados/POLILAMINADO_21_k2p4aj.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: white;
+    background-position: center;
+}
+
+// /* MOBILE DISPLAYS */
+@media screen and (max-width: 768px){
+    
+    /* SECTION ONE */
+    .polilaminados__section-one{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .polilaminados__section-one--image-container{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .polilaminados__section-one--header{
+        background: white;
+        width: 100vw;
+        height: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    .polilaminados__section-one--header-content{
+        transform: rotate(0deg);
+    }
+    
+    .polilaminados__section-one--header--A{
+        font-size: 16px;
+    }
+    
+    .polilaminados__section-one--header--B{
+        font-size: 48px;
+    }
+
+    .polilaminados--grid-unit{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 280px;
+        min-height: 280px;
+        width: 74vw;
+        height: 80vw;
+        margin: 5vw;
+        border-radius: 20px;
+    }
+
+    .polilaminados--grid-unit:hover{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 280px;
+        min-height: 280px;
+        width: 100vw;
+        height: 100vw;
+        margin: 5vw;
+        border-radius: 20px;
+    }
+
+    .polilaminados__section-one--header--A{
+        font-size: 16px;
+    }
+    
+    .polilaminados__section-one--header--B{
+        font-size: 36px;
+    }
+
+}

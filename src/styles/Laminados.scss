@@ -1,0 +1,1136 @@
+html{
+    scroll-behavior: smooth;
+}
+
+.laminados__section-one{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.laminados__section-one--image-container{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1617648567/Andrea/1_IMG_xyv8dd.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    width: 80vw;
+    height: 100vh;
+}
+
+.laminados__section-one--header{
+    background: white;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.laminados__section-one--header-content{
+    transform: rotate(-90deg);
+    margin-left: 10%;
+}
+
+.laminados__section-one--header--A{
+    font-size: 16px;
+}
+
+.laminados__section-one--header--B{
+    font-size: 48px;
+}
+
+/* Second section */
+
+.laminados__section-two{
+    width: 100vw;
+    height: fit-content;
+    min-height: 100vh;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background:white;
+    padding-bottom: 10vh;
+}
+
+.laminados__section-two--header{
+    font-size: calc(26px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+}
+
+.laminados__section-two--caracteristicas{
+    font-size: calc(16px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+}
+
+.laminados__section-two--separation-bar{
+    width: 10vw;
+    border: solid black 1px;
+    background:black;
+}
+
+
+/* Third section */
+
+.laminados__section-three{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.laminados__section-three--image-container{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1617648567/Andrea/1_IMG_xyv8dd.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(0.6);
+    position: absolute;
+}
+
+.laminados__section-three--content{
+    padding-top: 5%;
+    padding-left: 10%;
+    width: 100vw;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    font-size: calc(36px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+    color: white;
+    position: relative;
+    letter-spacing: 0.3vw;
+}
+
+.laminados__section-three--content-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.laminados__section-three--separation-bar{
+    width: 10vw;
+    height: 1px;
+    margin-left: 10%;
+    border: solid white 1px;
+    background:white;
+    align-self: flex-start;
+    
+}
+
+.laminados__section-three--button-container{
+    display: flex;
+    height: fit-content;
+    width: fit-content;
+    margin-top: 10vh;
+    justify-content: center;
+    align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; 
+}
+
+// animation button //
+
+$black: black;
+$white: white;
+
+.laminados__section-three--button {
+    background: none;
+    border: solid 5px white;
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+    margin:2.5vw;
+    font-family: 'Abhaya Libre', serif;
+    color: white;
+    font-size: 20px;
+    z-index: 10;
+    background: none;
+    box-sizing: border-box;
+    box-shadow: inset 0 0 0 2px $white;
+    color: $white;
+    font-weight: 700;
+
+    &::before,
+    &::after {
+      box-sizing: inherit;
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  
+.spin {
+    width: 200px;
+    height: 200px;
+    padding: 0;
+    
+    &:hover {
+      color: $white;
+      font-size: 28px;
+      transition: font-size 0.4s ease-in-out;
+    }
+  
+    &::before,
+    &::after {
+      top: 0;
+      left: 0;
+    }
+  
+    &::before {
+      border: 2px solid transparent; 
+    }
+  
+    &:hover::before {
+      border-top-color: $white;
+      border-right-color: $white;
+      border-bottom-color: $white;
+  
+      transition:
+        border-top-color 0.15s linear, border-right-color 0.15s linear 0.10s, border-bottom-color 0.15s linear 0.20s;
+    }
+  
+    &::after {
+      border: 0 solid transparent; 
+    }
+  
+    &:hover::after {
+      border-top: 2px solid $white; 
+      border-left-width: 2px; 
+      border-right-width: 2px; 
+      transform: rotate(270deg); 
+      transition:
+        transform 0.4s linear 0s,
+        border-left-width 0s linear 0.35s; 
+    }
+  }
+  
+  .circle {
+    border-radius: 100%;
+    box-shadow: none;
+      
+    &::before,
+    &::after {
+      border-radius: 100%;
+    }
+  }
+
+
+/* COLORS */
+.laminados__colores{
+    width: 100vw;
+    height: 100vh;
+    margin-bottom: 10vh;
+}
+
+.laminados__colores-header{
+    text-align: center;
+    font-size: calc(36px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 900;
+    margin-bottom: 3%;
+}
+
+.laminados__colores-container{
+    text-align: center;
+    height: fit-content;
+    font-size: calc(20px);
+    font-family: 'Abhaya Libre', serif;
+}
+
+.laminados__colores-mate--grid{
+    display: grid;
+    justify-content: center;
+    margin-top: 5%;
+    grid-template-columns: 12vw 12vw 12vw 12vw 12vw 12vw;
+    column-gap: 3vw;
+    grid-template-rows: 25vh 25vh 25vh;
+    row-gap: 3vh;
+    align-items: center;
+}
+ 
+.laminados__colores-mate{
+    border: solid 1px;
+    border-radius: 100%;
+    width: 10vw;
+    height: 10vw;
+    min-width: 100px;
+    min-height: 100px;
+    margin-right: 5px;
+}
+
+/* MATE */
+.aluminio-arosa-soft{
+    border-color: #B6BABB;
+    background-color: #B6BABB ;
+}
+
+.verde-oliva-soft{
+    border-color: #656654;
+    background-color: #656654 ;
+}
+
+.very-berry-soft{
+    border-color: #4F2B3C;
+    background-color: #4F2B3C ;
+}
+
+.negro-soft{
+    border-color: #010101;
+    background-color: #010101 ;
+}
+
+.verde-arcilla-soft{
+    border-color: #8D988A;
+    background-color: #8D988A ;
+}
+
+.rojo-pompeya-soft{
+    border-color: #83272C;
+    background-color: #83272C ;
+}
+
+.gris-gu-soft{
+    border-color: #3D3E39;
+    background-color: #3D3E39 ;
+}
+
+.verde-salvia-soft{
+    border-color: #A7AE9E;
+    background-color: #A7AE9E ;
+}
+
+.rosa-talco-soft{
+    border-color: #C8988A;
+    background-color: #C8988A ;
+}
+
+/* MATE PAGE 2*/
+.laminados__colors-container--two{
+    display: flex;
+    flex-direction: row;
+    height: fit-content;
+    margin-bottom: 10%;
+    width: 100vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.laminados__colors-container--two-unit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    justify-content: center;
+    font-size: calc(20px);
+}
+
+.laminados__colores-mate--two{
+    border: solid 1px;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    margin: 50px;
+}
+
+.azul-indigo-touch{
+    border-color: #00264B;
+    background-color: #00264B;
+}
+
+.amarillo-pompeya-soft{
+    border-color: #CA9247;
+    background-color: #CA9247;
+}
+
+.rojo-touch{
+    border-color: #BB1111;
+    background-color: #BB1111;
+}
+
+.verde-talco-soft{
+    border-color: #9DBDAA;
+    background-color: #9DBDAA;
+}
+
+.malva-talco-soft{
+    border-color: #CDC2BC;
+    background-color: #CDC2BC ;
+}
+
+/*MATE PAGE 3*/
+
+.laminados__colors-container--three{
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100vw;
+}
+
+.laminados__colors-container--three-first{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #222222;
+    align-content: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    flex-wrap: wrap;
+}
+
+.laminados__colors-container--three-second{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    flex-wrap: wrap;
+}
+
+.laminados__colors-container--three-unit{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-left: 5%;
+    margin-bottom: 5%;
+}
+
+.laminados__colors-container--three-text-white{
+    font-size: 20px;
+    color:white;
+}
+
+.laminados__colors-container--three-text{
+    font-size: 20px;
+}
+
+.laminados__colors-mate--three{
+    border: solid 1px;
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    padding: 10%;
+}
+
+.blanco-touch{
+    border-color: #F9FEF8;
+    background-color: #F9FEF8 ;
+}
+
+.blanco-soft{
+    border-color: #FFFFFF;
+    background-color: #FFFFFF;
+}
+
+.crema-sil-soft{
+    border-color: #D9D8D7;
+    background-color: #D9D8D7 ;
+}
+
+.nube-touch{
+    border-color: #A2A09E;
+    background-color: #A2A09E ;
+}
+
+.negro-touch{
+    border-color: #000000;
+    background-color: #000000 ;
+}
+
+.grafito-touch{
+    border-color: #47413E;
+    background-color: #47413E;
+}
+
+.capuccino-touch{
+    border-color: #745036;
+    background-color: #745036 ;
+}
+
+.crema-touch{
+    border-color: #CDBA9A;
+    background-color: #CDBA9A ;
+}
+
+
+/* COLORES BRILLO ONE*/
+
+.laminados__colors-brillo--container-one{
+   width: 100vw;
+   height: fit-content;
+}
+
+.laminados__colors-brillo-header{
+    font-size: calc(36px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+    font-weight: 900;
+    margin-top: 16px;
+    margin-left: 3%;
+    position: absolute;
+    color: white;
+    z-index: 10;
+}
+
+.laminados__colors-brillo--grid-one{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30vw 30vw 30vw;
+    column-gap: 3vw;
+    grid-template-rows: 40vh 40vh;
+    row-gap: 5vh;
+    align-items: center;
+    background: #222222;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.laminados__colors-brillo--grid-three{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 30vw 30vw 30vw;
+    column-gap: 3vw;
+    grid-template-rows: 40vh 40vh 40vh 40vh;
+    row-gap: 5vh;
+    align-items: center;
+    background: #222222;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.laminados__colors-brillo--one-unit{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+}
+
+.laminados__colors-brillo--one{
+    width: 30vw;
+    height: 20vh;
+}
+
+.laminados__colors-brillo--one-text{
+    color:white;
+    font-size: 20px;
+}
+
+/*BRILLO ONE*/
+
+.blanco-brillo{
+    border: #FFFFFF;
+    background: #FFFFFF;
+}
+
+.blanco-seda{
+    border: #FFF9F1;
+    background: #FFF9F1;
+}
+
+.antique-white-brillo{
+    border: #FAE6BD;
+    background: #FAE6BD;
+}
+
+.levante-brillo{
+    border: #FF9100;
+    background: #FF9100;
+}
+
+.carnaval-brillo{
+    border: #FF0000;
+    background: #FF0000;
+}
+
+.ciclone-brillo{
+    border: #D4BD90;
+    background: #D4BD90;
+}
+
+/*BRILLO TWO*/
+
+.storm-brillo{
+    border: #3B3735;
+    background: #3B3735;
+}
+
+.diamond-black-brillo{
+    border: #000000;
+    background: #000000;
+}
+
+.just-blue-brillo{
+    border: #B6BABB;
+    background: #B6BABB;
+}
+
+.maui-brillo{
+    border: #3EB296;
+    background: #3EB296;
+}
+
+.dening-brillo{
+    border: #1F3B56;
+    background: #1F3B56;
+}
+
+.just-gold-brillo{
+    border: #E1B33A;
+    background: #E1B33A;
+}
+
+/*BRILLO THREE*/
+.lemon-brillo{
+    border: #BCBF0E;
+    background: #BCBF0E;
+}
+
+.kashmir-brillo{
+    border: #B88E55;
+    background: #B88E55;
+}
+
+.new-burgundy{
+    border: #840707;
+    background: #840707;
+}
+
+.krypton-metalizado-brillo{
+    border: #9F9E9C;
+    background: #9F9E9C;
+}
+
+.glacial-brillo{
+    border: #E4E1DC;
+    background: #E4E1DC;
+}
+
+.tierra-brillo-gloss{
+    border: #6D5432;
+    background: #6D5432;
+}
+
+.br-blanco{
+    border: #FFFFFF;
+    background: #FFFFFF;
+}
+
+.br-beige{
+    border: #EFE4D6;
+    background: #EFE4D6;
+}
+
+.br-nube{
+    border: #9F9E9C;
+    background: #9F9E9C;
+}
+
+.br-grafito{
+    border: #47413E;
+    background: #47413E;
+}
+
+.br-tierra{
+    border: #7F736D;
+    background: #7F736D;
+}
+
+/*WOODS ONE*/
+.laminados__wood--container-one{
+    width: 100vw;
+    height: fit-content;
+ }
+ 
+ .laminados__woods-header{
+     font-size: calc(36px + 0.5vw);
+     font-family: 'Abhaya Libre', serif;
+     font-weight: 900;
+     margin-top: 16px;
+     margin-left: 3%;
+     position: absolute;
+     z-index: 10;
+ }
+ 
+ .laminados__woods--grid-one{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+ }
+
+ .laminados__woods--one-unit{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    padding: 2.5vw;
+    flex-wrap: wrap;
+}
+
+.laminados__woods--one{
+    width: 300px;
+    height: 100px;
+    margin-top: 10vh;
+}
+
+.laminados__woods--one-text{
+    color:black;
+    margin-top: 2%;
+    font-size: 16px;
+    font-weight:700;
+}
+
+/*WOOD TEXTURES 19MM*/
+
+.roble-hercules-atlas{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639267/Andrea/WOODS/1._ROBLE_H%C3%89RCULES_ATLAS_mzmcob.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.roble-osstipo-atlas{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639288/Andrea/WOODS/2._ROBLE_OSSTIPO_ATLAS_ehkgqg.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.roble-aurora-atlas{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639320/Andrea/WOODS/3._ROBLE_AURORA_ATLAS_hnytbp.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.fresno-estepa-sega{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639321/Andrea/WOODS/4._FRESNO_ESTEPA_SEGA_una9i9.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.heaven-oak-atlas{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639319/Andrea/WOODS/5._HEAVEN_OAK_ATLAS_cptjqa.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.iron-oak-atlas{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639320/Andrea/WOODS/6._IRON_OAK_ATLAS_bbpzkd.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.oak-market-atlas{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1620298112/Andrea/WOODS/7._OAK_MARKET_ATLA_c9tgzr.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.roble-pegasus-atlas{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1620298950/Andrea/WOODS/8._ROBLE_PEGASUS_ATLAS_1_qwnyvo.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.roble-denver-atlas{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639318/Andrea/WOODS/9._ROBLE_DENVER_ATLAS_j1at3k.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.roble-sinatra-essence{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639318/Andrea/WOODS/10._ROBLE_SINATRA_ESSENCE_fqvj7a.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.prime-wood-legno{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639320/Andrea/WOODS/11._PRIME_WOOD_LEGNO_pbykwr.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.oak-river-atlas{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639317/Andrea/WOODS/12._OAK_RIVER_ATLAS_yxhhln.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.roble-arezzo-soul{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639317/Andrea/WOODS/13._ROBLE_AREZZO_SOUL_uj2vzl.png");
+    background-position: center;
+    background-size: contain;
+}
+
+.roble-nordico-atlas{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639317/Andrea/WOODS/14._ROBLE_N%C3%93RDICO_ATLAS_ctlqrh.png");
+    background-position: center;
+    background-size: contain;
+}
+
+/*WOOD TEXTURES 22MM*/
+
+.W4452{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641286/Andrea/WOODS/4452r_isedvo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4479{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641286/Andrea/WOODS/4479_Seda-Mate_bb4ake.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4479-1R{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641286/Andrea/WOODS/4479-1r_tie4ca.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4479-R{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641286/Andrea/WOODS/4479r_dor2lm.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4487{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641285/Andrea/WOODS/4487r_kpcmu4.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4569{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641285/Andrea/WOODS/4569_Roble_j4ic5u.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4570{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641285/Andrea/WOODS/4570_Roble_jhem1d.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4574{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641286/Andrea/WOODS/4574_poro_doble_inkkni.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4603{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641284/Andrea/WOODS/4603r_n2f2gi.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4619{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641284/Andrea/WOODS/4619_poro_doble_22mm_vplrue.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4622{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4622r_k3jqrg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4654{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4654_poro_doble_22mm_iqg4dg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4660{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4660r_aqst5t.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4673{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641284/Andrea/WOODS/4673r_wwls4y.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4677{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4677r_q1cxud.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4678{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4678r_jdysrv.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4692{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4692_Roble-Poro-Pizarra_brfznb.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4694{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4694_Roble-Poro-Pizarra_dwo1js.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4698{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641288/Andrea/WOODS/4698_Roble-Poro-Pizarra_ziqrjd.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4697{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641286/Andrea/WOODS/4697_Roble-Canyon-Poro-Pizarra_uiiuc2.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.W4701{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641287/Andrea/WOODS/4701_Roble-Poro-Pizarra_iejpha.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+/* MOBILE DISPLAYS */
+@media screen and (max-width: 1024px){
+    
+    /* SECTION ONE */
+    .laminados__section-one{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .laminados__section-one--image-container{
+        background: url("https://res.cloudinary.com/gunnerag/image/upload/v1617648567/Andrea/1_IMG_xyv8dd.webp");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .laminados__section-one--header{
+        background: white;
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    .laminados__section-one--header-content{
+        transform: rotate(0deg);
+    }
+    
+    .laminados__section-one--header--A{
+        font-size: 16px;
+    }
+    
+    .laminados__section-one--header--B{
+        font-size: 36px;
+    }
+
+    /* COLORS GRID */
+
+    .laminados__colores-mate--grid{
+        display: grid;
+        margin-left: 5%;
+        grid-template-columns: 15vw 15vw 15vw 15vw;
+        grid-template-rows: 10vh 10vh 10vh 10vh ;
+        column-gap: 10%;
+        row-gap: 20vh;
+        justify-content: center;
+    }
+
+    .laminados__colores{
+        height: 140vh;
+    }
+
+    .laminados__colores-mate{
+        width: 20vw;
+        height: 20vw;
+        min-width: 75px;
+        min-height: 75px;
+    }
+
+    .laminados__colores-container{
+        text-align: center;
+        height: fit-content;
+        font-size: calc(16px + 0.2vw);
+        font-family: 'Abhaya Libre', serif;
+        justify-content: center;
+    }
+
+    .laminados__colores-mate--grid-two{
+        display: grid;
+        grid-template-columns: 16% 16%;
+        column-gap: 20%;
+        row-gap: 10%;
+        grid-template-rows: 25% 25%;
+        padding-bottom: 5%;
+        text-align: center;
+    }
+
+    /*COLORES BRILLO ONE*/
+    .laminados__colors-brillo--grid-one{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 90vw;
+        column-gap: 5vw;
+        grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
+        row-gap: 10vh;
+        align-items: center;
+        background: #222222;
+        padding-top: 10vh;
+    }
+
+    .laminados__colors-brillo--one{
+        width: 80vw;
+        height: 20vh;
+    }
+
+    .laminados__colors-brillo--one-text{
+        font-size: 16px;
+    }
+
+    /*COLORES BRILLO THREE*/
+    .laminados__colors-brillo--grid-three{
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 90vw;
+        column-gap: 5vw;
+        grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
+        row-gap: 10vh;
+        align-items: center;
+        background: #222222;
+        padding-top: 10vh;
+    }
+
+    .laminados__colors-brillo-header{
+        font-size: calc(36px + 0.5vw);
+        font-family: 'Abhaya Libre', serif;
+        font-weight: 900;
+        margin-top: 8px;
+        margin-left: 10%;
+        position: absolute;
+        color: white;
+        z-index: 10;
+    }
+
+}
+
+@media screen and (max-width: 280px){
+    .laminados__colores-mate--grid{
+        display: grid;
+        margin-left: 5%;
+        grid-template-columns: 25vw 25vw ;
+        grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+        column-gap: 15vw;
+        row-gap: 3vh;
+        justify-content: center;  
+    }
+    
+    .laminados__colores{
+        height: 140vh;
+    }
+
+    .laminados__colores-mate--grid-two{
+        display: grid;
+        margin-left: 5%;
+        grid-template-columns: 25vw ;
+        grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh;
+        column-gap: 15vw;
+        row-gap: 25vh; 
+        text-align: center;
+    }
+
+    .laminados__woods--one{
+        min-width: 250px;
+    }
+
+}
+
+// @media screen 
+// and(max-width: 1024px)
+// and(min-width: 375px)
+// and(orientation: landscape){
+
+//     .laminados__colores-mate--grid{
+//         display: grid;
+//         margin-left: 5%;
+//         grid-template-columns: 25vw 25vw ;
+//         grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+//         column-gap: 15vw;
+//         row-gap: 3vh;
+//         justify-content: center;  
+//     }
+    
+//     .laminados__colores{
+//         height: 140vh;
+//     }
+
+//     .laminados__colores-mate--grid-two{
+//         display: grid;
+//         margin-left: 5%;
+//         grid-template-columns: 25vw ;
+//         grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh;
+//         column-gap: 15vw;
+//         row-gap: 25vh; 
+//         text-align: center;
+//     }
+
+//     .laminados__woods--one{
+//         min-width: 250px;
+//     }
+    
+//     .laminados__section-one--header--B{
+//         font-size: 36px;
+//         margin-top: 10%;
+//     }
+    
+// }

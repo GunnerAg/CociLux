@@ -1,10 +1,9 @@
-
-  .contactBg{
+  .contact{
+    width: 100%;
     height: 100vh;
-    width: 100vw; 
   }
   
-  .contactHeader{
+  .contact__header{
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -13,14 +12,14 @@
     height: 25vh;
   }
   
-  .contactHeaderContent{
+  .contact__header-content{
     color: snow;
     margin-left: 5vw;
     font-size: calc(3vw + 15px);
     font-weight: 200;
   }
   
-  .contactInnerContent{
+  .contact__inner-content{
     display: flex;
     justify-content: flex-start;
     flex-direction: row;
@@ -28,22 +27,22 @@
   }
 
   @media screen and (max-width: 768px){
-    .contactInnerContent{
+    .contact__inner-content{
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         height: 75vh;
         
       }
-    .dataContainer{
+    .contact__details{
         min-width: 100vw;
         background-size: cover;
         background-repeat: no-repeat;
       }
-    .middleBar{
+    .contact__middle-bar{
         display: none;
     }
-    .contactFormContainer{
+    .contact__form-container{
         min-width: 100vw;
         height: 75vh;
         padding-bottom: 2%;
@@ -54,35 +53,32 @@
     }
     }
   
-  .dataContainer{
+  .contact__details{
     width: 50vw;
     background-size: cover;
     background-repeat: no-repeat;
   }
 
-  .paragraphOne{
+  .contact__details-paragraph--one{
     font-size: calc(10px + 0.7vw);
-    margin-bottom: 3%;
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-top: 7%;
+    margin:5%;
   }
 
-  .contactList{
+  .contact__details-list{
     font-size: calc(10px + 0.7vw);
     margin-left: 8%;
   }
 
-  .elementList{
+  .contact__details-list--element{
       display: flex;
       flex-direction: row;
   }
 
-  .boldText{
+  .contact__details-list--bold{
     font-weight: 700;
   }
 
-  .paragraphTwo{
+  .contact__details-paragraph--two{
     font-size: calc(10px + 0.7vw);
     margin-bottom: 5%;
     margin-left: 7%;
@@ -90,15 +86,7 @@
     margin-top: 6%;
   }
 
-  .paragraphThree{
-    font-size: calc(10px + 0.7vw);
-    margin-bottom: 5%;
-    margin-left: 7%;
-    margin-right: 7%;
-    margin-top: 3%;
-  }
-
-  .paragraphThreeInner{
+  .contact__details-paragraph--three{
     font-size: calc(10px + 0.7vw);
     margin-bottom: 5%;
     margin-left: 7%;
@@ -106,17 +94,13 @@
     margin-top: 3%;
   }
   
-  .contactFormContainer{
+  .contact__form-container{
       width: 50vw;
       height: 75vh;
-      padding-bottom: 2%;
-      padding-right: 5%;
-      padding-left: 5%;
-      padding-top: 2%;
       background-color: rgba(128, 128, 128, 0.2);
   }
 
-  .middleBar{
+  .contact__middle-bar{
     background: black;
     border: solid black 3px;
     border-radius: 5px;
@@ -124,5 +108,6 @@
     height: 45vh;
     position: absolute;
     bottom: 15vh;
-    margin-left: calc(50vw - 3px);
+    margin-left: calc(50% - 3px);
+    z-index: 1;
 }

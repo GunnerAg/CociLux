@@ -1,0 +1,447 @@
+.melanina__section-one{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.melanina__section-one--image-container{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1619684184/Andrea/1._COCINA_TERRACOTA_hxt4ej.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    width: 74vw;
+    height: 100vh;
+}
+.melanina__section-one--header{
+    background: white;
+    width: 26vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.melanina__section-one--header-content{
+    transform: rotate(-90deg);
+    margin-left: 10%;
+}
+
+.melanina__section-one--header--A{
+    font-size: 16px;
+}
+
+.melanina__section-one--header--B{
+    font-size: 48px;
+}
+
+/* Second section */
+
+.melanina__section-two{
+    width: 100vw;
+    height: 100vh;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background:white;
+}
+
+.melanina__section-two--header{
+    font-size: calc(26px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+}
+
+.melanina__section-two--caracteristicas{
+    font-size: calc(16px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+}
+
+.melanina__section-two--separation-bar{
+    width: 10vw;
+    border: solid black 1px;
+    background:black;
+}
+
+/* Third section */
+
+.melanina__section-three{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.melanina__section-three--image-container{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1619684184/Andrea/1._COCINA_TERRACOTA_hxt4ej.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(0.6);
+    position: absolute;
+}
+
+.melanina__section-three--content{
+    display: flex;
+    padding-left: 10%;
+    align-self: flex-start;
+    flex-direction: column;
+    font-size: calc(36px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+    color: white;
+    position: relative;
+    letter-spacing: 0.3vw;
+}
+
+.melanina__section-three--content-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.melanina__section-three--separation-bar{
+    width: 10vw;
+    height: 1px;
+    margin-left: 10%;
+    border: solid white 1px;
+    background:white;
+    align-self: flex-start;
+    
+}
+
+/* COLORES */
+
+.melanina__colores--container{
+    width: 100vw;
+    height: fit-content;
+ }
+ 
+ .melanina__colores-header-container{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     justify-items: space-between;
+ }
+ 
+ .melanina__colores-header{
+     font-size: calc(36px + 0.5vw);
+     font-family: 'Abhaya Libre', serif;
+     font-weight: 900;
+     margin-top: 5px;
+     margin-left: 10%;
+ }
+
+ .melanina__logo-container-tmatt{
+    width: 200px;
+    height: 75px;
+    margin-top: 10px;
+    margin-right: 3%;
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619690190/Andrea/TMATT_puch9c.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+ .melanina__logo-container-crystal{
+     width: 200px;
+     height: 75px;
+     margin-top: 5px;
+     margin-right: 3%;
+     background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619690048/Andrea/CRYSTAL_b1wggh.png");
+     background-position: center;
+     background-size: contain;
+     background-repeat: no-repeat;
+ }
+
+ .melanina__logo-container-fenix{
+    width: 200px;
+    height: 75px;
+    margin-top: 5px;
+    margin-right: 3%;
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619691244/Andrea/FENIX_dsujki.png");
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+ 
+ .melanina__colores--grid-one{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+ }
+
+ .melanina__colores--one-unit{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    margin-top: 5%;
+    width: fit-content;
+    min-width: 280px;
+    flex-wrap: wrap;
+}
+
+.melanina__colores--one{
+    border: solid 1px;
+    border-radius: 100%;
+    width: 10vw;
+    height: 10vw;
+    min-width: 100px;
+    min-height: 100px;
+    margin-right: 5px;
+}
+
+.melanina__colores--one-text{
+    color:black;
+    margin-top: 2%;
+    font-size: 16px;
+    font-weight:700;
+}
+
+/*COLORES MATE ANTIHUELLA*/
+
+.artico{
+    border: black 2px solid;
+    background: #FFFFFF;
+}
+
+.smeraldo{
+    border:#273D30;
+    background: #273D30;
+}
+
+.lignite{
+    border: #4F2B3C;
+    background: #4F2B3C;
+}
+
+.terracotta{
+    border: #AD6056;
+    background: #AD6056;
+}
+
+.blue{
+    border: #171D27;
+    background: #171D27;
+}
+
+.legno-fume{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619689070/Andrea/WOODS/38_cookqc.png");
+    background-position: center;
+    background-size: 300px;
+}
+
+.bianco-zen{
+    border: black 2px solid;
+    background: #FFFFFF;
+}
+
+.visone{
+    border: #7F7C74;
+    background: #7F7C74;
+}
+
+.nero{
+    border: #2A2A2C;
+    background: #2A2A2C;
+}
+
+.nuvola{
+    border: #D8D7D5;
+    background: #D8D7D5;
+}
+
+.antracite{
+    border: #62656C;
+    background: #62656C;
+}
+
+.arena{
+    border: #A89B95;
+    background: #A89B95;
+}
+
+.toscano{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619689397/Andrea/WOODS/39_ncraoq.png");
+    background-position: center;
+    background-size: 300px;
+}
+
+.elba{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619689320/Andrea/WOODS/40_b1jybr.png");
+    background-position: center;
+    background-size: 300px;
+}
+
+/*COLORES ALTO BRILLO*/
+
+.cemento{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619690999/Andrea/42_nai7mv.png");
+    background-position: center;
+    background-size: 300px;
+}
+
+.carrara{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619690985/Andrea/41_fb6vsc.png");
+    background-position: center;
+    background-size: 300px;
+}
+
+.crema{
+    border: #FFF4DE;
+    background: #FFF4DE;
+}
+
+.bronce{
+    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619690995/Andrea/43_aksbbb.png");
+    background-position: center;
+    background-size: 300px;
+}
+
+.blanco{
+    border: black 2px solid;
+    background: #FFFFFF;
+}
+
+.negro{
+    border: #000000;
+    background: #000000;
+}
+
+.arena{
+    border: #C4AF90;
+    background: #C4AF90;
+}
+
+.agua-marina{
+    border: #C4E4E1;
+    background: #C4E4E1;
+}
+
+.azul{
+    border: #143A4A;
+    background: #143A4A;
+}
+
+.gris-claro{
+    border: #D3D3D4;
+    background: #D3D3D4;
+}
+
+.marengo{
+    border: #706561;
+    background: #706561;
+}
+
+.rojo{
+    border: #C0191A;
+    background: #C0191A;
+}
+
+/*COLORES SUPER MATE*/
+
+.negro-ingro{
+    border: #000000;
+    background: #000000;
+}
+
+.grigio-efeso{
+    border: #8D8B8A;
+    background: #8D8B8A;
+}
+
+.castoro-ottawa{
+    border: #756953;
+    background: #756953;
+}
+
+.grigio-bromo{
+    border: #34383C;
+    background: #34383C;
+}
+
+.bianco-kos{
+    border: #E0E0E0;
+    background: #E0E0E0;
+}
+
+.grigio-londra{
+    border: #5B5650;
+    background: #5B5650;
+}
+
+
+/* MOBILE DISPLAYS */
+@media screen and (max-width: 1024px){
+    
+    /* SECTION ONE */
+    .melanina__section-one{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .melanina__colores--one-text{
+        color:black;
+        margin-top: 2%;
+        font-size: 13px;
+        font-weight:700;
+    }
+
+    .melanina__section-one--image-container{
+        background: url("https://res.cloudinary.com/gunnerag/image/upload/v1619684184/Andrea/1._COCINA_TERRACOTA_hxt4ej.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .melanina__section-one--header{
+        background: white;
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    .melanina__section-one--header-content{
+        transform: rotate(0deg);
+    }
+    
+    .melanina__section-one--header--A{
+        font-size: 16px;
+    }
+    
+    .melanina__section-one--header--B{
+        font-size: 36px;
+    }
+
+}
+
+@media screen and (max-width: 375px){
+    .melanina__colores--one-unit{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6%;
+        margin-top: 5%;
+        margin-left: 20px;
+        width: fit-content;
+        min-width: 280px;
+        flex-wrap: wrap;
+    }
+
+}
+

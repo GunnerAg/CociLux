@@ -1,5 +1,5 @@
 import React, {useRef,useState,useEffect} from 'react';
-import '../styles/Home.css'
+import '../styles/Home.scss'
 import Logo from './Logo'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faArrowDown,faArrowUp} from '@fortawesome/free-solid-svg-icons'
@@ -12,17 +12,17 @@ export default function Home(props) {
     const section2 = useRef();
     const section3 = useRef();
     const section4 = useRef();
-
-    const {scrollYProgress} = useViewportScroll();
-    const yRange1 = useTransform(scrollYProgress, [0, 0.3], [3000,0]);
-    const yRange2 = useTransform(scrollYProgress, [0.4, 0.65], [-2000,0]);
-    const yRange3 = useTransform(scrollYProgress, [0, 0.3], [-2000,0]);
-    const yRange4 = useTransform(scrollYProgress, [0.4, 0.65], [3000,0]);
-    const yRange5 = useTransform(scrollYProgress, [0.65, 1], [3000,0]);
-
+    const section5 = useRef();
     let [infoActive,setInfo]=useState('SectionFour')
     let [sectionIcon,setIcon]=useState(faArrowDown)
     const [scrollY, setScrollY] = useState(0);
+    const {scrollYProgress} = useViewportScroll();
+
+    const yRange1 = useTransform(scrollYProgress, [0, infoActive==="SectionFour" && 0.3||infoActive==="SectionFourActive" && 0.25], [3000,0]);
+    const yRange2 = useTransform(scrollYProgress, [0.4, infoActive==="SectionFour" && 0.65||infoActive==="SectionFourActive" && 0.50], [-2000,0]);
+    const yRange3 = useTransform(scrollYProgress, [0, infoActive==="SectionFour" && 0.3||infoActive==="SectionFourActive" && 0.25], [-2000,0]);
+    const yRange4 = useTransform(scrollYProgress, [0.4, infoActive==="SectionFour" && 0.65||infoActive==="SectionFourActive" && 0.50], [3000,0]);
+    const yRange5 = useTransform(scrollYProgress, [0.65, 1], [3000,0]);
 
     useEffect(() => {
         function watchScroll() {
@@ -40,103 +40,135 @@ export default function Home(props) {
     }
 
     function scrollSection(){
-        console.log(scrollYProgress.current)
-        if (scrollYProgress.current<0.33){
-            section2.current.scrollIntoView({behavior: 'smooth'})
-        }
-        else if (scrollYProgress.current<0.66){
-            section3.current.scrollIntoView({behavior: 'smooth'})
-        }
-        else if (0.66<=scrollYProgress.current){
-            section4.current.scrollIntoView({behavior: 'smooth'})
-        }
-        if (scrollYProgress.current>0.9){
-            section1.current.scrollIntoView({behavior: 'smooth'})
-        }
+
+        switch(infoActive){
+            case("SectionFour"):
+                if (scrollYProgress.current<1/3){
+                    section2.current.scrollIntoView({behavior: 'smooth'})
+                }
+                else if (scrollYProgress.current<2/3){
+                    section3.current.scrollIntoView({behavior: 'smooth'})
+                }
+                else if (scrollYProgress.current<0.9){
+                    section4.current.scrollIntoView({behavior: 'smooth'})
+                }
+                if (scrollYProgress.current>=0.9){
+                    section1.current.scrollIntoView({behavior: 'smooth'})
+                
+            }
+            break;
+    
+            case("SectionFourActive"):
+                console.log('at the correct place',scrollYProgress.current)
+                if (scrollYProgress.current<0.25){
+                    section2.current.scrollIntoView({behavior: 'smooth'})
+                }
+                else if (scrollYProgress.current<0.50){
+                    section3.current.scrollIntoView({behavior: 'smooth'})
+                }
+                else if (scrollYProgress.current<0.75){
+                    section4.current.scrollIntoView({behavior: 'smooth'})
+                }
+                else if (scrollYProgress.current<0.9){
+                    section5.current.scrollIntoView({behavior: 'smooth'})
+                }
+                if (scrollYProgress.current>=0.9){
+                    section1.current.scrollIntoView({behavior: 'smooth'})
+                }
+        }  
     }
 
     const handleOn=()=> {
         setInfo(infoActive="SectionFourActive")
+        scrollYProgress.current=0.75
+        setIcon(sectionIcon=faArrowDown)
     }
 
-
-    let SectionFour= () =>{
+    let SectionFour=()=>{
         return (
             <>
-                <section className="homeSectionFour" style={{height:window.innerHeight}} ref={section4}>
-                    <div className="homeSectionFourBg"> </div>
+                <section className="home__section-four" style={{height:window.innerHeight}} ref={section4}>
+                    <div className="home__section-four--background"> </div>
                         <motion.div style={{x:yRange5}}>
-                            <h1 onClick={handleOn} className="slogan4 bounceSlogan">Quiénes somos</h1>
+                            <h1 onClick={handleOn} className="home__section-four--slogan bounceSlogan">Quiénes somos</h1>
                         </motion.div>
                 </section>
             </>
         )
     }
 
-    let SectionFourActive= () =>{
+    let SectionFourActive=()=>{
         return (
             <>
-                <section className="homeSectionFourActive" style={{height:window.innerHeight}} ref={section4}>
-                    <div className="homeSectionFourBgActive"> </div>
-                        <div className="sectionFourHeaderActive">
-                            <h5 className="sectionFourHeaderContent">En SL Luxury Kitchen Design fabricamos y realizamos cocinas a medida con variedad de diseños que buscan, principalmente, la comodidad, la estética y la funcionalidad que mejor se adapte al espacio y a sus necesidades</h5>
+                <section className="home__section-four--active" style={{height:window.innerHeight}} ref={section4}>
+                    <div className="home__section-four--active-background"> </div>
+                        <div className="home__section-four--active-header">
+                            <h5 className="home__section-four--active-header--content">En SL Cocilux fabricamos y realizamos cocinas a medida, que buscan principalmente la comodidad, la estética y la funcionalidad que mejor se adapte al espacio y a sus necesidades con una amplia gama de materiales</h5>
                         </div>
-                        <div className="sectionFourInnerActive">
-                            <div className="ImagenContainer">
+                        <div className="home__section-four--active-inner">
+                            <div className="home__section-four--image-container"></div>
+                            <div className="home__section-four--porque-nosotros">
+                                <h6 className="home__porque-nosotros--content">Somos fabricantes especializados, con unos precios competentes directamente de fábrica. <br></br><br></br> Acérquese a nuestra tienda y exposición física, en la que descubrirá una amplia gama de materiales y encimeras.<br></br><br></br> Pídanos presupuesto sin compromiso.</h6>
                             </div>
-                            <div className="porqueNosotrosContainer">
-                                <h3 className="porqueNosotrosTitulo">Por Qué Nosotros</h3>
-                                <h6 className="porqueNosotrosMotivo">Somos fabricantes especializados, con unos precios directamente de fábrica. <br></br><br></br> Acérquese a nuestra tienda y exposición física ubicada en Madrid, en la que descubrirá una amplia gama de materiales exclusivos al mejor precio.<br></br><br></br> Pídanos presupuesto sin compromiso.</h6>
+                        </div>
+                </section>
+                <section className="home__section-five--active" style={{height:window.innerHeight}} ref={section5}>
+                    <div className="home__section-five--active-background"> </div>
+                        <div className="home__section-five--active-header">
+                            <h5 className="home__section-five--active-header--content">Compromiso y fiabilidad</h5>
+                        </div>
+                        <div className="home__section-five--active-inner">
+                            <div className="home__section-five--compromiso">
+                                <h6 className="home__porque-nosotros--content">Como fabricantes de muebles de cocina; medimos, presupuestamos y montamos en su casa directamente y sin intermediarios. 
+                                Esto nos permite realizar grandes descuentos en el material ya que proviene directamente de fábrica. Como resultado obtenemos la cocina que más se adapte a sus necesidades a precios competentes. <br></br><br></br> Todo el inmobiliario cuenta con un seguro y una garantía de fábrica, tanto de materiales como de instalación.<br></br><br></br> Dispondrá de un plazo estimado para que se solucione todo aquello que haya podido sufrir daños, errores de medición o imperfectos de fábrica.<br></br><br></br> Nuestro trabajo experimentado garantiza la calidad del producto y el servicio postventa por si hubiera algún material defectuoso.</h6>
                             </div>
+                            <div className="home__section-five--image-container"></div>
                         </div>
                 </section>
             </>
         )
     }
-    
 
     return (
         <>
-        <button style={{ outline:'none'}} onClick={scrollSection} className="scrollBtn">
+        <button style={{ outline:'none'}} onClick={scrollSection} className="home__scroll-button">
             <div className="arrow bounce"><FontAwesomeIcon icon={sectionIcon}/></div>
         </button>
 
-         <section className="homeSectionOne" style={{height:window.innerHeight}} ref={section1}>
-            <motion.h3 className="titulo" initial={{x: -1000}} animate={{x: 0}} transition={{duration:1}} > COCILUX · Diseño de cocinas </motion.h3>
+        <section className="home__section-one" style={{height:window.innerHeight}} ref={section1}>
+            <div className="home__section-one--background"> </div>
+            <motion.h3 className="home__section-one--title" initial={{x: -1000}} animate={{x: 0}} transition={{duration:1}} > COCILUX · Diseño de cocinas </motion.h3>
             <motion.div initial={{x: 3000}} animate={{x: 0}} transition={{duration:1}}  >
-            <h1 className="slogan">LO ÚLTIMO EN ARTE Y <br></br> FUNCIONALIDAD</h1>
-            <h4 className="textoExplicativo">Muebles de cocina hechos a mano <br></br> y decoración</h4>
+            <h1 className="home__section-one--slogan">LO ÚLTIMO EN DISEÑO <br></br> Y FUNCIONALIDAD</h1>
+            <h4 className="home__section-one--text">Te ayudamos a conseguir la cocina que <br></br> mejor se adapte a sus necesidades a <br></br> precios de fábrica</h4>
             </motion.div>
-                <div className={!props.activeBurger? "logoPng":"logoPngHiden"}><Logo /></div>:
+                <div className={!props.activeBurger? "home__section-one--logo-png":"home__section-one--logo-png--hidden"}><Logo /></div>:
         </section> 
 
-        <section className="homeSectionTwo" style={{height:window.innerHeight}} ref={section2}>
-            <div className="homeSectionTwoBg"> </div>
+        <section className="home__section-two" style={{height:window.innerHeight}} ref={section2}>
+            <div className="home__section-two--background"> </div>
             
                 <motion.div style={{x:yRange1}}>
-                <h3 className="slogan2">UNA NUEVA Y SOFISTICADA VISIÓN DEL ESPACIO <br></br> PARA SU COCINA</h3>
+                <h3 className="home__section-two--slogan">UNA NUEVA Y SOFISTICADA VISIÓN DEL ESPACIO <br></br> PARA SU COCINA</h3>
                 </motion.div>
 
                 <motion.div style={{x:yRange3}} >
-                <div className="barraSeparacion" ></div>
-                <h6 className="textoExplicativo2" >Tras la marca se halla la búsqueda de la 
-                    productividad y el máximo aprovechamiento 
-                    del espacio, partiendo de la idea de crear 
-                    ambientes y servicios personalizados con la 
-                    estética que mejor se adapte a sus 
-                    necesidades al mejor precio. 
+                <div className="home__section-two--separation-bar" ></div>
+                <h6 className="home__section-two--text" >Tras la marca se halla la fórmula que transforma el espacio en una zona cómoda, 
+                    que le permita realizar sus labores de una manera práctica y ordenada, partiendo de la idea de crear ambientes modernos y
+                    personalizados con la estética que mejor se adapte a sus necesidades al mejor precio. 
                 </h6>
                 </motion.div>   
         </section>
 
-        <section className="homeSectionThree" style={{height:window.innerHeight}} ref={section3}>
-            <div className="homeSectionThreeBg"> </div>
+        <section className="home__section-three" style={{height:window.innerHeight}} ref={section3}>
+            <div className="home__section-three--background"> </div>
             <motion.div style={{x:yRange2}}>
-            <h1 className="slogan3">Compromiso <br></br> Medioambiental </h1>
+            <h1 className="home__section-three--slogan">Compromiso <br></br> Medioambiental </h1>
             </motion.div>
             <motion.div style={{x:yRange4}} >
-            <div className="barraSeparacion2" ></div>
-            <h6 className="textoExplicativo3">Nuevo acabado mate más ecológico con base al agua <br></br>
+            <div className="home__section-three--separation-bar" ></div>
+            <h6 className="home__section-three--text">Nuevo acabado mate más ecológico con base al agua <br></br>
                 Fórmulas a partir de resinas, solventes, aceites, ceras y aditivos 
                 de origen biológico. Reduce la <br></br> dependencia de materias primas 
                 de origen fósil. Nuestra última contribución a la reducción de la <br></br>
@@ -146,7 +178,7 @@ export default function Home(props) {
         </section>
 
         {infoActive==="SectionFour" && <SectionFour/>}
-        {infoActive==="SectionFourActive" && <SectionFourActive/>}
+        {infoActive==="SectionFourActive" && <SectionFourActive />}
         </>
     )
 }

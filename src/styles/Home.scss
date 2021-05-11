@@ -1,49 +1,59 @@
 
-.homeSectionOne{
-    display: block;
-    position: relative;
-    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1614702931/Andrea/1_IMAGEN_PRINCIPAL_xei0xl.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100vw;
+.home__section-one{
+  display: block;
+  position: relative;
+  overflow:hidden;
+  height: 100vh;
+  width: auto;
 }
 
-.titulo{
+.home__section-one--background{
+  display: block;
+  position: absolute;
+  background: url("https://res.cloudinary.com/gunnerag/image/upload/v1614702931/Andrea/1_IMAGEN_PRINCIPAL_xei0xl.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100vw;
+  background-position: center;
+  } 
+
+
+.home__section-one--title{
     padding-top: 8vh;
-    padding-left: 12vw;
+    margin-left: 12vw;
     padding-right: 12vw;
     font-size: calc(40px - 0.1vw);
 }
 
-.slogan{
+.home__section-one--slogan{
     margin-top:4%;
     margin-left:5%;
     font-size: calc(3vw + 10px);
     font-weight: bold;
 }
 
-.textoExplicativo{
+.home__section-one--text{
     margin-top:2%;
     margin-left:5%;
     font-weight: 400;
-    font-size: calc(2vw + 10px);
-    letter-spacing: 0.1vw;
+    font-size: calc(1.5vw + 7px);
+    letter-spacing: 0.2vw;
   
 }
 
-.logoPng{
+.home__section-one--logo-png{
   transition: all ease-in-out 1s;
   right: 5%;
   bottom: 5%;
   position: absolute;
 }
 
-.logoPng>*{
+.home__section-one--logo-png>*{
   transform: rotate(4deg);
 }
 
-.logoPngHiden{
+.home__section-one--logo-png--hidden{
   transform: translateX(-110vw);
   transition: all ease-in-out 1s;
   right: 0;
@@ -51,11 +61,11 @@
   position: absolute;
 }
 
-.logoPngHiden>*{
+.home__section-one--logo-png--hidden>*{
   transform: rotate(4deg);
 }
 
-.scrollBtn{
+.home__scroll-button{
   border:none;
   background:none;
   transform: scale(2) ;
@@ -94,7 +104,7 @@
 
   /* SECCION DOS DEL HOMEPAGE */
 
-.homeSectionTwo{
+.home__section-two{
     display: block;
     position: relative;
     overflow:hidden;
@@ -102,7 +112,7 @@
     width: auto;
 }
 
-.homeSectionTwoBg{
+.home__section-two--background{
   display: block;
   position: absolute;
   background: url("https://res.cloudinary.com/gunnerag/image/upload/v1614716107/Andrea/2_SEGUNDA_IMAGEN_PRINCIPAL_esz2py.png");
@@ -117,7 +127,7 @@
   opacity: 0.5;
 } 
 
-.slogan2{
+.home__section-two--slogan{
   font-size: calc(2vw + 10px);
   text-align: center;
   margin-top: calc(40px + 5vw);
@@ -125,7 +135,7 @@
   letter-spacing: 0.5vw;
 }
 
-.barraSeparacion{
+.home__section-two--separation-bar{
   border: solid 0.1vw black;
   width: 25vw;
   height: 0.01vh;
@@ -134,7 +144,7 @@
   margin-top: 5%;
 }
 
-.textoExplicativo2{
+.home__section-two--text{
   font-size: calc(1vw + 15px);
   letter-spacing: 0.3vw;
   font-weight: 500;
@@ -146,7 +156,7 @@
 
 /* SECCION TRES DEL HOMEPAGE */
 
-.homeSectionThree{
+.home__section-three{
   display: block;
   position: relative;
   overflow:hidden;
@@ -155,7 +165,7 @@
   color:snow
 }
 
-.homeSectionThreeBg{
+.home__section-three--background{
 display: block;
 position: absolute;
 background: url("https://res.cloudinary.com/gunnerag/image/upload/v1615121532/Andrea/3_IMAGEN_PRINCIPAL_1_b8ukli.png");
@@ -167,17 +177,7 @@ background-repeat: no-repeat;
 background-size: cover;
 } 
 
-.barraSeparacion2{
-  border: solid 0.1vw snow;
-  width: 25vw;
-  height: 0.01vh;
-  background: snow;
-  margin-left: 4%;
-  margin-bottom: 6%;
-  margin-top: 2%;
-}
-
-.slogan3{
+.home__section-three--slogan{
   text-align:end;
   padding-right: calc(40px + 5vw);
   margin-top:6%;
@@ -189,7 +189,17 @@ background-size: cover;
   letter-spacing: 0.5vw;
 }
 
-.textoExplicativo3{
+.home__section-three--separation-bar{
+  border: solid 0.1vw snow;
+  width: 25vw;
+  height: 0.01vh;
+  background: snow;
+  margin-left: 4%;
+  margin-bottom: 6%;
+  margin-top: 2%;
+}
+
+.home__section-three--text{
   text-align: center;
   font-size: calc(1.1vw + 20px);
   margin-top: 5vh ;
@@ -203,7 +213,7 @@ background-size: cover;
 
 /* SECCION CUATRO HOMEPAGE */
 
-.homeSectionFour{
+.home__section-four{
   display: block;
   position: relative;
   overflow:hidden;
@@ -212,7 +222,7 @@ background-size: cover;
   color:snow
 }
 
-.homeSectionFourBg{
+.home__section-four--background{
 display: block;
 position: absolute;
 background: url("https://res.cloudinary.com/gunnerag/image/upload/v1615128928/Andrea/4_IMAGEN_PRINCIPAL_s0xjsq.png");
@@ -225,7 +235,7 @@ background-size: cover;
 filter: brightness(50%)
 } 
 
-.slogan4{
+.home__section-four--slogan{
   color: snow;
   margin-top: 45vh;
   margin-left: calc(35vw - 60px);
@@ -236,7 +246,7 @@ filter: brightness(50%)
   transition: all ease-in-out 0.5s;
 }
 
-.slogan4:hover{
+.home__section-four--slogan:hover{
   transform: scale(1.5);
   transition: all ease-in-out 0.5s;
 }
@@ -277,7 +287,7 @@ filter: brightness(50%)
 
 
 /* INFO ACTIVE */
-.homeSectionFourActive{
+.home__section-four--active{
   display: block;
   position: relative;
   overflow:hidden;
@@ -286,7 +296,7 @@ filter: brightness(50%)
   color:snow
 }
 
-.homeSectionFourBgActive{
+.home__section-four--active-background{
   display: block;
   position: absolute;
   height: 100%;
@@ -294,7 +304,7 @@ filter: brightness(50%)
   padding-right: 38%;
 }
 
-.sectionFourHeaderActive{
+.home__section-four--active-header{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -303,14 +313,14 @@ filter: brightness(50%)
   height: 40%;
 }
 
-.sectionFourHeaderContent{
+.home__section-four--active-header--content{
   color: black;
   font-size: calc(1vw + 15px);
   letter-spacing: 0.3vw;
   font-weight: 400;
 }
 
-.sectionFourInnerActive{
+.home__section-four--active-inner{
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
@@ -318,14 +328,14 @@ filter: brightness(50%)
 }
 
 
-.ImagenContainer{
+.home__section-four--image-container{
   width: 50vw;
   background: url("https://res.cloudinary.com/gunnerag/image/upload/v1615139058/Andrea/5_IMAGEN_PRINCIPAL_yoi5sc.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
-.porqueNosotrosContainer{
+.home__section-four--porque-nosotros{
   width: 50vw;
   display: flex;
   padding-top: 5%;
@@ -335,7 +345,7 @@ filter: brightness(50%)
   padding-bottom: 5%;
 }
 
-.porqueNosotrosTitulo{
+.home__section-four--porque-nosotros{
   color:black;
   font-family: 'Abhaya Libre', serif;
   font-style: normal;
@@ -343,7 +353,7 @@ filter: brightness(50%)
   margin-bottom: 5%;
 }
 
-.porqueNosotrosMotivo{
+.home__porque-nosotros--content{
   color:black;
   font-family: 'Abhaya Libre', serif;
   font-style: normal;
@@ -352,4 +362,69 @@ filter: brightness(50%)
   padding-left: 5%;
   padding-right: 5%;
 }
+
+
+/* SECCION CINCO HOMEPAGE */
+.home__section-five--active{
+  display: block;
+  position: relative;
+  overflow:hidden;
+  height: 100vh;
+  width: auto;
+  color:snow;
+}
+
+.home__section-five--active-background{
+  display: block;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding-right: 38%;
+}
+
+.home__section-five--active-header{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  background: rgb(221, 221, 221);
+  height: 20%;
+  margin-bottom: 0%;
+}
+
+.home__section-five--active-header--content{
+  color:black;
+  font-family: 'Abhaya Libre', serif;
+  font-style: normal;
+  font-size: calc(10px + 2.5vw);
+  letter-spacing: 0.3vw;
+  font-weight: 400;
+  margin-left: 5%;
+}
+
+.home__section-five--active-inner{
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.home__section-five--image-container{
+  width: 50vw;
+  height: 80vh;
+  justify-self: flex-end;
+  background: url("https://res.cloudinary.com/gunnerag/image/upload/v1614702931/Andrea/1_IMAGEN_PRINCIPAL_xei0xl.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home__section-five--compromiso{
+  width: 50vw;
+  display: flex;
+  padding-top: 2%;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-bottom: 5%;
+}
+
 

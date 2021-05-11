@@ -1,0 +1,62 @@
+.design-and-materials__header{
+    display: flex;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1617627371/Andrea/1._IMG_rz1pbv.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    filter: blur(8px);
+    -webkit-filter: blur(3px);
+}
+
+.design-and-materials__content-container{
+    width:100vw;
+ }
+
+/* MAIN MENU COMPONENT */
+.main-menu{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-menu__header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    color:whitesmoke;
+    font-size: calc(2vw + 25px);
+    font-family: 'Abhaya Libre', serif;
+}
+
+.main-menu__container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.main-menu__button{
+    background: none;
+    border: solid 5px white;
+    color: white;
+    width:calc( 80vw / 6);
+    min-width: 150px;
+    font-size: 16px;
+}
+
+
+
+/* MOBILE DEVICE DISPLAYS*/
+
+@media screen and (max-width: 768px){
+    
+        
+}

@@ -1,4 +1,4 @@
-.boxContainer{
+.products__box-container{
     height: 100vh;
     width: 100vw;
     display: flex;
@@ -10,7 +10,7 @@
 }
 
 @media screen and (max-width: 768px){
-    .boxContainer{
+    .products__box-container{
         height: 100vh;
         width: 100vw;
         display: flex;

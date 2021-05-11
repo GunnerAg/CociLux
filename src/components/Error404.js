@@ -1,6 +1,6 @@
 import React,{useRef,useState} from 'react';
 import {motion, useMotionValue} from 'framer-motion';
-import '../styles/Error404.css'
+import '../styles/Error404.scss'
 
 export default function Error404() {
 

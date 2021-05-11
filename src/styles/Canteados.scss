@@ -1,0 +1,266 @@
+.canteados__section-one{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.canteados__section-one--image-container{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1619692027/Andrea/CANTEADO_gjtlqz.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    width: 80vw;
+    height: 100vh;
+}
+.canteados__section-one--header{
+    background: white;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.canteados__section-one--header-content{
+    transform: rotate(-90deg);
+    margin-left: 10%;
+}
+
+.canteados__section-one--header--A{
+    font-size: 16px;
+}
+
+.canteados__section-one--header--B{
+    font-size: 48px;
+}
+
+/* Second section */
+
+.canteados__section-two{
+    width: 100vw;
+    min-height: 100vh;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background:white;
+}
+
+.canteados__section-two--header{
+    font-size: calc(26px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+}
+
+.canteados__section-two--caracteristicas{
+    font-size: calc(16px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+}
+
+.canteados__section-two--separation-bar{
+    width: 10vw;
+    border: solid black 1px;
+    background:black;
+}
+
+/* Third section */
+
+.canteados__section-three{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.canteados__section-three--image-container{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1619692027/Andrea/CANTEADO_gjtlqz.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(0.6);
+    position: absolute;
+}
+
+.canteados__section-three--content{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    font-size: calc(36px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+    color: white;
+    position: relative;
+    letter-spacing: 0.3vw;
+}
+
+.canteados__section-three--content-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.canteados__section-three--separation-bar{
+    width: 10vw;
+    height: 1px;
+    border: solid white 1px;
+    background:white;
+    align-self: flex-start;
+    
+}
+
+/* CANTEADOS */
+
+.canteados--container{
+    width: 100vw;
+    height: fit-content;
+    background: #222222
+ }
+ 
+ .canteados--grid{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+ }
+
+ .canteados--grid-unit{
+    display: flex;
+    flex-wrap: wrap;
+    min-width: 280px;
+    min-height: 280px;
+    width: 37vw;
+    height: 40vw;
+    margin: 5vw;
+    border-radius: 20px;
+}
+
+
+.one{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1619693366/Andrea/CANTEADO_5_sayx7b.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.two{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1619693365/Andrea/CANTEADO_6_vgxz2m.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.three{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1619693365/Andrea/CANTEADO_7_au8jkb.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.four{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1619693365/Andrea/CANTEADO_8_jd0dyt.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.five{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1619693365/Andrea/CANTEADO_9_ivas9s.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.six{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1619693365/Andrea/CANTEADO_11_befujf.png");
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+.seven{
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1619693365/Andrea/CANTEADO_10_j4463v.png");
+    background-size:contain;
+
+    background-repeat: no-repeat;
+    background-color: white;
+}
+
+
+// /* MOBILE DISPLAYS */
+@media screen and (max-width: 1024px){
+    
+    /* SECTION ONE */
+    .canteados__section-one{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .canteados__section-one--image-container{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .canteados__section-one--header{
+        background: white;
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    .canteados__section-one--header-content{
+        transform: rotate(0deg);
+    }
+    
+    .canteados__section-one--header--A{
+        font-size: 16px;
+    }
+    
+    .canteados__section-one--header--B{
+        font-size: 48px;
+    }
+
+    .canteados--grid-unit{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 280px;
+        min-height: 280px;
+        width: 74vw;
+        height: 80vw;
+        margin: 5vw;
+        border-radius: 20px;
+        z-index: 10;
+    }
+
+    .canteados--grid-unit:hover, .canteados--grid-unit:active{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 280px;
+        min-height: 280px;
+        width: 100vw;
+        height: 100vw;
+        margin: 5vw;
+        border-radius: 20px;
+        z-index: 10;
+    }
+
+    .canteados__section-one--header--A{
+        font-size: 16px;
+    }
+    
+    .canteados__section-one--header--B{
+        font-size: 36px;
+    }
+
+}

@@ -1,5 +1,5 @@
 import React, {useRef, useEffect, useReducer} from 'react'
-import '../styles/catalogue.scss'
+import '../styles/Carousel.scss'
 
 
 const slides = [

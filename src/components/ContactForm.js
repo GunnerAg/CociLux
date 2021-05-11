@@ -1,6 +1,6 @@
 import React, {useState} from 'react'
 import emailjs from 'emailjs-com';
-import '../styles/ContactForm.css'
+import '../styles/ContactForm.scss'
 require('dotenv').config();
 
 
@@ -8,7 +8,7 @@ require('dotenv').config();
 export default function ContactForm({ env }) {
 
   const [sendStatus,setFormStatus]=useState(false)
-  const [formInputs,setFormValues]=useState({})
+  const [formInputs,setFormValues]=useState({name:'',email:'',phone:'',message:''})
 
   const{
     REACT_APP_EMAILJS_USERID: userId,
@@ -36,7 +36,7 @@ export default function ContactForm({ env }) {
 
   function validateNotEmpty(input) 
     {
-      if (input.length>0)
+      if (input!==undefined||input.length>0)
         {
           return (true)
         }
@@ -75,18 +75,18 @@ export default function ContactForm({ env }) {
   }
 
   return (
-    <form className="contact-form" onSubmit={sendEmail} onChange={handleChange}>
+    <form className="contact__form" onSubmit={sendEmail} onChange={handleChange}>
       <label>Nombre</label>
-      <input type="text" name="user_name" className="inputField"/>
+      <input type="text" name="user_name" className="contact__form-input"/>
       <label>Email</label>
-      <input type="email" name="user_email" className="inputField"/>
+      <input type="email" name="user_email" className="contact__form-input"/>
       <label>Teléfono</label>
-      <input type="text" name="user_phone" className="inputField"/>
+      <input type="text" name="user_phone" className="contact__form-input"/>
       <label>A tener en cuenta:</label>
-      <textarea name="message" rows="6" className="textArea"/>
+      <textarea name="message" rows="6" className="contact__form-text--area"/>
       {sendStatus? 
-        <button type="submit" value="Send" className="btnSubmitDisable" disabled={true}> Enviado! </button>:
-        <button type="submit" value="Send" className="btnSubmit"> Enviar </button>
+        <button type="submit" value="Send" className="contact__form-button--dissable" disabled={true}> Enviado! </button>:
+        <button type="submit" value="Send" className="contact__form-button--enable"> Enviar </button>
       }
     </form>
   );

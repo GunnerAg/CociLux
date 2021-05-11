@@ -1,5 +1,5 @@
 import React,{useState} from 'react';
-import '../styles/SectionBox.css';
+import '../styles/SectionBox.scss';
 
 export default function SectionBox(props) {
 

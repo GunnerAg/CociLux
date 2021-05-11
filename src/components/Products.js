@@ -1,9 +1,9 @@
 import React,{useState,useEffect} from 'react';
 import {useHistory} from 'react-router-dom'
-import '../styles/Designs.css';
+import '../styles/Products.scss';
 import SectionBox from './SectionBox';
 
-export default function Designs() {
+export default function Products() {
 
     //We redirect with history to use timer in touchscreens, this allows me to play the animation on mobile and wait before redirect
     //And at the same time avoid desktop user to wait 0.5 extra seconds.
@@ -29,8 +29,8 @@ export default function Designs() {
     ];
 
     let descriptions=[
-        'Encontramos una variedad de opciones para establecer una base sobre el estilo que podría tener su cocina',
-        'Contiene un amplio abanico de muebles y complementos colos que podrá completar el diseño de su cocina',
+        'Encontramos una variedad de opciones para establecer una base sobre el estilo que podría tener nuestra cocina',
+        'Contiene un amplio abanico de muebles y complementos con los que podrá completar el diseño de su cocina',
         'Galería de imágenes donde se muestran los resultados finales'
     ];
 
@@ -41,8 +41,8 @@ export default function Designs() {
     ];
 
     return (
-        <div>
-            <div className="boxContainer">
+        <div className="products">
+            <div className="products__box-container">
                 <SectionBox content={contents[0]} handleClicked={handleClick} withDescription={isTouchScreen? false:true} description={descriptions[0]} redirection={redirections[0]}/>
                 <SectionBox content={contents[1]} handleClicked={handleClick} withDescription={isTouchScreen? false:true} description={descriptions[1]} redirection={redirections[1]}/>
                 <SectionBox content={contents[2]} handleClicked={handleClick} withDescription={isTouchScreen? false:true} description={descriptions[2]} redirection={redirections[2]}/>

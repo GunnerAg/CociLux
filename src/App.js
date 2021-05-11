@@ -5,10 +5,16 @@ import NavBar from './components/NavBar';
 import Home from './components/Home';
 import Catalogo from './components/Catalogo';
 import Contact from './components/Contact';
-import Designs from './components/Designs';
+import Products from './components/Products';
 import Equipment from './components/Equipment';
+import Laminados from './components/Diseña_tu_cocina/Laminados';
+import LaminadoLacado from './components/Diseña_tu_cocina/LaminadoLacado';
+import Canteados from './components/Diseña_tu_cocina/Canteado';
+import Polilaminados from './components/Diseña_tu_cocina/Polilaminado';
 import Error404 from './components/Error404';
 import './components/App.css'
+import DiseñoMateriales from './components/Diseña_tu_cocina/DiseñoMateriales';
+
 
 
 
@@ -45,7 +51,7 @@ function App() {
         }}/>
 
         <Route path="/diseña_tu_cocina" render={(routeProps)=>{
-          return <Designs {...routeProps}/>
+          return <Products {...routeProps}/>
         }}/>
 
         <Route exact path="/equipamientos" render={(routeProps)=>{
@@ -55,10 +61,31 @@ function App() {
         <Route path="/equipamientos/bisagras" render={(routeProps)=>{
           return <Equipment {...routeProps}/>
         }}/>
+        
+        <Route path="/diseños&materiales" render={(routeProps)=>{
+          return <DiseñoMateriales {...routeProps}/>
+        }}/>
+
+        <Route path="/laminado" render={(routeProps)=>{
+          return <Laminados {...routeProps}/>
+        }}/>
+
+        <Route path="/melanina_lacada" render={(routeProps)=>{
+          return <LaminadoLacado {...routeProps}/>
+        }}/>
+
+        <Route path="/canteado" render={(routeProps)=>{
+          return <Canteados {...routeProps}/>
+        }}/>
+
+        <Route path="/polilaminado" render={(routeProps)=>{
+          return <Polilaminados {...routeProps}/>
+        }}/>
+
         <Route path="*" render={(routeProps)=>{
           return <Error404 {...routeProps}/>
         }}/>
-
+  
       </Switch>
     </div>
   );
