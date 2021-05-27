@@ -25,6 +25,7 @@
     padding-right: 12vw;
     font-size: calc(40px - 0.1vw);
     color: #222222;
+    font-family: 'Abhaya Libre', serif;
 }
 
 .home__section-one--slogan{
@@ -33,6 +34,7 @@
     font-size: calc(3vw + 10px);
     font-weight: bold;
     color: #222222;
+    font-family: 'Abhaya Libre', serif;
 }
 
 .home__section-one--text{
@@ -43,6 +45,7 @@
     font-size: calc(1vw + 15px);
     letter-spacing: 0.2vw;
     color: #222222;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .home__section-one--logo-png{
@@ -138,6 +141,7 @@
   font-weight: 500;
   letter-spacing: 0.5vw;
   color: #222222;
+  font-family: 'Abhaya Libre', serif;
 }
 
 .home__section-two--separation-bar{
@@ -158,6 +162,8 @@
   padding-left: 10vw;
   padding-right: 30vw;
   color: #222222;
+  font-family: 'Open Sans', sans-serif;
+  font-style: normal;
 }
 
 /* SECCION TRES DEL HOMEPAGE */
@@ -208,10 +214,10 @@ background-size: cover;
 
 .home__section-three--text{
   text-align: center;
-  font-size: calc(1.1vw + 20px);
+  font-size: calc(1vw + 15px);
   margin-top: 5vh ;
   text-align:start; 
-  font-family: 'Abhaya Libre', serif;
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
   padding-left: calc(30px + 2.5vw);
   padding-right: 10vw;
@@ -304,7 +310,7 @@ filter: brightness(50%)
 .home__section-four--active-background{
   display: block;
   position: absolute;
-  height: 100%;
+  height:auto;
   width: 100%;
   padding-right: 38%;
 }
@@ -323,6 +329,7 @@ filter: brightness(50%)
   font-size: calc(1vw + 15px);
   letter-spacing: 0.3vw;
   font-weight: 400;
+  font-family: 'Abhaya Libre', serif;
 }
 
 .home__section-four--active-inner{
@@ -350,20 +357,14 @@ filter: brightness(50%)
   justify-content: center;
   flex-direction: column;
   padding-bottom: 5%;
-}
-
-.home__section-four--porque-nosotros{
-  font-family: 'Abhaya Libre', serif;
-  font-style: normal;
-  font-size: calc(10px + 2.5vw);
-  margin-bottom: 5%;
+  
 }
 
 .home__porque-nosotros--content{
   color:#222222;
-  font-family: 'Abhaya Libre', serif;
+  font-size: calc(0.5vw + 15px);
+  font-family: 'Open Sans', sans-serif;
   font-style: normal;
-  font-size: calc(1.1vw + 16px);
   text-align: start;
   padding-left: 5%;
   padding-right: 5%;
@@ -387,7 +388,7 @@ filter: brightness(50%)
 .home__section-five--active-background{
   display: block;
   position: absolute;
-  height: 100%;
+  height: auto;
   width: 100%;
   padding-right: 38%;
 }
@@ -404,9 +405,9 @@ filter: brightness(50%)
 
 .home__section-five--active-header--content{
   color:#222222;
-  font-family: 'Abhaya Libre', serif;
   font-style: normal;
-  font-size: calc(10px + 2.5vw);
+  font-size: calc(1vw + 15px);
+  font-family: 'Abhaya Libre', serif;
   letter-spacing: 0.3vw;
   font-weight: 400;
   margin-left: 5%;
@@ -416,12 +417,12 @@ filter: brightness(50%)
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
+  height: 80vh;
 }
 
 .home__section-five--image-container{
   width: 30vw;
-  height: inherit;
-  justify-self: flex-end;
+  height: auto;
   background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1621522720/CANTEADO-06_pbow96.jpg");
   background-size: cover;
   background-position: center;

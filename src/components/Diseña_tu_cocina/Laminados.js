@@ -65,8 +65,8 @@ export default function Laminados() {
                             <div className="laminados__section-three--content">Colección de Laminados</div>
                             <div className="laminados__section-three--separation-bar"></div>
                         <div className="laminados__section-three--button-container">
-                            <button onClick={displayContent} className="laminados__section-three--button spin circle" style={{outline:"none"}} name="colors" > ESTILO <br/> COLORES </button>
-                            <button onClick={displayContent} className="laminados__section-three--button spin circle" style={{outline:"none"}} name="wood"> ESTILO <br/> MADERAS</button>
+                            <button onClick={displayContent} className="laminados__section-three--button laminados-spin laminados-circle" style={{outline:"none"}} name="colors" > ESTILO <br/> COLORES </button>
+                            <button onClick={displayContent} className="laminados__section-three--button laminados-spin laminados-circle" style={{outline:"none"}} name="wood"> ESTILO <br/> MADERAS</button>
                         </div>
                     </div>
                 </div>
@@ -170,7 +170,7 @@ export default function Laminados() {
                     </div>
                     <div className="laminados__colors-container--three-unit">
                         <div className="laminados__colors-mate--three crema-touch"></div>
-                        <div className="laminados__colors-container--three-text">NUBE TOUCH</div>  
+                        <div className="laminados__colors-container--three-text">CREMA TOUCH</div>  
                     </div>
             </div>
         </div>

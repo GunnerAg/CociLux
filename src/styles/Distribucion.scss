@@ -69,7 +69,7 @@
 
 .distribucion__section-two--caracteristicas{
     font-size: calc(16px + 0.5vw);
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .distribucion__section-two--separation-bar{
@@ -95,6 +95,7 @@
     -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
     -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
     box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
+    margin-bottom: 1%;
 }
 
 .distribucion__section-three--description{
@@ -111,6 +112,8 @@
     justify-content: space-evenly;
     width: 40vw;
     font-weight: 900;
+    font-family: 'Abhaya Libre', serif;
+    font-size: calc(26px + 0.5vw);
  }
 
 .distribucion__section-three--description-header-text{
@@ -131,5 +134,83 @@
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 10%;
-    padding-bottom: 20%;
+    padding-bottom: 10%;
+    font-family: 'Open Sans', sans-serif;
+}
+
+@media  screen and(max-width:1024px) {
+
+    .distribucion__section-one{
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+    }
+
+    .distribucion__section-one--content{
+        display: flex;
+        align-self: flex-start;
+        flex-direction: column;
+        font-size: calc(36px + 0.5vw);
+        font-family: 'Abhaya Libre', serif;
+        color: #F6F3EE;
+        position: relative;
+        letter-spacing: 0.3vw;
+        justify-self: center;
+        padding-top: 20%;
+    }
+
+    .distribucion__section-one--separation-bar{
+        width: 10vw;
+        height: 1px;
+        border: solid #F6F3EE 1px;
+        background:#F6F3EE;
+        align-self: flex-start;
+        margin-bottom: 20%;
+    }
+
+    .distribucion__section-one--image-container{
+        background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1622135650/TIPOS%20DE%20DISTRIBUCI%C3%93N/POLILAMINADO_9_nyicvw.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: center;
+        width: 100vw;
+        height: 100%;
+        filter: brightness(0.6);
+        position: absolute;
+        overflow: hidden;
+    }
+
+    .distribucion__section-three{
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        padding-top: 30%;
+        flex-direction: column;
+    }
+
+    .distribucion__section-three--image{
+        height: auto;
+        width: auto;
+        transform: scale(1.5);
+    }
+
+    .distribucion__section-three--description-header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        width: 100vw;
+        font-weight: 900;
+        padding-top: 25%;
+     }
+    
+
+    .distribucion__section-three--description{
+        width: 100vw;
+        height: auto;
+        font-size: calc(26px + 0.5vw);
+        font-family: 'Abhaya Libre', serif;
+        padding-top: 3%;
+    }
+    
 }

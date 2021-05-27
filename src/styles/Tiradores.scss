@@ -24,7 +24,7 @@
 }
 
 .tiradores__header--text{
-    color: snow;
+    color: #F6F3EE;
     font-family: 'Abhaya Libre', serif;
     font-style: normal;
     font-size: calc(50px + 3.5vw);
@@ -34,8 +34,8 @@
 .tiradores__separation-bar{
     width: calc(50px + 15vw);
     height: 1px;
-    border: solid white 2px;
-    background:white;
+    border: solid #F6F3EE 2px;
+    background:#F6F3EE;
     margin-right: calc(130px + 10vw);
 }
 
@@ -67,9 +67,9 @@
     height: fit-content;
     min-height: 50vh;
     padding: 5% 5% 5% 5%;
-    font-family: 'Abhaya Libre', serif;
     font-size: calc(16px + 0.8vw);
-    color:black;
+    font-family: 'Open Sans', sans-serif;
+    color:#222222;
 }
 
 .tiradores__content--efecto-gota-text--bold{
@@ -98,10 +98,10 @@
     height: fit-content;
     min-height: 50vh;
     padding: 5% 5% 5% 5%;
-    font-family: 'Abhaya Libre', serif;
     font-size: calc(16px + 0.8vw);
+    font-family: 'Open Sans', sans-serif;
+    color:#F6F3EE;
     background-color: #222222;
-    color: whitesmoke;
 }
 
 @media screen and (max-width: 1024px){

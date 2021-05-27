@@ -24,7 +24,7 @@
 }
 
 .colgadores__header--text{
-    color: snow;
+    color: #F6F3EE;
     font-family: 'Abhaya Libre', serif;
     font-style: normal;
     font-size: calc(50px + 3.5vw);
@@ -34,8 +34,8 @@
 .colgadores__separation-bar{
     width: calc(50px + 15vw);
     height: 1px;
-    border: solid white 2px;
-    background:white;
+    border: solid #F6F3EE 2px;
+    background:#F6F3EE;
     margin-right: calc(130px + 10vw);
 }
 
@@ -66,7 +66,7 @@
     font-size: calc(26px + 1.5vw);
     font-family: 'Abhaya Libre', serif;
     background-color: #222222;
-    color:whitesmoke;
+    color:#F6F3EE;
     text-align: center;
     letter-spacing: 6px;
 }
@@ -75,9 +75,10 @@
     height: 60vh;
     width: 70vw;
     padding: 10% 10% 5% 10%;
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Open Sans', sans-serif;
+    color:#222222;
     font-size: calc(16px + 1vw);
-    background-color: #22222231;
+    background-color: #F6F3EE;
 }
 
 .colgadores__content--right-info-content--italic-bold{

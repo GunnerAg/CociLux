@@ -17,8 +17,8 @@ export default function Encimeras() {
     // let isTouchScreen = (('ontouchstart' in window) ||(navigator.MaxTouchPoints > 0) ||(navigator.msMaxTouchPoints > 0));
 
     const displayContent=(e)=>{
-        if(e.currentTarget.id=='formica'){setCuarzoToggled(false); setFormicaToggled(!formicaToggle)}
-        else if(e.currentTarget.id=='cuarzo'){setFormicaToggled(false); setCuarzoToggled(!cuarzoToggle)}
+        if(e.currentTarget.id==='formica'){setCuarzoToggled(false); setFormicaToggled(!formicaToggle)}
+        else if(e.currentTarget.id==='cuarzo'){setFormicaToggled(false); setCuarzoToggled(!cuarzoToggle)}
         
     }
 
@@ -116,7 +116,7 @@ export default function Encimeras() {
 
                 { modelos_formica.map((modelo,i)=>{
                     return(
-                        <div key={`formica${i}`} className={ (i+1)%3===0? `encimeras__formica-cuarzo--one-unit-test ${types[i]}`:`encimeras__formica-cuarzo--one-unit ${types[i]}`}>
+                        <div key={`formica${i}`} className={ (i+1)%3===0? `encimeras__formica-cuarzo--one-unit ${types[i]}`:`encimeras__formica-cuarzo--one-unit ${types[i]}`}>
                             <div className= {`encimeras__formica-cuarzo--one ${estilos_formica[i]}`}></div>
                             <div className={`encimeras__formica-cuarzo--one-text `}>{modelo}</div>
                         </div>

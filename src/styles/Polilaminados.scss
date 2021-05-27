@@ -28,11 +28,15 @@
 }
 
 .polilaminados__section-one--header--A{
-    font-size: 16px;
+    font-size: 24px;
+    color:#222222;
+    font-family: 'Abhaya Libre', serif;
 }
 
 .polilaminados__section-one--header--B{
     font-size: 48px;
+    color:#222222;
+    font-family: 'Abhaya Libre', serif;
 }
 
 /* Second section */
@@ -58,7 +62,7 @@
 
 .polilaminados__section-two--caracteristicas{
     font-size: calc(16px + 0.5vw);
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Open Sans', sans-serif;
     color: #222222;
 }
 
@@ -172,6 +176,8 @@
     word-wrap: break-word;
     opacity: 0;
     transition: all 1s ease-in-out;
+    font-family: 'Open Sans', sans-serif;
+    color:#222222;
 }
 
 .polilaminados__grid-unit-description-bold{

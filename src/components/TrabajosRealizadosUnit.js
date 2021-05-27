@@ -54,7 +54,10 @@ export default function TrabajosRealizadosUnit(props) {
                         </div>)
                 })}
                 </div>
-                <div
+
+                {
+                    data.length>1? 
+                    <div
                 onTouchStart={touchStartEvent => handleTouchStart(touchStartEvent)}
                 onTouchEnd={touchEndEvent => handleTouchEnd(touchEndEvent)}
                 onTouchMove={touchMoveEvent => handleTouchMove(touchMoveEvent)}
@@ -63,7 +66,14 @@ export default function TrabajosRealizadosUnit(props) {
                 style={inlineStyles}
                 className={`testingSwipeEvents ${swipper}`}
                 >
+                </div>:
+                <div 
+                style={inlineStyles}
+                className={`testingSwipeEvents ${swipper}`}>
                 </div>
+
+                }
+              
         </div>
     )
 }

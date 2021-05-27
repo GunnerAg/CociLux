@@ -102,11 +102,10 @@ export default function Home(props) {
             </motion.div>
             <motion.div style={{x:yRange4}} >
             <div className="home__section-three--separation-bar" ></div>
-            <h6 className="home__section-three--text">Nuevo acabado mate más ecológico con base al agua <br></br>
+            <h6 className="home__section-three--text">Nuevo acabado mate más ecológico con base al agua.<br/><br/>
                 Fórmulas a partir de resinas, solventes, aceites, ceras y aditivos 
-                de origen biológico. Reduce la <br></br> dependencia de materias primas 
-                de origen fósil. Nuestra última contribución a la reducción de la <br></br>
-                debastable huella en la capa de ozono 
+                de origen biológico. <br/><br/>Reduce la dependencia de materias primas 
+                de origen fósil. Nuestra última contribución a la reducción de la debastable huella en la capa de ozono. 
             </h6>
             </motion.div>
         </section>

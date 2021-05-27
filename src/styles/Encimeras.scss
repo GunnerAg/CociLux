@@ -34,6 +34,8 @@ html{
 
 .encimeras__section-one--header--A{
     font-size: 48px;
+    color:#222222;
+    font-family: 'Abhaya Libre', serif;
 }
 
 /* Second section */
@@ -60,8 +62,7 @@ html{
 
 .encimeras__section-two--caracteristicas{
     font-size: calc(16px + 0.5vw);
-    font-family: 'Abhaya Libre', serif;
-    height: fit-content;
+    font-family: 'Open Sans', sans-serif;
     color:#222222;
 }
 
@@ -202,17 +203,19 @@ html{
 .encimeras__formica--info-header{
     font-size: calc(26px + 0.5vw);
     font-family: 'Abhaya Libre', serif;
+    color:#222222;
 }
 
 .encimeras__formica--info-caracteristicas{
     font-size: calc(16px + 0.5vw);
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Open Sans', sans-serif;
+    color:#222222;
 }
 
 .encimeras__formica--info-separation-bar{
     width: 10vw;
-    border: solid black 1px;
-    background:black;
+    border: solid #222222 1px;
+    background:#222222;
 }
 
 /* ENCIMERAS CUARZO */
@@ -231,11 +234,13 @@ html{
 .encimeras__cuarzo--info-header{
     font-size: calc(26px + 0.5vw);
     font-family: 'Abhaya Libre', serif;
+    color:#222222;
 }
 
 .encimeras__cuarzo--info-caracteristicas{
     font-size: calc(16px + 0.5vw);
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Open Sans', sans-serif;
+    color:#222222;
 }
 
 .encimeras__cuarzo--info-separation-bar{
@@ -272,19 +277,10 @@ html{
     align-items: center;
     justify-items: center;
     flex-wrap: wrap;
+    
 }
 
 .encimeras__formica-cuarzo--one-unit{
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    justify-items: center;
-    padding: 2.5vw;
-    flex-wrap: wrap;
-}
-
-.encimeras__formica-cuarzo--one-unit-test{
     display:flex;
     flex-direction: column;
     justify-content: center;
@@ -303,6 +299,7 @@ html{
 .encimeras__formica-cuarzo--one-text{
     margin-top: 2%;
     font-size: 23px;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .clear{

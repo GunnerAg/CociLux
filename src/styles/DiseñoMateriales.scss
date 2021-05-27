@@ -14,7 +14,7 @@
 
 .design-and-materials__content-container{
     width:100vw;
-    height: 100vh;
+    height: fit-content;
  }
 
 /* MAIN MENU COMPONENT */
@@ -47,7 +47,6 @@
         display: flex;
         justify-content: center;
         flex-direction: column;
- 
     }
 }
 

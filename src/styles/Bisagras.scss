@@ -24,7 +24,7 @@
 }
 
 .bisagras__header--text{
-    color: snow;
+    color: #F6F3EE;
     font-family: 'Abhaya Libre', serif;
     font-style: normal;
     font-size: calc(50px + 3.5vw);
@@ -34,8 +34,8 @@
 .bisagras__separation-bar{
     width: calc(50px + 15vw);
     height: 1px;
-    border: solid white 2px;
-    background:white;
+    border: solid #F6F3EE 2px;
+    background: #F6F3EE;
     margin-right: calc(130px + 10vw);
 }
 
@@ -65,15 +65,16 @@
     padding:10%;
     font-size: calc(36px + 2vw);
     font-family: 'Abhaya Libre', serif;
-    color: black;
-    background-color: rgba(199, 199, 199, 0.726);
+    color:#222222;
+    background-color: #E4E1DC;
 }
 
 .bisagras__content--left-info-content{
     height: 50vh;
     width: 60vw;
     padding:5% 10% 5% 10%;
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Open Sans', sans-serif;
+    color:#222222;
     font-size: calc(16px + 1vw);
 }
 

@@ -33,13 +33,15 @@ html{
 }
 
 .laminados__section-one--header--A{
-    font-size: 16px;
+    font-size: 24px;
     color:#222222;
+    font-family: 'Abhaya Libre', serif;
 }
 
 .laminados__section-one--header--B{
     font-size: 48px;
     color:#222222;
+    font-family: 'Abhaya Libre', serif;
 }
 
 /* Second section */
@@ -65,7 +67,7 @@ html{
 
 .laminados__section-two--caracteristicas{
     font-size: calc(16px + 0.5vw);
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Open Sans', sans-serif;
     color:#222222;
 }
 
@@ -103,7 +105,7 @@ html{
     flex-direction: column;
     font-size: calc(36px + 0.5vw);
     font-family: 'Abhaya Libre', serif;
-    color: #222222;
+    color: #F6F3EE;
     position: relative;
 }
 
@@ -122,8 +124,8 @@ html{
     width: 10vw;
     min-width: 150px;
     height: 1px;
-    border: solid #222222 1px;
-    background:#222222;
+    border: solid #F6F3EE 1px;
+    background:#F6F3EE;
     margin-right: 15%;
 }
 
@@ -144,18 +146,18 @@ html{
 
 .laminados__section-three--button {
   background: none;
-  border: solid 5px #222222;
+  border: solid 5px #F6F3EE;
   border-radius: 100%;
   width: 200px;
   height: 200px;
   margin:1vw;
   font-family: 'Abhaya Libre', serif;
-  color: #222222;
+  color: #F6F3EE;
   font-size: 16px;
   background: none;
   box-sizing: border-box;
-  box-shadow: inset 0 0 0 2px #222222;
-  color: #222222;
+  box-shadow: inset 0 0 0 2px #F6F3EE;
+  color: #F6F3EE;
   font-weight: 700;
 
   &::before,
@@ -168,14 +170,14 @@ html{
   }
 }
 
-.spin{
+.laminados-spin{
     width: 200px;
     height: 200px;
     padding: 0;
-    color:#222222;
+    color:#F6F3EE;
     
     &:hover {
-      color: #222222;
+      color: #F6F3EE;
       font-size: 24px;
       transition: font-size 0.4s ease-in-out;
     }
@@ -192,9 +194,9 @@ html{
     }
   
     &:hover::before {
-      border-top-color: #222222;
-      border-right-color: #222222;
-      border-bottom-color: #222222;
+      border-top-color: #F6F3EE;
+      border-right-color: #F6F3EE;
+      border-bottom-color: #F6F3EE;
   
       transition:
         border-top-color 0.15s linear, border-right-color 0.15s linear 0.10s, border-bottom-color 0.15s linear 0.20s;
@@ -205,7 +207,7 @@ html{
     }
   
     &:hover::after {
-      border-top: 2px solid #222222; 
+      border-top: 2px solid #F6F3EE; 
       border-left-width: 2px; 
       border-right-width: 2px; 
       transform: rotate(270deg); 
@@ -215,7 +217,7 @@ html{
     }
   }
   
-  .circle {
+  .laminados-circle {
     border-radius: 100%;
     box-shadow: none;
       
@@ -247,7 +249,6 @@ html{
     text-align: center;
     height: fit-content;
     font-size: calc(20px);
-    font-family: 'Abhaya Libre', serif;
     background: #F6F3EE;
 }
 
@@ -260,6 +261,7 @@ html{
     grid-template-rows: 25vh 25vh 25vh;
     row-gap: 3vh;
     align-items: center;
+    font-family: 'Open Sans', sans-serif;
 }
  
 .laminados__colores-mate{
@@ -337,6 +339,7 @@ html{
     text-align: center;
     justify-content: center;
     font-size: calc(20px);
+    font-family: 'Open Sans', sans-serif;
 }
 
 .laminados__colores-mate--two{
@@ -413,6 +416,7 @@ html{
     text-align: center;
     margin-left: 5%;
     margin-bottom: 5%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .laminados__colors-container--three-text-white{
@@ -503,6 +507,7 @@ html{
     background: #222222;
     padding-top: 5%;
     padding-bottom: 5%;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .laminados__colors-brillo--grid-three{

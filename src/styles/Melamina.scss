@@ -28,11 +28,15 @@
 }
 
 .melamina__section-one--header--A{
-    font-size: 16px;
+    font-size: 24px;
+    color:#222222;
+    font-family: 'Abhaya Libre', serif;
 }
 
 .melamina__section-one--header--B{
     font-size: 48px;
+    color:#222222;
+    font-family: 'Abhaya Libre', serif;
 }
 
 /* Second section */
@@ -57,7 +61,8 @@
 
 .melamina__section-two--caracteristicas{
     font-size: calc(16px + 0.5vw);
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Open Sans', sans-serif;
+    color:#222222;
 }
 
 .melamina__section-two--separation-bar{
@@ -178,6 +183,7 @@
     align-items: center;
     justify-items: center;
     flex-wrap: wrap;
+    font-family: 'Open Sans', sans-serif;
  }
 
  .melamina__colores--one-unit{

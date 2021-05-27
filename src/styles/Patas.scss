@@ -69,19 +69,19 @@
     display: flex;
     font-family: 'Abhaya Libre', serif;
     font-size: calc(16px + 0.8vw);
-    background-color: #222222da;
-    color: whitesmoke;
+    background-color: #222222;
+    color: #F6F3EE;
     justify-content: center;
     align-items: center;
 }
 
 .patas__content--description-140mm{
-    border:solid  white 2px;
-    font-family: 'Abhaya Libre', serif;
-    background-color: whitesmoke;
+    border:solid  #F6F3EE 2px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F6F3EE;
     width: 250px;
     height: fit-content;
-    color:#222222da;
+    color:#222222;
     text-align: center;
 }
 
@@ -100,29 +100,29 @@
     display: flex;
     font-family: 'Abhaya Libre', serif;
     font-size: calc(16px + 0.8vw);
-    background-color: #222222da;
+    background-color: #222222;
     color: whitesmoke;
     justify-content: center;
     align-items: center;
 }
 
 .patas__content--description-190mm{
-    border:solid  white 2px;
-    font-family: 'Abhaya Libre', serif;
-    background-color: whitesmoke;
+    border:solid  #F6F3EE 2px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F6F3EE;
     width: 250px;
     height: fit-content;
-    color:#222222da;
+    color:#222222;
     text-align: center;
 }
 
 .patas__content--description-text-container{
     display: flex;
     z-index: 10;
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: calc(16px + 0.8vw);
-    color: whitesmoke;
-    background-color: #222222da;
+    color: #F6F3EE;
+    background-color: #222222;
     height: 25vh;
     justify-content: center;
     align-items: center;

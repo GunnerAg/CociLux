@@ -24,7 +24,7 @@
 }
 
 .elevadores__header--text{
-    color: snow;
+    color: #F6F3EE;
     font-family: 'Abhaya Libre', serif;
     font-style: normal;
     font-size: calc(50px + 3.5vw);
@@ -34,21 +34,21 @@
 .elevadores__separation-bar{
     width: calc(50px + 15vw);
     height: 1px;
-    border: solid white 2px;
-    background:white;
+    border: solid #F6F3EE 2px;
+    background:#F6F3EE;
     margin-right: calc(130px + 10vw);
 }
 
 .elevadores__content{
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
 }
 
 .elevadores__content--right-info{
     width: 50vw;
-    height: 100vh;
+    height: fit-content;
 }
 
 .elevadores__content--right-info-container{
@@ -58,7 +58,7 @@
 
 .elevadores__content--right-info-header{
     display: flex;
-    height: 40vh;
+    height: fit-content;
     width: 50vw;
     justify-content: center;
     align-items: center;
@@ -68,16 +68,17 @@
     color: #222222;
     text-align: center;
     letter-spacing: 6px;
+    background-color: #F6F3EE;
 }
 
 .elevadores__content--right-info-content{
-    height: 60vh;
+    height: fit-content;
     width: 50vw;
     padding:5% 10% 5% 10%;
-    font-family: 'Abhaya Libre', serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: calc(16px + 1vw);
     background-color: #222222;
-    color:whitesmoke;
+    color:#F6F3EE;
 }
 
 .elevadores__content--right-info-content--italic-bold{
@@ -88,7 +89,7 @@
 
 .elevadores__content--left-image{
     width: 50vw;
-    height: 100vh;
+    height: auto;
     background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620910207/Andrea/Blum_KLA0621_AA_FOT_FO_BAU_-SALL_-AL_-V1_Enlarged_dpuri1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
