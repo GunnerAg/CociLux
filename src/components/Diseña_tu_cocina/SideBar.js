@@ -10,7 +10,7 @@ export default function SideBar(){
                     <p className="design-and-materials__content">LAMINADOS</p>
                 </button>
             </Link>
-            <Link to="/melanina_lacada" style={{textDecoration:"none"}} className="design-and-materials__section-link">
+            <Link to="/melamina_lacada" style={{textDecoration:"none"}} className="design-and-materials__section-link">
                 <button style={{background: 'none', color: 'none', border: 'none', outline: 'none'}}  className="design-and-materials__button" >
                     <p className="design-and-materials__content">MELAMINA</p>
                 </button>
@@ -27,12 +27,17 @@ export default function SideBar(){
             </Link>
             <Link to="/lacado" style={{textDecoration:"none"}} className="design-and-materials__section-link">
                 <button style={{background: 'none', color: 'none', border: 'none', outline: 'none'}} className="design-and-materials__button">
-                    <p className="design-and-materials__content">LAMINADOS</p>
+                    <p className="design-and-materials__content">LACADOS</p>
                 </button>
             </Link>
             <Link to="/madera" style={{textDecoration:"none"}} className="design-and-materials__section-link">
                 <button style={{background: 'none', color: 'none', border: 'none', outline: 'none'}} className="design-and-materials__button">
-                    <p className="design-and-materials__content">MADERA</p>
+                    <p className="design-and-materials__content">MADERAS</p>
+                </button>
+            </Link>
+            <Link to="/encimera" style={{textDecoration:"none"}} className="design-and-materials__section-link">
+                <button style={{background: 'none', color: 'none', border: 'none', outline: 'none'}} className="design-and-materials__button">
+                    <p className="design-and-materials__content">ENCIMERAS</p>
                 </button>
             </Link>
         </div>

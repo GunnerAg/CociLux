@@ -10,7 +10,7 @@
 .home__section-one--background{
   display: block;
   position: absolute;
-  background: url("https://res.cloudinary.com/gunnerag/image/upload/v1614702931/Andrea/1_IMAGEN_PRINCIPAL_xei0xl.png");
+  background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1621522720/CANTEADO-06_pbow96.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   height: 100%;
@@ -24,6 +24,7 @@
     margin-left: 12vw;
     padding-right: 12vw;
     font-size: calc(40px - 0.1vw);
+    color: #222222;
 }
 
 .home__section-one--slogan{
@@ -31,15 +32,17 @@
     margin-left:5%;
     font-size: calc(3vw + 10px);
     font-weight: bold;
+    color: #222222;
 }
 
 .home__section-one--text{
     margin-top:2%;
     margin-left:5%;
+    margin-right:20%;
     font-weight: 400;
-    font-size: calc(1.5vw + 7px);
+    font-size: calc(1vw + 15px);
     letter-spacing: 0.2vw;
-  
+    color: #222222;
 }
 
 .home__section-one--logo-png{
@@ -73,9 +76,9 @@
   width: 50px;
   position: fixed;
   z-index: 100;
-  color: black;
+  color: #222222;
   bottom: 0;
-  margin-left: 50vw
+  margin-left: calc(50% - 25px)
 }
 
 .arrow {
@@ -125,6 +128,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   opacity: 0.5;
+  border-top: solid black 1px;
 } 
 
 .home__section-two--slogan{
@@ -133,13 +137,14 @@
   margin-top: calc(40px + 5vw);
   font-weight: 500;
   letter-spacing: 0.5vw;
+  color: #222222;
 }
 
 .home__section-two--separation-bar{
-  border: solid 0.1vw black;
+  border: solid 0.1vw #222222;;
   width: 25vw;
   height: 0.01vh;
-  background: black;
+  background:  #222222;
   margin-left: 30%;
   margin-top: 5%;
 }
@@ -152,6 +157,7 @@
   text-align: start;
   padding-left: 10vw;
   padding-right: 30vw;
+  color: #222222;
 }
 
 /* SECCION TRES DEL HOMEPAGE */
@@ -162,7 +168,7 @@
   overflow:hidden;
   height: 100vh;
   width: auto;
-  color:snow
+  color:#F6F3EE
 }
 
 .home__section-three--background{
@@ -178,7 +184,7 @@ background-size: cover;
 } 
 
 .home__section-three--slogan{
-  text-align:end;
+  text-align: end;
   padding-right: calc(40px + 5vw);
   margin-top:6%;
   margin-left:7%;
@@ -187,13 +193,14 @@ background-size: cover;
   font-size: calc(10px + 3.5vw);
   font-weight: 500;
   letter-spacing: 0.5vw;
+  color:#F6F3EE;
 }
 
 .home__section-three--separation-bar{
-  border: solid 0.1vw snow;
+  border: solid 0.1vw #F6F3EE;
   width: 25vw;
   height: 0.01vh;
-  background: snow;
+  background: #F6F3EE;
   margin-left: 4%;
   margin-bottom: 6%;
   margin-top: 2%;
@@ -209,6 +216,7 @@ background-size: cover;
   padding-left: calc(30px + 2.5vw);
   padding-right: 10vw;
   letter-spacing: 0.1vw;
+  color: #F6F3EE;
 }
 
 /* SECCION CUATRO HOMEPAGE */
@@ -236,7 +244,7 @@ filter: brightness(50%)
 } 
 
 .home__section-four--slogan{
-  color: snow;
+  color: #F6F3EE;
   margin-top: 45vh;
   margin-left: calc(35vw - 60px);
   margin-right: 20vw;
@@ -244,11 +252,8 @@ filter: brightness(50%)
   font-style: normal;
   font-size: calc(50px + 3.5vw);
   transition: all ease-in-out 0.5s;
-}
-
-.home__section-four--slogan:hover{
-  transform: scale(1.5);
-  transition: all ease-in-out 0.5s;
+  width: auto;
+  height: auto;
 }
 
 .bounceSlogan {
@@ -272,7 +277,7 @@ filter: brightness(50%)
 
 @media(hover: hover){
   .slogan4:hover{
-    color: snow;
+    color: #F6F3EE;
     margin-top: 45vh;
     margin-left: calc(35vw - 60px);
     margin-right: 20vw;
@@ -291,7 +296,7 @@ filter: brightness(50%)
   display: block;
   position: relative;
   overflow:hidden;
-  height: 100vh;
+  height: fit-content;
   width: auto;
   color:snow
 }
@@ -309,12 +314,12 @@ filter: brightness(50%)
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: rgb(221, 221, 221);
+  background: #E4E1DC;;
   height: 40%;
 }
 
 .home__section-four--active-header--content{
-  color: black;
+  color: #222222;
   font-size: calc(1vw + 15px);
   letter-spacing: 0.3vw;
   font-weight: 400;
@@ -324,19 +329,21 @@ filter: brightness(50%)
   display: flex;
   justify-content: flex-start;
   flex-direction: row;
-  height: 60%;
+  height: fit-content;
+  min-height: 60%;
+  background: #F6F3EE;
 }
 
 
 .home__section-four--image-container{
-  width: 50vw;
+  width: 30vw;
   background: url("https://res.cloudinary.com/gunnerag/image/upload/v1615139058/Andrea/5_IMAGEN_PRINCIPAL_yoi5sc.png");
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 .home__section-four--porque-nosotros{
-  width: 50vw;
+  width: 70vw;
   display: flex;
   padding-top: 5%;
   text-align: center;
@@ -346,7 +353,6 @@ filter: brightness(50%)
 }
 
 .home__section-four--porque-nosotros{
-  color:black;
   font-family: 'Abhaya Libre', serif;
   font-style: normal;
   font-size: calc(10px + 2.5vw);
@@ -354,13 +360,17 @@ filter: brightness(50%)
 }
 
 .home__porque-nosotros--content{
-  color:black;
+  color:#222222;
   font-family: 'Abhaya Libre', serif;
   font-style: normal;
-  font-size: calc(10px + 1.2vw);
+  font-size: calc(1.1vw + 16px);
   text-align: start;
   padding-left: 5%;
   padding-right: 5%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  height: fit-content;
+  min-height: 60%;
 }
 
 
@@ -387,13 +397,13 @@ filter: brightness(50%)
   justify-content: flex-start;
   align-items: center;
   text-align: center;
-  background: rgb(221, 221, 221);
-  height: 20%;
+  background: #E4E1DC;
+  height: 20vh;
   margin-bottom: 0%;
 }
 
 .home__section-five--active-header--content{
-  color:black;
+  color:#222222;
   font-family: 'Abhaya Libre', serif;
   font-style: normal;
   font-size: calc(10px + 2.5vw);
@@ -409,22 +419,25 @@ filter: brightness(50%)
 }
 
 .home__section-five--image-container{
-  width: 50vw;
-  height: 80vh;
+  width: 30vw;
+  height: inherit;
   justify-self: flex-end;
-  background: url("https://res.cloudinary.com/gunnerag/image/upload/v1614702931/Andrea/1_IMAGEN_PRINCIPAL_xei0xl.png");
+  background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1621522720/CANTEADO-06_pbow96.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
 }
 
 .home__section-five--compromiso{
-  width: 50vw;
+  width: 70vw;
   display: flex;
   padding-top: 2%;
   text-align: center;
   justify-content: center;
   flex-direction: column;
   padding-bottom: 5%;
+  height: fit-content;
+  background: #F6F3EE;
 }
 
 

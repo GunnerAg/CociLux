@@ -1,42 +1,27 @@
-import React,{useRef,useState} from 'react';
-import {motion, useMotionValue} from 'framer-motion';
+import React,{useRef} from 'react';
+import {Link} from 'react-router-dom';
+import {motion} from 'framer-motion';
 import '../styles/Error404.scss'
 
 export default function Error404() {
 
-    const[clicked,setClicked]=useState(false)
     const constrainsRef = useRef(null);
-
-    const handleClickedOn=()=>{
-        setClicked(true)
-    }
-
-    const handleClickedOff=()=>{
-        setClicked(false) 
-    }
 
     return (
         <>
-        <div className="backgroundImg" ref={constrainsRef}>
-            <div className="flexBox">
-                <div className="contentContainer" >
-                    <div className="errorMsg">4</div>
-                    <div className="errorMsg2">0</div>
-                    <div className="errorMsg">4</div>
-                </div>
+        <div className="error404__backgroundImg" ref={constrainsRef}>
+            <div className="error404__flexBox">
+                <motion.div className="error404__contentContainer" drag={true} dragConstraints={constrainsRef}>
+                        <div className="error404__errorMsg">4</div>
+                        <div className="error404__errorMsg2">0</div>
+                        <div className="error404__errorMsg">4</div>
+                </motion.div>
             </div>
-            <div className="innerMsg">Vaya! por aqui no se cuece nada...</div>
-            <div className="animatedContainer">
-                    <motion.div className="cutleryContainer" drag={true} dragConstraints={constrainsRef} onDrag={handleClickedOn} onDragEnd={handleClickedOff}>
-                        <div className="forkPng rotate"></div>
-                    </motion.div>
-                    <motion.div className="cutleryContainer" drag={true} dragConstraints={constrainsRef} onDrag={handleClickedOn} onDragEnd={handleClickedOff}>
-                        <div className="spoonPng rotate1"></div>
-                    </motion.div>
-                    <motion.div className="cutleryContainer" drag={true} dragConstraints={constrainsRef} onDrag={handleClickedOn} onDragEnd={handleClickedOff}>
-                        <div className="knifePng rotate2"></div>
-                    </motion.div>
-                </div>
+            <div className="error404__innerMsg">
+                <div >Vaya! por aqui no se cuece nada...</div>
+                <button className="error404__link-button"><Link to='/' style={{textDecoration:'none', color:'black'}}>Inicio</Link></button>
+            </div>
+
         </div>
         </>
     )

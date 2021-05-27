@@ -6,7 +6,7 @@
     justify-content: center;
     position: fixed;
     flex-wrap: nowrap;
-    z-index: 10;
+    z-index: 20;
     transform: translateX(-80%);
     height: 100vh;
 }
@@ -43,16 +43,13 @@
     .design-and-materials__sections{
         display: flex;
         flex-direction: column;
-        max-height: 100vh;
         width: 300px;
         justify-content: center;
-        position: fixed;
         flex-wrap: nowrap;
         z-index: 10;
-        transform: translateX(-10%);
-        height: 100vh;
+        transform: translateX(-20px);
+        height: 90vh;
     }
-
 
     .design-and-materials__section-link{
         display: flex;
@@ -70,7 +67,7 @@
 
     .design-and-materials__button{
         font-family: 'Abhaya Libre', serif;
-        font-size: calc(2.5vh);
+        font-size: calc(1.5vh);
         text-align: center;
         width: 100%;
     }
@@ -88,21 +85,21 @@
     }
 }
 
-@media screen and (orientation:landscape)
+@media screen 
+and (orientation: landscape)
 and (min-device-width: 280px) 
-and (max-device-width: 1200px) {
+and (max-device-width: 1024px) {
 
     .design-and-materials__sections{
         display: flex;
         flex-direction: column;
         width: 300px;
         justify-content: center;
-        position: -webkit-sticky;
+        position: fixed;
         flex-wrap: nowrap;
         z-index: 10;
         transform: translateX(-5%);
         height: 100vh;
-        margin-top: 0%;
         align-content: space-between;
     }
 
@@ -123,7 +120,7 @@ and (max-device-width: 1200px) {
 
     .design-and-materials__button{
         font-family: 'Abhaya Libre', serif;
-        font-size: calc(2vh);
+        font-size: (1.7vh);
         text-align: center;
         width: 100%;
     }

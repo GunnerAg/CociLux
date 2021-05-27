@@ -1,88 +1,9 @@
-import React, {useRef, useEffect, useReducer} from 'react'
+import React, {useRef, useEffect, useReducer, useState} from 'react'
+import { Suspense } from 'react';
 import '../styles/Carousel.scss'
+import { laminado,melamina,canteado,polilaminado,lacado,madera } from './CocinaSlideData';
 
-
-const slides = [
-  {
-    title: "POLILAMINADO",
-    subtitle: "0",
-    description: "Descripcion aqui",
-    image:
-      "https://res.cloudinary.com/gunnerag/image/upload/v1614945722/Andrea/carousell/POLILAMINADO_fpmiub.png"
-  },
-  {
-    title: "POLILAMINADO",
-    subtitle: "1",
-    description: "Descripcion aqui",
-    image:
-      "https://res.cloudinary.com/gunnerag/image/upload/v1614945730/Andrea/carousell/POLILAMINADO_1_ic4vbb.png"
-  },
-  {
-    title: "POLILAMINADO",
-    subtitle: "2",
-    description: "Descripcion aqui",
-    image:
-      "https://res.cloudinary.com/gunnerag/image/upload/v1614945731/Andrea/carousell/POLILAMINADO_2_opk8fa.png"
-  },
-  {
-    title: "POLILAMINADO",
-    subtitle: "3",
-    description: "Descripcion aqui",
-    image:
-      "https://res.cloudinary.com/gunnerag/image/upload/v1614945738/Andrea/carousell/POLILAMINADO_3_j95wzm.png"
-  },
-  {
-    title: "POLILAMINADO",
-    subtitle: "4",
-    description: "Descripcion aqui",
-    image:
-      "https://res.cloudinary.com/gunnerag/image/upload/v1614945740/Andrea/carousell/POLILAMINADO_4_f8zjiw.png"
-  }, 
-  {
-    title: "POLILAMINADO",
-    subtitle: "5",
-    description: "Descripcion aqui",
-    image:
-      "https://res.cloudinary.com/gunnerag/image/upload/v1614945741/Andrea/carousell/POLILAMINADO_5_doaplj.png"
-  },
-  {
-    title: "POLILAMINADO",
-    subtitle: "6",
-    description: "Descripcion aqui",
-    image:
-      "https://res.cloudinary.com/gunnerag/image/upload/v1614945742/Andrea/carousell/POLILAMINADO_6_xgg07f.png"
-  },
-  {
-    title: "POLILAMINADO",
-    subtitle: "7",
-    description: "Descripcion aqui",
-    image:
-      "https://res.cloudinary.com/gunnerag/image/upload/v1614945744/Andrea/carousell/POLILAMINADO_7_itwi37.png"
-  },
-  {
-    title: "POLILAMINADO",
-    subtitle: "8",
-    description: "Descripcion aqui",
-    image:
-      "https://res.cloudinary.com/gunnerag/image/upload/v1614945745/Andrea/carousell/POLILAMINADO_8_wphk3l.png"
-  },
-  {
-    title: "POLILAMINADO",
-    subtitle: "9",
-    description: "Descripcion aqui",
-    image:
-      "https://res.cloudinary.com/gunnerag/image/upload/v1614945746/Andrea/carousell/POLILAMINADO_9_zhnsni.png"
-  },
-  {
-    title: "POLILAMINADO",
-    subtitle: "10",
-    description: "Descripcion aqui",
-    image:
-      "https://res.cloudinary.com/gunnerag/image/upload/v1614945747/Andrea/carousell/POLILAMINADO_10_juff7j.png"
-  }
-];
-
-
+let slides=[];
 
 function useTilt(active) {
   const ref = useRef(null);
@@ -121,23 +42,23 @@ function useTilt(active) {
     return () => {
       el.removeEventListener("mousemove", handleMouseMove);
     };
-  }, [active]);
+  }, [active,slides]);
 
   return ref;
 }
 
-const initialState = {
+let initialState = {
   slideIndex: 0
 };
 
 const slidesReducer = (state, event) => {
-  if (event.type === "NEXT") {
+  if (event.type === "PREV") {
     return {
       ...state,
       slideIndex: (state.slideIndex + 1) % slides.length
     };
   }
-  if (event.type === "PREV") {
+  if (event.type === "NEXT") {
     return {
       ...state,
       slideIndex:
@@ -151,6 +72,7 @@ function Slide({ slide, offset }) {
   const ref = useTilt(active);
 
   return (
+    
     <div
       ref={ref}
       className="slide"
@@ -162,14 +84,13 @@ function Slide({ slide, offset }) {
     >
       <div
         className="slideBackground"
-        style={{
-          backgroundImage: `url('${slide.image}')`
-        }}
-      />
+      > <img className="slideBackground" src={slide.image} alt={`Cocina estilo ${slide.title}, ${slide.description}`} rel="preload" as="image"/></div>
+
       <div
         className="slideContent"
         style={{
-          backgroundImage: `url('${slide.image}')`
+          backgroundImage: `url('${slide.image}')`,
+          backgroundPosition: 'bottom',
         }}
       >
         <div className="slideContentInner">
@@ -182,30 +103,43 @@ function Slide({ slide, offset }) {
   );
 }
 
-function Cocinas() {
+function Cocinas(props) {
+  var {displaySlides}=props;
+  let [displayed, setSlides] = useState(displaySlides)
+  const [state, dispatch] = useReducer(slidesReducer, initialState);
+  useEffect(() => {
+    setSlides(displayed=displaySlides)
+   state.slideIndex=0
+  }, [displaySlides])
+  if(displayed==="LAMINADO"){slides=laminado}
+  if(displayed==="MELAMINA"){slides=melamina}
+  if(displayed==="CANTEADO"){slides=canteado}
+  if(displayed==="POLILAMINADO"){slides=polilaminado}
+  if(displayed==="LACADO"){slides=lacado}
+  if(displayed==="MADERA"){slides=madera}
 
-  {if (window.location.pathname==='/productos'){
+  if (window.location.pathname==='/catalogo'){
     window.onkeydown=(event)=>{
-      if(event.keyCode === 39){return dispatch({ type: "NEXT" })}
-      else if(event.keyCode === 37){return dispatch({ type: "PREV" })}
+      if(event.keyCode === 39){return dispatch({ type: "PREV" })}
+      else if(event.keyCode === 37){return dispatch({ type: "NEXT" })}
       return null
     }
   } 
-}
-  
-  const [state, dispatch] = useReducer(slidesReducer, initialState);
+
 
   return (
    
+  
     <div className="slides">
       <button onClick={() => dispatch({ type: "NEXT" })} style={{color:'black', marginLeft: '30vw'}} >‹</button>
 
       {[...slides, ...slides, ...slides].map((slide, i) => {
         let offset = slides.length + (state.slideIndex - i);
-        return <Slide slide={slide} offset={offset} key={i} />;
+        return <Slide slide={slide} offset={-offset} key={i} />;
       })}
       <button onClick={() => dispatch({ type: "PREV" })} style={{color:'black', marginRight:'30vw'}} >›</button>
     </div>
+    
   );
 }
 

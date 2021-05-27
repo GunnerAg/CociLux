@@ -5,7 +5,7 @@ require('dotenv').config();
 
 
 
-export default function ContactForm({ env }) {
+export default function ContactForm() {
 
   const [sendStatus,setFormStatus]=useState(false)
   const [formInputs,setFormValues]=useState({name:'',email:'',phone:'',message:''})
@@ -13,7 +13,7 @@ export default function ContactForm({ env }) {
   const{
     REACT_APP_EMAILJS_USERID: userId,
     REACT_APP_EMAILJS_TEMPLATEID: templateId,
-    REACT_APP_EMAILJS_SERVICEID:serviceId,
+    REACT_APP_EMAILJS_SERVICEID: serviceId,
     REACT_APP_EMAILJS_RECEIVER: email,
   }=process.env
 
@@ -36,12 +36,12 @@ export default function ContactForm({ env }) {
 
   function validateNotEmpty(input) 
     {
-      if (input!==undefined||input.length>0)
+      if (input.length>10)
         {
           return (true)
         }
-          alert("Rellena todos los campos antes de enviar!")
-          console.log('here',input.length)
+          alert("Introduce un mensaje que explique tu motivo de contacto")
+          console.log('here input', input.length)
           return (false)
     }
 
@@ -57,7 +57,6 @@ export default function ContactForm({ env }) {
 
   function sendEmail(e) {
     e.preventDefault();
-    const{user_email,user_name,user_phone,message}=e.target;
     if(
       validateNotEmpty(formInputs['name'])&&
       validateEmail(formInputs['email'])&&

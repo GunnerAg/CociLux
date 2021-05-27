@@ -1,6 +1,8 @@
 .mainBoxContainer{
     display: flex;
     flex-direction: column;
+    margin-bottom: 10vh;
+    margin-top: 10vh;
 }
 
 .containerInner{
@@ -8,6 +10,8 @@
     height: calc(100px + 12vw);
     background-color: #222222;
     z-index: +1;
+    cursor: pointer;
+    border-radius: 20px;
 }
 
 .contentInner{
@@ -62,6 +66,7 @@
     width: calc(100px + 12vw);
     height: calc(100px + 12vw);
     background-color: #222222;
+    border-radius: 20px;
     margin-top: 2vw;
     opacity: 1;
     transition: all ease-in-out 0.5s;
@@ -74,19 +79,29 @@
     font-size: calc(5px + 1vw);
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 1024px){
 
     .containerInner{
-        width: 200px;
-        height: 200px;
+        height: 20vw;
+        width: 20vw;
+        min-width: 150px;
+        min-height: 150px;
         background-color: #222222;
+        margin: 10px
     }
 
     .contentInner{
         margin-top: 30%;
-        font-size: 20px;
+        font-size: 12px;
         color:#E4E1DC;
         padding-left: 5%;
         padding-right: 5%;
+    }
+
+    .mainBoxContainer{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 0vh;
+        margin-top: 0vh;
     }
 }

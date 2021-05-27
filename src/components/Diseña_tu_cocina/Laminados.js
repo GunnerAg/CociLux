@@ -1,6 +1,9 @@
-import React, {useState,useRef,useEffect} from 'react'
+import React, {useState,useRef,useEffect,Suspense} from 'react'
 import '../../styles/Laminados.scss'
+import TransitionAnimation from '../TransitionAnimation';
 import SideBar from './SideBar';
+
+const WoodSection = React.lazy(() => import ('../Diseña_tu_cocina/WoodSectionLaminados'));
 
 export default function Laminados() {
 
@@ -9,16 +12,20 @@ export default function Laminados() {
     let [woodToggle,setWoodToggled]=useState(false);
     const colors = useRef();
     const woods = useRef();
-    const executeScroll=()=>colorsToggle===true && colors.current.scrollIntoView()||woodToggle===true && woods.current.scrollIntoView()
+    let [woodStyle,setWoodStyle] = useState({ display:'none'})
     useEffect(() => {
-         executeScroll()
+        function executeScroll(){(colorsToggle===true && colors.current.scrollIntoView())||(woodToggle===true && woods.current.scrollIntoView())}
+        executeScroll()
     }, [colorsToggle,woodToggle])
-    // let isTouchScreen = (('ontouchstart' in window) ||(navigator.MaxTouchPoints > 0) ||(navigator.msMaxTouchPoints > 0));
 
     const displayContent=(e)=>{
-        if(e.currentTarget.id=='colors'){setWoodToggled(false); setColorsToggled(!colorsToggle)}
-        else if(e.currentTarget.id=='wood'){setColorsToggled(false); setWoodToggled(!woodToggle)}
-        
+        if(e.currentTarget.name==='colors'){setWoodToggled(false); setColorsToggled(!colorsToggle)}
+        else if(e.currentTarget.name==='wood'){setColorsToggled(false); setWoodToggled(!woodToggle)}
+        renderContents()
+    }
+
+    const renderContents=()=>{
+        setWoodStyle({display:'inherit'})
     }
 
     let SectionOne=()=>{
@@ -58,8 +65,8 @@ export default function Laminados() {
                             <div className="laminados__section-three--content">Colección de Laminados</div>
                             <div className="laminados__section-three--separation-bar"></div>
                         <div className="laminados__section-three--button-container">
-                            <button onClick={displayContent} className="laminados__section-three--button spin circle" id="colors" style={{outline:'none'}}> <p>ESTILO <br/> COLORES </p></button>
-                            <button onClick={displayContent} className="laminados__section-three--button spin circle" id="wood" style={{outline:'none'}}> ESTILO <br/> MADERAS</button>
+                            <button onClick={displayContent} className="laminados__section-three--button spin circle" style={{outline:"none"}} name="colors" > ESTILO <br/> COLORES </button>
+                            <button onClick={displayContent} className="laminados__section-three--button spin circle" style={{outline:"none"}} name="wood"> ESTILO <br/> MADERAS</button>
                         </div>
                     </div>
                 </div>
@@ -292,159 +299,6 @@ export default function Laminados() {
         )
     }
 
-    let WoodSection=()=>{
-        return(
-            <div ref={woods} className="laminados__wood--container-one">
-                <div className="laminados__woods-header"> Maderas - 19 mm </div>
-                    <div className="laminados__woods--grid-one">
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one roble-hercules-atlas"></div>
-                            <div className="laminados__woods--one-text">Roble Hércules Atlas</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one roble-osstipo-atlas"></div>
-                            <div className="laminados__woods--one-text">Roble Osstipo Atlas</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one roble-aurora-atlas"></div>
-                            <div className="laminados__woods--one-text">Roble Aurora Atlas</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one fresno-estepa-sega"></div>
-                            <div className="laminados__woods--one-text">Fresno Estepa Sega</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one heaven-oak-atlas"></div>
-                            <div className="laminados__woods--one-text">Heaven Oak Atlas</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one iron-oak-atlas"></div>
-                            <div className="laminados__woods--one-text">Iron Oak Atlas</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one oak-market-atlas"></div>
-                            <div className="laminados__woods--one-text">Oak Market Atlas</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one roble-pegasus-atlas"></div>
-                            <div className="laminados__woods--one-text">Roble Pegasus Atlas</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one roble-denver-atlas"></div>
-                            <div className="laminados__woods--one-text">Roble Denver Atlas</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one roble-sinatra-essence"></div>
-                            <div className="laminados__woods--one-text">Roble Sinatra Essence</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one prime-wood-legno"></div>
-                            <div className="laminados__woods--one-text">Prime Wood Legno</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one oak-river-atlas"></div>
-                            <div className="laminados__woods--one-text">Oak River Atlas</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one roble-arezzo-soul"></div>
-                            <div className="laminados__woods--one-text">Roble Arezzo Soul</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one roble-nordico-atlas"></div>
-                            <div className="laminados__woods--one-text">Roble Nórdico Atlas</div>
-                        </div>
-                    </div> 
-
-                     <div className="laminados__woods-header"> Maderas - 22 mm </div>
-                    <div className="laminados__woods--grid-one">
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4452"></div>
-                            <div className="laminados__woods--one-text">4452 Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4479"></div>
-                            <div className="laminados__woods--one-text">4479 Seda Mate - Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4479-1R"></div>
-                            <div className="laminados__woods--one-text">4479 1R - Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4479-R"></div>
-                            <div className="laminados__woods--one-text">4479 R - Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4487"></div>
-                            <div className="laminados__woods--one-text">4487 Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4569"></div>
-                            <div className="laminados__woods--one-text">4569 Roble - Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4570"></div>
-                            <div className="laminados__woods--one-text">4570 Roble - Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4574"></div>
-                            <div className="laminados__woods--one-text">4574 Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4603"></div>
-                            <div className="laminados__woods--one-text">4603 Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4619"></div>
-                            <div className="laminados__woods--one-text">4619 Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4622"></div>
-                            <div className="laminados__woods--one-text">4622 Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4654"></div>
-                            <div className="laminados__woods--one-text">4654 Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4660"></div>
-                            <div className="laminados__woods--one-text">4660 Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4673"></div>
-                            <div className="laminados__woods--one-text">4673 Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4677"></div>
-                            <div className="laminados__woods--one-text">4677 Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4678"></div>
-                            <div className="laminados__woods--one-text">4678 Poro doble</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4692"></div>
-                            <div className="laminados__woods--one-text">4692 Roble - Poro pizarra</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4694"></div>
-                            <div className="laminados__woods--one-text">4694 Roble - Poro pizarra</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4698"></div>
-                            <div className="laminados__woods--one-text">4698 Roble - Poro pizarra</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4697"></div>
-                            <div className="laminados__woods--one-text">4697 Roble - Poro pizarra</div>
-                        </div>
-                        <div className="laminados__woods--one-unit">
-                            <div className="laminados__woods--one W4701"></div>
-                            <div className="laminados__woods--one-text">4701 Roble - Poro pizarra</div>
-                        </div>
-                    </div> 
-            </div>
-        )
-    }
 
  return(
      <div id="laminados" style={{overflow:'hidden'}}>
@@ -457,8 +311,10 @@ export default function Laminados() {
         {colorsToggle && <MateColorsThree/>}
         {colorsToggle && <ColoresBrillo/>}
         {colorsToggle && <ColoresBrilloTwo/>}
-        {colorsToggle && <ColoresBrilloThree/>}       
-        {woodToggle && <WoodSection/>}
+        {colorsToggle && <ColoresBrilloThree/>}
+        <Suspense fallback={<div ref={woods} style={woodStyle}><TransitionAnimation renderContent={renderContents}/></div>}>
+            {woodToggle && <div ref={woods} style={woodStyle}><WoodSection /></div>}
+        </Suspense>
      </div>
     
  )

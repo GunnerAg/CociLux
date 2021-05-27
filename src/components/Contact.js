@@ -2,7 +2,7 @@ import React from 'react'
 import ContactForm from './ContactForm';
 import '../styles/Contacto.scss'
 
-export default function () {
+export default function Contact() {
     return (
         <div className="contact">
         <div className="contact__middle-bar"></div>

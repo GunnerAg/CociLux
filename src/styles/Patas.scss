@@ -1,0 +1,180 @@
+.patas__header{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+}
+
+.patas__header--image{
+    position: absolute;
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620907201/Andrea/IMG_PATAS_nwrwpm.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+    background-position: center;
+} 
+
+.patas__header--content-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40vh;
+}
+
+.patas__header--text{
+    color: #F6F3EE;
+    font-family: 'Abhaya Libre', serif;
+    font-style: normal;
+    font-size: calc(50px + 3.5vw);
+    position: relative;
+}
+
+.patas__separation-bar{
+    width: calc(50px + 15vw);
+    height: 1px;
+    border: solid #F6F3EE 2px;
+    background:#F6F3EE;
+    margin-right: calc(130px + 10vw);
+}
+
+.patas__content{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.patas__content--image-container{
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: fit-content;
+    background: white;
+}
+
+.patas__content--image-one{
+    width: 50vw;
+    height: 50vh;
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620907530/Andrea/PATA_140MM_tysiyr.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.patas__content--text-one{
+    width: 50vw;
+    height: 25vh;
+    display: flex;
+    font-family: 'Abhaya Libre', serif;
+    font-size: calc(16px + 0.8vw);
+    background-color: #222222da;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+.patas__content--description-140mm{
+    border:solid  white 2px;
+    font-family: 'Abhaya Libre', serif;
+    background-color: whitesmoke;
+    width: 250px;
+    height: fit-content;
+    color:#222222da;
+    text-align: center;
+}
+
+.patas__content--image-two{
+    width: 50vw;
+    height: 50vh;
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620907529/Andrea/PATA_190_fbucet.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+.patas__content--text-two{
+    width: 50vw;
+    height: 25vh;
+    display: flex;
+    font-family: 'Abhaya Libre', serif;
+    font-size: calc(16px + 0.8vw);
+    background-color: #222222da;
+    color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+}
+
+.patas__content--description-190mm{
+    border:solid  white 2px;
+    font-family: 'Abhaya Libre', serif;
+    background-color: whitesmoke;
+    width: 250px;
+    height: fit-content;
+    color:#222222da;
+    text-align: center;
+}
+
+.patas__content--description-text-container{
+    display: flex;
+    z-index: 10;
+    font-family: 'Abhaya Libre', serif;
+    font-size: calc(16px + 0.8vw);
+    color: whitesmoke;
+    background-color: #222222da;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.patas__content--description-text{
+    text-align: center;
+    z-index: 10;
+    font-family: 'Abhaya Libre', serif;
+    font-size: calc(16px + 0.8vw);
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 1024px){
+
+    .patas__header {
+        height: 50vh;
+    }
+    .patas__header--image{
+        height: 50vh;
+    }
+    .patas__header--content-container{
+        padding-top: 20vh;
+    }
+
+    .patas__content{
+        width: 100vw;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .patas__content--image-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .patas__content--image-one{
+        width: 100vw;
+    }
+
+    .patas__content--text-one{
+        width: 100vw;
+    }
+
+    .patas__content--image-two{
+        width: 100vw;
+    }
+
+    .patas__content--text-two{
+        width: 100vw;
+    }
+
+    
+}

@@ -1,44 +1,52 @@
-.boxContainer2{
-    background: rgba(0, 0, 0, 0.6);
-    height: auto;
-    width: 100vw;
+
+.equipamientos__header{
     display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    text-align: center;
-    padding-top: 10vh;
-    padding-bottom: 10vh;
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620893225/Andrea/EQUIPAMIENTOS_mbkjcu.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
 }
 
-.sectionContainer{
-    padding-bottom: 10%;
+.equipamientos__content-container{
+    width:100vw;
+    height: 100vh;
+ }
+    
+ .equipamientos__main-menu{
     display: flex;
     justify-content: center;
+    flex-direction: column;
     align-items: center;
-    flex:1 0 33%;
 }
 
-@media screen and (max-width: 768px){
-    
-    .boxContainer2{
-        height: auto;
-        width: 100vw;
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
-        text-align: center;
-        background:  #F6F3EE;
-        padding-top: 10vh;
+.equipamientos__main-menu__header{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    color:#F6F3EE;
+    font-size: calc(2vw + 25px);
+    font-family: 'Abhaya Libre', serif;
+}
+
+@media screen and(max-width: 1024px) {
+
+    .equipamientos__main-menu__header{
+        padding-top: 0%;
+        padding-bottom: 10%;
     }
-    
-    .sectionContainer{
+
+    .equipamientos__content-container{
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex:1 0 33%;
-        margin: 5%;
-    }  
-        
+        flex-direction: column;
+       
+    }
 }

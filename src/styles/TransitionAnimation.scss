@@ -1,0 +1,61 @@
+.transition__logo--main{
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.transition__logo--container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: black;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+}
+
+.transition__logo--restyle{
+    display: flex;
+    transform:
+    rotate(+4deg)
+    scale(2.5);
+    align-self: center;
+    padding-bottom: 10%;
+}
+
+.transition__logo--branding{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 56px;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.animated {
+    -moz-animation: animated 3s ease-in-out;
+    -webkit-animation: animated 3s ease-in-out;
+    animation: animated 3s ease-in-out;
+    -o-animation: animated 3s ease-in-out;
+}
+  
+@keyframes animated {
+  0% {
+    opacity: 0.3;
+    transform: translateY(+100vh)
+  }
+  20% {
+    opacity: 1;
+    transform: translateY(0) 
+  }
+  60% {
+    opacity: 1;
+    transform: translateY(0)
+  }
+  100%{
+    opacity: 0.3;
+    transform: translateY(-100vh) 
+  }
+}
+
+
+

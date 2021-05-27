@@ -40,12 +40,23 @@
   }
 }
 
-
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 10vh;
+  font-size: 26px;
+  font-family: 'Abhaya Libre', serif;
+}
 
 .slideContent {
   width: 80vw;
-  height: 80vh;
+  height: 60vh;
   background-size: cover;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
+  -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
+  box-shadow:  2px 2px 4px 6px rgba(0, 0, 0, 0.4);
   background-position: center center;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out;
@@ -53,6 +64,8 @@
 
   display: grid;
   align-content: center;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
 
   transform-style: preserve-3d;
   transform: perspective(900px) translateX(calc(100% * var(--offset)))

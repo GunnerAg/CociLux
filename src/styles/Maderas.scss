@@ -1,0 +1,255 @@
+.maderas__section-one{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.maderas__section-one--image-container{
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1621531393/DISE%C3%91OS%20Y%20MATERIALES/7.%20MADERAS/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-MAD_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    width: 80vw;
+    height: 100vh;
+}
+.maderas__section-one--header{
+    background: #F6F3EE;
+    width: 20vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.maderas__section-one--header-content{
+    transform: rotate(-90deg);
+    margin-left: 10%;
+}
+
+.maderas__section-one--header--A{
+    font-size: 16px;
+}
+
+.maderas__section-one--header--B{
+    font-size: 48px;
+}
+
+/* Second section */
+
+.maderas__section-two{
+    width: 100vw;
+    height: fit-content;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    background:#F6F3EE;
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+
+.maderas__section-two--header{
+    font-size: calc(26px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+    color: #222222;
+}
+
+.maderas__section-two--caracteristicas{
+    font-size: calc(16px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+    color: #222222;
+}
+
+.maderas__section-two--separation-bar{
+    width: 10vw;
+    border: solid #222222 1px;
+    background:#222222;
+}
+
+/* Third section */
+
+.maderas__section-three{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+.maderas__section-three--image-container{
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1621531393/DISE%C3%91OS%20Y%20MATERIALES/7.%20MADERAS/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-MAD_1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: center;
+    width: 100vw;
+    height: 100vh;
+    filter: brightness(0.6);
+    position: absolute;
+}
+
+.maderas__section-three--content{
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    font-size: calc(36px + 0.5vw);
+    font-family: 'Abhaya Libre', serif;
+    color: #F6F3EE;
+    position: relative;
+    letter-spacing: 0.3vw;
+}
+
+.maderas__section-three--content-container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    width: fit-content;
+    padding-left: 10%;
+}
+
+.maderas__section-three--separation-bar{
+    width: 10vw;
+    height: 1px;
+    border: solid #F6F3EE 1px;
+    background:#F6F3EE;
+    align-self: flex-start;
+    
+}
+
+/* MADERAS */
+
+.maderas--container{
+    width: 100vw;
+    height: fit-content;
+    padding-top: 10vh ;
+    background: #222222;
+ }
+ 
+ .maderas--grid{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    flex-wrap: wrap;
+ }
+
+ .maderas--grid-unit-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 400px;
+    width: 280px;
+    background-color: white;
+    border-radius: 10px;
+    margin: 1%;
+    padding: 1%;
+    -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
+    -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
+    transition: all 1s ease-in-out;
+    z-index: 10;
+}
+
+.maderas--grid-unit-container:hover .maderas__grid-unit-description, .maderas--grid-unit-container:active .maderas__grid-unit-description{
+    opacity: 1;
+    height: 30%;
+    z-index:0;
+    transition: all 1s ease-in-out;
+}
+
+.maderas--grid-unit-container:hover .maderas__image, .maderas--grid-unit-container:active .maderas__image{
+    transform: scale(0.9);
+    transition: all 1s ease-in-out;
+}
+
+.maderas__grid-unit-description{
+    width: 100%;
+    height: 0%;
+    font-size: 16px;
+    text-align: center;
+    word-wrap: break-word;
+    opacity: 0;
+    transition: all 1s ease-in-out;
+}
+
+.maderas__grid-unit-description-bold{
+    display: inline-block;
+    font-weight: 600;
+}
+
+.maderas__image{
+    display: flex;
+    height: 70%;
+    width: 70%;
+    align-self: center;
+    transition: all 1s ease-in-out;
+}
+
+// /* MOBILE DISPLAYS */
+@media screen and (max-width: 768px){
+    
+    /* SECTION ONE */
+    .maderas__section-one{
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .maderas__section-one--image-container{
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-y: bottom;
+        width: 100vw;
+        height: 100vh;
+    }
+    
+    .maderas__section-one--header{
+        background: white;
+        width: 100vw;
+        height: fit-content;
+        padding-top: 10%;
+        padding-bottom: 5%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: absolute;
+    }
+    
+    .maderas__section-one--header-content{
+        transform: rotate(0deg);
+    }
+    
+    .maderas__section-one--header--A{
+        font-size: 16px;
+    }
+    
+    .maderas__section-one--header--B{
+        font-size: 36px;
+    }
+
+    .maderas--grid-unit{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 280px;
+        min-height: 280px;
+        width: 74vw;
+        height: 80vw;
+        margin: 5vw;
+        border-radius: 20px;
+    }
+
+    .maderas--grid-unit:hover{
+        display: flex;
+        flex-wrap: wrap;
+        min-width: 280px;
+        min-height: 280px;
+        width: 100vw;
+        height: 100vw;
+        margin: 5vw;
+        border-radius: 20px;
+    }
+
+}

@@ -1,11 +1,12 @@
-import React,{useState} from 'react'
+import React from 'react'
 import '../../styles/Canteados.scss'
 import SideBar from './SideBar';
+import {CanteadoData} from '../Diseña_tu_cocina/DesignData'
 
 export default function Canteados() {
-
     // let isTouchScreen = (('ontouchstart' in window) ||(navigator.MaxTouchPoints > 0) ||(navigator.msMaxTouchPoints > 0));
-    const [clicked, setClicked] = useState(false)
+
+    const {zonas,modelos,acabados,grosores,urls}=CanteadoData;
 
     let SectionOne=()=>{
         return (
@@ -51,19 +52,40 @@ export default function Canteados() {
         )
     }
 
-    let CanteadosDisplay=()=>{
+    let CanteadoDisplay=()=>{
         return(
             <div className="canteados--container">
                     <div className="canteados--grid">
-                        <div className="canteados--grid-unit one"></div>
-                        <div className="canteados--grid-unit two"></div>
-                        <div className="canteados--grid-unit three"></div>
-                        <div className="canteados--grid-unit four"></div>
-                        <div className="canteados--grid-unit five"></div>
-                        <div className="canteados--grid-unit six"></div>
-                        <div className="canteados--grid-unit seven"></div>
+                        <CanteadoGridUnit zonas={zonas} modelos={modelos} acabados={acabados} grosores={grosores} urls={urls}/>
                     </div> 
             </div>
+        )
+    }
+
+    let DoorDescriptions =({zona,modelo,acabado,grosor})=>{
+        return (
+        <div className="canteados__grid-unit-description"> 
+            <div className="canteados__grid-unit-description-bold">Zona</div>: {zona} <br/>
+            <div className="canteados__grid-unit-description-bold">Modelo</div>: {modelo} <br/>
+            <div className="canteados__grid-unit-description-bold">Acabado</div>: {acabado}<br/>
+            <div className="canteados__grid-unit-description-bold">Grosor</div>: {grosor} <br/>
+        </div>
+        )
+    }
+
+    let CanteadoGridUnit=({ zonas, modelos, acabados, grosores, urls})=>{
+        return(
+
+            <>
+                {modelos.map((modelo,i)=>{
+                    return(
+                        <div key={`cant-doors${i}`} className="canteados--grid-unit-container">
+                            <img className={'canteados__image'} src={urls[i]} alt={`Puerta ${modelos[i]}, acabado ${acabados[i]}`}/>
+                            <DoorDescriptions zona={zonas[i]} modelo={modelo} acabado={acabados[i]} grosor={grosores[i]}/>
+                        </div>
+                    )
+                })}
+            </>
         )
     }
 
@@ -73,7 +95,7 @@ export default function Canteados() {
            <SectionOne/>
            <SectionTwo/>
            <SectionThree/>
-           <CanteadosDisplay/>
+           <CanteadoDisplay/>
         </div>
        
     )

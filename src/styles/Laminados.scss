@@ -10,7 +10,7 @@ html{
 }
 
 .laminados__section-one--image-container{
-    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1617648567/Andrea/1_IMG_xyv8dd.webp");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825490/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/COCINAS/Cocilux-%20Laminados-%20Cocinas%20Madrid-1_LAMINADA.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: bottom;
@@ -19,7 +19,7 @@ html{
 }
 
 .laminados__section-one--header{
-    background: white;
+    background: #F6F3EE;
     width: 20vw;
     height: 100vh;
     display: flex;
@@ -34,10 +34,12 @@ html{
 
 .laminados__section-one--header--A{
     font-size: 16px;
+    color:#222222;
 }
 
 .laminados__section-one--header--B{
     font-size: 48px;
+    color:#222222;
 }
 
 /* Second section */
@@ -45,30 +47,32 @@ html{
 .laminados__section-two{
     width: 100vw;
     height: fit-content;
-    min-height: 100vh;
     padding-right: 10vw;
     padding-left: 10vw;
     align-items: center;
     display: flex;
     flex-direction: row;
-    background:white;
-    padding-bottom: 10vh;
+    background: #F6F3EE;
+    padding-top: 10%;
+    padding-bottom: 10%;
 }
 
 .laminados__section-two--header{
     font-size: calc(26px + 0.5vw);
     font-family: 'Abhaya Libre', serif;
+    color:#222222;
 }
 
 .laminados__section-two--caracteristicas{
     font-size: calc(16px + 0.5vw);
     font-family: 'Abhaya Libre', serif;
+    color:#222222;
 }
 
 .laminados__section-two--separation-bar{
     width: 10vw;
-    border: solid black 1px;
-    background:black;
+    border: solid #222222 1px;
+    background: #222222;
 }
 
 
@@ -82,7 +86,7 @@ html{
 }
 
 .laminados__section-three--image-container{
-    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1617648567/Andrea/1_IMG_xyv8dd.webp");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825490/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/COCINAS/Cocilux-%20Laminados-%20Cocinas%20Madrid-1_LAMINADA.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -94,86 +98,85 @@ html{
 
 .laminados__section-three--content{
     padding-top: 5%;
-    padding-left: 10%;
-    width: 100vw;
+    width: fit-content;
     display: flex;
-    align-self: flex-start;
     flex-direction: column;
     font-size: calc(36px + 0.5vw);
     font-family: 'Abhaya Libre', serif;
-    color: white;
+    color: #222222;
     position: relative;
-    letter-spacing: 0.3vw;
 }
 
 .laminados__section-three--content-container{
     display: flex;
-    align-items: center;
     flex-direction: column;
     height: 100vh;
+    width: 80vw;
+    align-content: center;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
 }
 
 .laminados__section-three--separation-bar{
     width: 10vw;
+    min-width: 150px;
     height: 1px;
-    margin-left: 10%;
-    border: solid white 1px;
-    background:white;
-    align-self: flex-start;
-    
+    border: solid #222222 1px;
+    background:#222222;
+    margin-right: 15%;
 }
 
 .laminados__section-three--button-container{
     display: flex;
     height: fit-content;
-    width: fit-content;
+    width: 100vw;
     margin-top: 10vh;
     justify-content: center;
     align-content: center;
     flex-direction: row;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    
 }
 
 // animation button //
 
-$black: black;
-$white: white;
 
 .laminados__section-three--button {
-    background: none;
-    border: solid 5px white;
-    border-radius: 100%;
-    width: 200px;
-    height: 200px;
-    margin:2.5vw;
-    font-family: 'Abhaya Libre', serif;
-    color: white;
-    font-size: 20px;
-    z-index: 10;
-    background: none;
-    box-sizing: border-box;
-    box-shadow: inset 0 0 0 2px $white;
-    color: $white;
-    font-weight: 700;
+  background: none;
+  border: solid 5px #222222;
+  border-radius: 100%;
+  width: 200px;
+  height: 200px;
+  margin:1vw;
+  font-family: 'Abhaya Libre', serif;
+  color: #222222;
+  font-size: 16px;
+  background: none;
+  box-sizing: border-box;
+  box-shadow: inset 0 0 0 2px #222222;
+  color: #222222;
+  font-weight: 700;
 
-    &::before,
-    &::after {
-      box-sizing: inherit;
-      content: '';
-      position: absolute;
-      width: 100%;
-      height: 100%;
-    }
+  &::before,
+  &::after {
+    box-sizing: inherit;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
   }
-  
-.spin {
+}
+
+.spin{
     width: 200px;
     height: 200px;
     padding: 0;
+    color:#222222;
     
     &:hover {
-      color: $white;
-      font-size: 28px;
+      color: #222222;
+      font-size: 24px;
       transition: font-size 0.4s ease-in-out;
     }
   
@@ -181,6 +184,7 @@ $white: white;
     &::after {
       top: 0;
       left: 0;
+      
     }
   
     &::before {
@@ -188,9 +192,9 @@ $white: white;
     }
   
     &:hover::before {
-      border-top-color: $white;
-      border-right-color: $white;
-      border-bottom-color: $white;
+      border-top-color: #222222;
+      border-right-color: #222222;
+      border-bottom-color: #222222;
   
       transition:
         border-top-color 0.15s linear, border-right-color 0.15s linear 0.10s, border-bottom-color 0.15s linear 0.20s;
@@ -201,7 +205,7 @@ $white: white;
     }
   
     &:hover::after {
-      border-top: 2px solid $white; 
+      border-top: 2px solid #222222; 
       border-left-width: 2px; 
       border-right-width: 2px; 
       transform: rotate(270deg); 
@@ -227,6 +231,7 @@ $white: white;
     width: 100vw;
     height: 100vh;
     margin-bottom: 10vh;
+    background: #F6F3EE;
 }
 
 .laminados__colores-header{
@@ -235,6 +240,7 @@ $white: white;
     font-family: 'Abhaya Libre', serif;
     font-weight: 900;
     margin-bottom: 3%;
+    margin-top: 3%;
 }
 
 .laminados__colores-container{
@@ -242,6 +248,7 @@ $white: white;
     height: fit-content;
     font-size: calc(20px);
     font-family: 'Abhaya Libre', serif;
+    background: #F6F3EE;
 }
 
 .laminados__colores-mate--grid{
@@ -320,6 +327,7 @@ $white: white;
     width: 100vw;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    background: #F6F3EE;
 }
 
 .laminados__colors-container--two-unit{
@@ -409,7 +417,7 @@ $white: white;
 
 .laminados__colors-container--three-text-white{
     font-size: 20px;
-    color:white;
+    color:#F6F3EE;
 }
 
 .laminados__colors-container--three-text{
@@ -479,7 +487,7 @@ $white: white;
     margin-top: 16px;
     margin-left: 3%;
     position: absolute;
-    color: white;
+    color: #F6F3EE;
     z-index: 10;
 }
 
@@ -525,7 +533,7 @@ $white: white;
 }
 
 .laminados__colors-brillo--one-text{
-    color:white;
+    color:#F6F3EE;
     font-size: 20px;
 }
 
@@ -653,6 +661,7 @@ $white: white;
 .laminados__wood--container-one{
     width: 100vw;
     height: fit-content;
+    background: white;
  }
  
  .laminados__woods-header{
@@ -691,7 +700,7 @@ $white: white;
 }
 
 .laminados__woods--one-text{
-    color:black;
+    color:#222222;
     margin-top: 2%;
     font-size: 16px;
     font-weight:700;
@@ -700,85 +709,85 @@ $white: white;
 /*WOOD TEXTURES 19MM*/
 
 .roble-hercules-atlas{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639267/Andrea/WOODS/1._ROBLE_H%C3%89RCULES_ATLAS_mzmcob.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825537/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-1._ROBLE_H%C3%89RCULES_ATLAS.png");
     background-position: center;
     background-size: contain;
 }
 
 .roble-osstipo-atlas{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639288/Andrea/WOODS/2._ROBLE_OSSTIPO_ATLAS_ehkgqg.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825537/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-2._ROBLE_OSSTIPO_ATLAS.png");
     background-position: center;
     background-size: contain;
 }
 
 .roble-aurora-atlas{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639320/Andrea/WOODS/3._ROBLE_AURORA_ATLAS_hnytbp.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825537/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-3._ROBLE_AURORA_ATLAS.png");
     background-position: center;
     background-size: contain;
 }
 
 .fresno-estepa-sega{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639321/Andrea/WOODS/4._FRESNO_ESTEPA_SEGA_una9i9.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825537/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-4._FRESNO_ESTEPA_SEGA_p2fert.png");
     background-position: center;
     background-size: contain;
 }
 
 .heaven-oak-atlas{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639319/Andrea/WOODS/5._HEAVEN_OAK_ATLAS_cptjqa.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825537/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-5._HEAVEN_OAK_ATLAS.png");
     background-position: center;
     background-size: contain;
 }
 
 .iron-oak-atlas{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639320/Andrea/WOODS/6._IRON_OAK_ATLAS_bbpzkd.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825537/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-6._IRON_OAK_ATLAS.png");
     background-position: center;
     background-size: contain;
 }
 
 .oak-market-atlas{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1620298112/Andrea/WOODS/7._OAK_MARKET_ATLA_c9tgzr.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825538/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-7._OAK_MARKET_ATLA.png");
     background-position: center;
     background-size: contain;
 }
 
 .roble-pegasus-atlas{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1620298950/Andrea/WOODS/8._ROBLE_PEGASUS_ATLAS_1_qwnyvo.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825538/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-8._ROBLE_PEGASUS_ATLAS.png");
     background-position: center;
     background-size: contain;
 }
 
 .roble-denver-atlas{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639318/Andrea/WOODS/9._ROBLE_DENVER_ATLAS_j1at3k.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825538/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-9._ROBLE_DENVER_ATLAS.png");
     background-position: center;
     background-size: contain;
 }
 
 .roble-sinatra-essence{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639318/Andrea/WOODS/10._ROBLE_SINATRA_ESSENCE_fqvj7a.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825538/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-10._ROBLE_SINATRA_ESSENCE.png");
     background-position: center;
     background-size: contain;
 }
 
 .prime-wood-legno{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639320/Andrea/WOODS/11._PRIME_WOOD_LEGNO_pbykwr.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825537/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-11._PRIME_WOOD_LEGNO.png");
     background-position: center;
     background-size: contain;
 }
 
 .oak-river-atlas{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639317/Andrea/WOODS/12._OAK_RIVER_ATLAS_yxhhln.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825537/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-12._OAK_RIVER_ATLAS.png");
     background-position: center;
     background-size: contain;
 }
 
 .roble-arezzo-soul{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639317/Andrea/WOODS/13._ROBLE_AREZZO_SOUL_uj2vzl.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825537/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-13._ROBLE_AREZZO_SOUL.png");
     background-position: center;
     background-size: contain;
 }
 
 .roble-nordico-atlas{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619639317/Andrea/WOODS/14._ROBLE_N%C3%93RDICO_ATLAS_ctlqrh.png");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825537/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2019MM/Cocilux-%20Laminados%20-%20Maderas%2019mm-%20Cocinas%20Madrid-14._ROBLE_N%C3%93RDICO_ATLAS_wyoshh.png");
     background-position: center;
     background-size: contain;
 }
@@ -786,147 +795,147 @@ $white: white;
 /*WOOD TEXTURES 22MM*/
 
 .W4452{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641286/Andrea/WOODS/4452r_isedvo.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825571/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4452r.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4479{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641286/Andrea/WOODS/4479_Seda-Mate_bb4ake.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825571/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4479_Seda-Mate.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4479-1R{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641286/Andrea/WOODS/4479-1r_tie4ca.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825571/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4479-1r.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4479-R{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641286/Andrea/WOODS/4479r_dor2lm.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825571/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4479r.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4487{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641285/Andrea/WOODS/4487r_kpcmu4.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825571/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4487r.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4569{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641285/Andrea/WOODS/4569_Roble_j4ic5u.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825571/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4569_Roble.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4570{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641285/Andrea/WOODS/4570_Roble_jhem1d.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825571/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4570_Roble.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4574{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641286/Andrea/WOODS/4574_poro_doble_inkkni.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825572/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4574_poro_doble.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4603{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641284/Andrea/WOODS/4603r_n2f2gi.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825572/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4603r.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4619{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641284/Andrea/WOODS/4619_poro_doble_22mm_vplrue.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825572/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4619_poro_doble_22mm.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4622{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4622r_k3jqrg.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825572/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4622r.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4654{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4654_poro_doble_22mm_iqg4dg.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825572/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4654_poro_doble_22mm.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4660{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4660r_aqst5t.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825572/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4660r.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4673{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641284/Andrea/WOODS/4673r_wwls4y.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825572/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4673r.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4677{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4677r_q1cxud.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825573/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4677r.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4678{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4678r_jdysrv.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825572/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4678r.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4692{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4692_Roble-Poro-Pizarra_brfznb.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825573/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4692_Roble-Poro-Pizarra.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4694{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641283/Andrea/WOODS/4694_Roble-Poro-Pizarra_dwo1js.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825573/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4694_Roble-Poro-Pizarra.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4698{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641288/Andrea/WOODS/4698_Roble-Poro-Pizarra_ziqrjd.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825573/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4698_Roble-Poro-Pizarra.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4697{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641286/Andrea/WOODS/4697_Roble-Canyon-Poro-Pizarra_uiiuc2.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825573/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4697_Roble-Canyon-Poro-Pizarra.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .W4701{
-    background-image: url("https://res.cloudinary.com/gunnerag/image/upload/v1619641287/Andrea/WOODS/4701_Roble-Poro-Pizarra_iejpha.jpg");
+    background-image: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825573/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/MADERAS%2022MM/Cocilux-Laminados-Maderas%2022mm-Cocinas%20Madrid-4701_Roble-Poro-Pizarra.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -945,7 +954,6 @@ $white: white;
     }
 
     .laminados__section-one--image-container{
-        background: url("https://res.cloudinary.com/gunnerag/image/upload/v1617648567/Andrea/1_IMG_xyv8dd.webp");
         background-size: cover;
         background-repeat: no-repeat;
         background-position-y: bottom;
@@ -957,6 +965,8 @@ $white: white;
         background: white;
         width: 100vw;
         height: fit-content;
+        padding-top: 10%;
+        padding-bottom: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1058,10 +1068,9 @@ $white: white;
         margin-top: 8px;
         margin-left: 10%;
         position: absolute;
-        color: white;
+        color: #F6F3EE;
         z-index: 10;
     }
-
 }
 
 @media screen and (max-width: 280px){
@@ -1094,43 +1103,3 @@ $white: white;
     }
 
 }
-
-// @media screen 
-// and(max-width: 1024px)
-// and(min-width: 375px)
-// and(orientation: landscape){
-
-//     .laminados__colores-mate--grid{
-//         display: grid;
-//         margin-left: 5%;
-//         grid-template-columns: 25vw 25vw ;
-//         grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
-//         column-gap: 15vw;
-//         row-gap: 3vh;
-//         justify-content: center;  
-//     }
-    
-//     .laminados__colores{
-//         height: 140vh;
-//     }
-
-//     .laminados__colores-mate--grid-two{
-//         display: grid;
-//         margin-left: 5%;
-//         grid-template-columns: 25vw ;
-//         grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh;
-//         column-gap: 15vw;
-//         row-gap: 25vh; 
-//         text-align: center;
-//     }
-
-//     .laminados__woods--one{
-//         min-width: 250px;
-//     }
-    
-//     .laminados__section-one--header--B{
-//         font-size: 36px;
-//         margin-top: 10%;
-//     }
-    
-// }

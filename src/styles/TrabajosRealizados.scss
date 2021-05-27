@@ -1,0 +1,17 @@
+.trabajos__realizados--grid{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: fit-content;
+    overflow: hidden;
+}
+
+.trabajos__realizados--header{
+    text-align: center;
+    width: 100vw;
+    font-size: calc(2vw + 25px);
+    font-family: 'Abhaya Libre', serif;
+    padding-top: 1%;
+    padding-bottom: 1%;
+}

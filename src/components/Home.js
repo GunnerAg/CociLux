@@ -13,16 +13,17 @@ export default function Home(props) {
     const section3 = useRef();
     const section4 = useRef();
     const section5 = useRef();
-    let [infoActive,setInfo]=useState('SectionFour')
+    const section6 = useRef();
+
     let [sectionIcon,setIcon]=useState(faArrowDown)
     const [scrollY, setScrollY] = useState(0);
     const {scrollYProgress} = useViewportScroll();
 
-    const yRange1 = useTransform(scrollYProgress, [0, infoActive==="SectionFour" && 0.3||infoActive==="SectionFourActive" && 0.25], [3000,0]);
-    const yRange2 = useTransform(scrollYProgress, [0.4, infoActive==="SectionFour" && 0.65||infoActive==="SectionFourActive" && 0.50], [-2000,0]);
-    const yRange3 = useTransform(scrollYProgress, [0, infoActive==="SectionFour" && 0.3||infoActive==="SectionFourActive" && 0.25], [-2000,0]);
-    const yRange4 = useTransform(scrollYProgress, [0.4, infoActive==="SectionFour" && 0.65||infoActive==="SectionFourActive" && 0.50], [3000,0]);
-    const yRange5 = useTransform(scrollYProgress, [0.65, 1], [3000,0]);
+    const yRange1 = useTransform(scrollYProgress, [0, 0.15], [3000,0]);
+    const yRange2 = useTransform(scrollYProgress, [0.15, 0.35], [-2000,0]);
+    const yRange3 = useTransform(scrollYProgress, [0, 0.15], [-2000,0]);
+    const yRange4 = useTransform(scrollYProgress, [0.15, 0.35], [3000,0]);
+    const yRange5 = useTransform(scrollYProgress, [0.35, 0.55], [3000,0]);
 
     useEffect(() => {
         function watchScroll() {
@@ -40,95 +41,28 @@ export default function Home(props) {
     }
 
     function scrollSection(){
-
-        switch(infoActive){
-            case("SectionFour"):
-                if (scrollYProgress.current<1/3){
+        console.log('here!',scrollYProgress.current)
+                if (scrollYProgress.current<1/5){
                     section2.current.scrollIntoView({behavior: 'smooth'})
                 }
-                else if (scrollYProgress.current<2/3){
+                else if (scrollYProgress.current<2/5){
                     section3.current.scrollIntoView({behavior: 'smooth'})
                 }
-                else if (scrollYProgress.current<0.9){
+                else if (scrollYProgress.current<3/5){
                     section4.current.scrollIntoView({behavior: 'smooth'})
                 }
-                if (scrollYProgress.current>=0.9){
-                    section1.current.scrollIntoView({behavior: 'smooth'})
-                
-            }
-            break;
-    
-            case("SectionFourActive"):
-                console.log('at the correct place',scrollYProgress.current)
-                if (scrollYProgress.current<0.25){
-                    section2.current.scrollIntoView({behavior: 'smooth'})
-                }
-                else if (scrollYProgress.current<0.50){
-                    section3.current.scrollIntoView({behavior: 'smooth'})
-                }
-                else if (scrollYProgress.current<0.75){
-                    section4.current.scrollIntoView({behavior: 'smooth'})
-                }
-                else if (scrollYProgress.current<0.9){
+                else if (scrollYProgress.current<4/5){
+                    console.log(scrollYProgress)
                     section5.current.scrollIntoView({behavior: 'smooth'})
                 }
-                if (scrollYProgress.current>=0.9){
-                    section1.current.scrollIntoView({behavior: 'smooth'})
+                else if (scrollYProgress.current<=0.9){
+                    section6.current.scrollIntoView({behavior: 'smooth'})
                 }
-        }  
+                if (scrollYProgress.current>=0.9){
+                    section1.current.scrollIntoView({behavior: 'smooth'})  
+                }  
     }
-
-    const handleOn=()=> {
-        setInfo(infoActive="SectionFourActive")
-        scrollYProgress.current=0.75
-        setIcon(sectionIcon=faArrowDown)
-    }
-
-    let SectionFour=()=>{
-        return (
-            <>
-                <section className="home__section-four" style={{height:window.innerHeight}} ref={section4}>
-                    <div className="home__section-four--background"> </div>
-                        <motion.div style={{x:yRange5}}>
-                            <h1 onClick={handleOn} className="home__section-four--slogan bounceSlogan">Quiénes somos</h1>
-                        </motion.div>
-                </section>
-            </>
-        )
-    }
-
-    let SectionFourActive=()=>{
-        return (
-            <>
-                <section className="home__section-four--active" style={{height:window.innerHeight}} ref={section4}>
-                    <div className="home__section-four--active-background"> </div>
-                        <div className="home__section-four--active-header">
-                            <h5 className="home__section-four--active-header--content">En SL Cocilux fabricamos y realizamos cocinas a medida, que buscan principalmente la comodidad, la estética y la funcionalidad que mejor se adapte al espacio y a sus necesidades con una amplia gama de materiales</h5>
-                        </div>
-                        <div className="home__section-four--active-inner">
-                            <div className="home__section-four--image-container"></div>
-                            <div className="home__section-four--porque-nosotros">
-                                <h6 className="home__porque-nosotros--content">Somos fabricantes especializados, con unos precios competentes directamente de fábrica. <br></br><br></br> Acérquese a nuestra tienda y exposición física, en la que descubrirá una amplia gama de materiales y encimeras.<br></br><br></br> Pídanos presupuesto sin compromiso.</h6>
-                            </div>
-                        </div>
-                </section>
-                <section className="home__section-five--active" style={{height:window.innerHeight}} ref={section5}>
-                    <div className="home__section-five--active-background"> </div>
-                        <div className="home__section-five--active-header">
-                            <h5 className="home__section-five--active-header--content">Compromiso y fiabilidad</h5>
-                        </div>
-                        <div className="home__section-five--active-inner">
-                            <div className="home__section-five--compromiso">
-                                <h6 className="home__porque-nosotros--content">Como fabricantes de muebles de cocina; medimos, presupuestamos y montamos en su casa directamente y sin intermediarios. 
-                                Esto nos permite realizar grandes descuentos en el material ya que proviene directamente de fábrica. Como resultado obtenemos la cocina que más se adapte a sus necesidades a precios competentes. <br></br><br></br> Todo el inmobiliario cuenta con un seguro y una garantía de fábrica, tanto de materiales como de instalación.<br></br><br></br> Dispondrá de un plazo estimado para que se solucione todo aquello que haya podido sufrir daños, errores de medición o imperfectos de fábrica.<br></br><br></br> Nuestro trabajo experimentado garantiza la calidad del producto y el servicio postventa por si hubiera algún material defectuoso.</h6>
-                            </div>
-                            <div className="home__section-five--image-container"></div>
-                        </div>
-                </section>
-            </>
-        )
-    }
-
+    
     return (
         <>
         <button style={{ outline:'none'}} onClick={scrollSection} className="home__scroll-button">
@@ -177,8 +111,38 @@ export default function Home(props) {
             </motion.div>
         </section>
 
-        {infoActive==="SectionFour" && <SectionFour/>}
-        {infoActive==="SectionFourActive" && <SectionFourActive />}
+        <section className="home__section-four" style={{height:window.innerHeight}} ref={section4}>
+            <div className="home__section-four--background"> </div>
+                <motion.div style={{x:yRange5}}>
+                    <h1 className="home__section-four--slogan bounceSlogan">Quiénes somos</h1>
+                </motion.div>
+        </section>
+
+        <section className="home__section-four--active" style={{height:window.innerHeight}} ref={section5}>
+                    <div className="home__section-four--active-background"> </div>
+                        <div className="home__section-four--active-header">
+                            <h5 className="home__section-four--active-header--content">En SL Cocilux fabricamos y realizamos cocinas a medida, que buscan principalmente la comodidad, la estética y la funcionalidad que mejor se adapte al espacio y a sus necesidades con una amplia gama de materiales</h5>
+                        </div>
+                        <div className="home__section-four--active-inner">
+                            <div className="home__section-four--image-container"></div>
+                            <div className="home__section-four--porque-nosotros">
+                                <h6 className="home__porque-nosotros--content">Somos fabricantes especializados, con unos precios competentes directamente de fábrica. <br></br><br></br> Acérquese a nuestra tienda y exposición física, en la que descubrirá una amplia gama de materiales y encimeras.<br></br><br></br> Pídanos presupuesto sin compromiso.</h6>
+                            </div>
+                        </div>
+                </section>
+                <section className="home__section-five--active" style={{height:window.innerHeight}} ref={section6}>
+                    <div className="home__section-five--active-background"> </div>
+                        <div className="home__section-five--active-header"> 
+                            <h5 className="home__section-five--active-header--content">Compromiso y fiabilidad</h5>
+                        </div>
+                        <div className="home__section-five--active-inner">
+                            <div className="home__section-five--compromiso">
+                                <h6 className="home__porque-nosotros--content">Como fabricantes de muebles de cocina; medimos, presupuestamos y montamos en su casa directamente y sin intermediarios. 
+                                Esto nos permite realizar grandes descuentos en el material ya que proviene directamente de fábrica. Como resultado obtenemos la cocina que más se adapte a sus necesidades a precios competentes. <br></br><br></br> Todo el inmobiliario cuenta con un seguro y una garantía de fábrica, tanto de materiales como de instalación.<br></br><br></br> Dispondrá de un plazo estimado para que se solucione todo aquello que haya podido sufrir daños, errores de medición o imperfectos de fábrica.<br></br><br></br> Nuestro trabajo experimentado garantiza la calidad del producto y el servicio postventa por si hubiera algún material defectuoso.</h6>
+                            </div>
+                            <div className="home__section-five--image-container"></div>
+                        </div>
+                </section>
         </>
     )
 }

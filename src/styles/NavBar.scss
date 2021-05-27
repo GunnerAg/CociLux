@@ -1,5 +1,5 @@
 #NavContainer{
-    z-index: 10;
+    z-index: 100;
     position: fixed;
     margin-left: calc(97% - 40px );
 }
@@ -9,7 +9,7 @@
     color: #fff;
 }
 
-.collapsed{
+.navBar__collapsed{
     border: 1px solid  rgb(0, 0, 0);
     background:rgb(0, 0, 0);
     width: 35px;
@@ -20,7 +20,7 @@
     transition: all 0.5s;
 }
 
-.expanded1{
+.navBar__expanded1{
     border: 1px solid snow;
     background:snow;
     width: 35px;
@@ -31,7 +31,7 @@
     transition: all 0.5s;
 }
 
-.expanded2{
+.navBar__expanded2{
     border: 1px solid snow;
     background:snow;
     width: 35px;
@@ -42,7 +42,7 @@
     transition: all 0.5s;
 }
 
-.container{
+.navBar__container{
     width: 40px;
     height: 100%;
     display: flex;
@@ -55,7 +55,7 @@
     z-index: 5;
 }
 
-.burgermenu{
+.navBar__burgermenu{
     border: snow solid 2px;
     margin-top: -60px;
     display: flex;
@@ -73,7 +73,7 @@
     transition: all 0.5s ease-in-out;
 }
 
-.burgermenuHide{
+.navBar__burgermenuHide{
     margin-top: -60px;
     display: flex;
     opacity: 0;
@@ -88,7 +88,7 @@
     transition: all 0.5s ease-in-out;
 }
 
-.link{
+.navBar__link{
     margin-top: 10vh;
     text-decoration: none;
     color:white;
@@ -97,7 +97,7 @@
     max-width:100px
 }
 
-.link:hover{
+.navBar__link:hover{
     margin-top: 10vh;
     text-decoration: none;
     color:white;

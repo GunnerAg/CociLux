@@ -1,11 +1,12 @@
-import React,{useState} from 'react'
+import React  from 'react'
 import '../../styles/Polilaminados.scss'
 import SideBar from './SideBar';
+import {PolilaminadoData} from '../Diseña_tu_cocina/DesignData'
 
 export default function Polilaminados() {
-
     // let isTouchScreen = (('ontouchstart' in window) ||(navigator.MaxTouchPoints > 0) ||(navigator.msMaxTouchPoints > 0));
-    const [clicked, setClicked] = useState(false)
+    
+    const {zonas,modelos,folios,grosores,urls}=PolilaminadoData;
 
     let SectionOne=()=>{
         return (
@@ -49,23 +50,40 @@ export default function Polilaminados() {
         )
     }
 
-    let CanteadosDisplay=()=>{
+    let PolilaminadoDisplay=()=>{
         return(
             <div className="polilaminados--container">
                     <div className="polilaminados--grid">
-                        <div className="polilaminados--grid-unit one"></div>
-                        <div className="polilaminados--grid-unit two"></div>
-                        <div className="polilaminados--grid-unit three"></div>
-                        <div className="polilaminados--grid-unit four"></div>
-                        <div className="polilaminados--grid-unit five"></div>
-                        <div className="polilaminados--grid-unit six"></div>
-                        <div className="polilaminados--grid-unit seven"></div>
-                        <div className="polilaminados--grid-unit eight"></div>
-                        <div className="polilaminados--grid-unit nine"></div>
-                        <div className="polilaminados--grid-unit ten"></div>
-                        <div className="polilaminados--grid-unit eleven"></div>
+                        <PolilaminadoGridUnit zonas={zonas} modelos={modelos} folios={folios} grosores={grosores} urls={urls}/>
                     </div> 
             </div>
+        )
+    }
+
+    let DoorDescriptions =({zona,modelo,folio,grosor})=>{
+        return (
+        <div className="polilaminados__grid-unit-description"> 
+            <div className="polilaminados__grid-unit-description-bold">Zona</div>: {zona} <br/>
+            <div className="polilaminados__grid-unit-description-bold">Modelo</div>: {modelo} <br/>
+            <div className="polilaminados__grid-unit-description-bold">Folio</div>: {folio}<br/>
+            <div className="polilaminados__grid-unit-description-bold">Grosor</div>: {grosor} <br/>
+        </div>
+        )
+    }
+
+    let PolilaminadoGridUnit=({ zonas, modelos, folios, grosores})=>{
+        return(
+
+            <>
+                {modelos.map((modelo,i)=>{
+                    return(
+                        <div key={`poli-doors${i}`} className="polilaminados--grid-unit-container">
+                            <img className={'polilaminados__image'} src={urls[i]} alt={`Puerta ${modelos[i]}, acabado ${folios[i]}`}/>
+                            <DoorDescriptions zona={zonas[i]} modelo={modelo} folio={folios[i]} grosor={grosores[i]}/>
+                        </div>
+                    )
+                })}
+            </>
         )
     }
 
@@ -75,7 +93,7 @@ export default function Polilaminados() {
            <SectionOne/>
            <SectionTwo/>
            <SectionThree/>
-           <CanteadosDisplay/>
+           <PolilaminadoDisplay/>
         </div>
        
     )

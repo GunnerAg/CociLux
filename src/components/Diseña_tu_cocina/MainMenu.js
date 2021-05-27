@@ -1,21 +1,42 @@
 import React from 'react';
 import {Link} from 'react-router-dom';
+import '../../styles/MainMenu.scss'
 
 export default function MainMenu(props) {
 
-    let {handleSectionSelected}=props;
+    let {data, links, withLinks, handleClick, clear}=props;
 
-    return (
-        <div className="main-menu">
-                <div className="main-menu__header">Diseños y Materiales</div>
-                <div className="main-menu__container">
-                    <Link to="/laminado"><button className="main-menu__button" onClick={handleSectionSelected}>LAMINADO</button></Link>
-                    <Link to="/melanina_lacada"><button className="main-menu__button" onClick={handleSectionSelected}>MELANINA</button></Link>
-                    <Link to="/canteado"><button className="main-menu__button" onClick={handleSectionSelected}>CANTEADO</button></Link>
-                    <Link to="/polilaminado"><button className="main-menu__button" onClick={handleSectionSelected}>POLILAMINADO</button></Link>
-                    <Link to="/lacado"><button className="main-menu__button" onClick={handleSectionSelected}>LACADO</button></Link>
-                    <Link to="/madera"><button className="main-menu__button" onClick={handleSectionSelected}>MADERA</button></Link>
-                </div>
+    if(clear===true){
+        return (
+            <div className="main__menu--container">
+                {data.map((data,i)=>{return(
+                    <Link to={links[i]} className="main__menu--link">
+                    <button name={data} className="main__menu--button-clear main__menu-spin-clear main__menu-circle-clear" style={{outline:"none"}} onClick={handleClick}>
+                    {data} 
+                </button>
+                </Link>
+                )})}            
         </div>
-    )
+        )  }
+    if(withLinks===true){
+        return (
+            <div className="main__menu--container">
+                {data.map((data,i)=>{return(
+                    <Link to={links[i]} className="main__menu--link">
+                    <button style={{outline:"none"}} className="main__menu--button main__menu-spin main__menu-circle">
+                        {data} 
+                    </button>
+                </Link>
+                )})}
+            </div>
+    )}
+    else return (
+        <div className="main__menu--container-linkless">
+            {data.map((data)=>{return(
+                <button name={data} className="main__menu--button main__menu-spin main__menu-circle" style={{outline:"none"}} onClick={handleClick}>
+                {data} 
+            </button>
+            )})}            
+    </div>
+    )  
 }
