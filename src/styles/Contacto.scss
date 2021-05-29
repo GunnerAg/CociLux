@@ -26,22 +26,25 @@
     height: 75vh;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 1024px){
     .contact__inner-content{
         display: flex;
         justify-content: flex-start;
         flex-direction: column;
         height: 75vh;
         
-      }
+    }
+
     .contact__details{
         min-width: 100vw;
         background-size: cover;
         background-repeat: no-repeat;
-      }
+    }
+
     .contact__middle-bar{
         display: none;
     }
+
     .contact__form-container{
         min-width: 100vw;
         height: 75vh;
@@ -51,12 +54,13 @@
         padding-top: 2%;
         background-color: rgba(128, 128, 128, 0.2);
     }
-    }
+  }
   
   .contact__details{
     width: 50vw;
     background-size: cover;
     background-repeat: no-repeat;
+    padding-bottom: 3%;
   }
 
   .contact__details-paragraph--one{

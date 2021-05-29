@@ -25,7 +25,9 @@ export default function Encimeras() {
     let SectionOne=()=>{
         return (
                 <section className="encimeras__section-one" >
-                    <div className="encimeras__section-one--image-container"></div>
+                     <div className="encimeras__section-one--image-container">
+                        <img className="encimeras__section-one--image" src="https://res.cloudinary.com/sl-cocilux/image/upload/v1622197364/DISE%C3%91OS%20Y%20MATERIALES/8.%20ENCIMERAS/ENCIMERA_aeuero.png" alt="test"/>
+                    </div>
                     <div className="encimeras__section-one--header" >
                         <div className="encimeras__section-one--header-content">
                             <p className="encimeras__section-one--header--A">ENCIMERAS</p>

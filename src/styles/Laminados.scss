@@ -1,27 +1,27 @@
-html{
-    scroll-behavior: smooth;
-}
-
 .laminados__section-one{
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
 }
 
 .laminados__section-one--image-container{
-    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825490/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/COCINAS/Cocilux-%20Laminados-%20Cocinas%20Madrid-1_LAMINADA.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
     width: 80vw;
-    height: 100vh;
+    height: fit-content;
+    max-height: 80vh;
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
+}
+
+.laminados__section-one--image{
+    width: 80vw;
+    height: auto;
 }
 
 .laminados__section-one--header{
     background: #F6F3EE;
     width: 20vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -143,7 +143,6 @@ html{
 
 // animation button //
 
-
 .laminados__section-three--button {
   background: none;
   border: solid 5px #F6F3EE;
@@ -159,6 +158,7 @@ html{
   box-shadow: inset 0 0 0 2px #F6F3EE;
   color: #F6F3EE;
   font-weight: 700;
+  z-index: 10;
 
   &::before,
   &::after {
@@ -231,8 +231,7 @@ html{
 /* COLORS */
 .laminados__colores{
     width: 100vw;
-    height: 100vh;
-    margin-bottom: 10vh;
+    height: fit-content;
     background: #F6F3EE;
 }
 
@@ -241,8 +240,8 @@ html{
     font-size: calc(36px + 0.5vw);
     font-family: 'Abhaya Libre', serif;
     font-weight: 900;
-    margin-bottom: 3%;
-    margin-top: 3%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 .laminados__colores-container{
@@ -253,15 +252,22 @@ html{
 }
 
 .laminados__colores-mate--grid{
-    display: grid;
+    display: flex;
+    height: fit-content;
+    flex-wrap: wrap;
+    margin-left: 10vw;
+    margin-right: 10vw;
     justify-content: center;
-    margin-top: 5%;
-    grid-template-columns: 12vw 12vw 12vw 12vw 12vw 12vw;
-    column-gap: 3vw;
-    grid-template-rows: 25vh 25vh 25vh;
-    row-gap: 3vh;
-    align-items: center;
     font-family: 'Open Sans', sans-serif;
+}
+
+.laminados__colores-mate-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vw;
+    flex-wrap: wrap;
+    width: 200px;
 }
  
 .laminados__colores-mate{
@@ -272,6 +278,10 @@ html{
     min-width: 100px;
     min-height: 100px;
     margin-right: 5px;
+    margin-bottom:50px;
+    -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
+    -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
 /* MATE */
@@ -348,6 +358,9 @@ html{
     width: 250px;
     height: 250px;
     margin: 50px;
+    -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
+    -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
 .azul-indigo-touch{
@@ -422,10 +435,12 @@ html{
 .laminados__colors-container--three-text-white{
     font-size: 20px;
     color:#F6F3EE;
+    margin-top: 10%;
 }
 
 .laminados__colors-container--three-text{
     font-size: 20px;
+    margin-top: 10%;
 }
 
 .laminados__colors-mate--three{
@@ -434,6 +449,9 @@ html{
     width: 250px;
     height: 250px;
     padding: 10%;
+    -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
+    -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
 .blanco-touch{
@@ -482,46 +500,25 @@ html{
 .laminados__colors-brillo--container-one{
    width: 100vw;
    height: fit-content;
+   background: #222222;   
 }
 
 .laminados__colors-brillo-header{
     font-size: calc(36px + 0.5vw);
     font-family: 'Abhaya Libre', serif;
     font-weight: 900;
-    margin-top: 16px;
     margin-left: 3%;
-    position: absolute;
+    padding-top: 3%;
+    padding-bottom: 3%;
     color: #F6F3EE;
-    z-index: 10;
+    
 }
 
-.laminados__colors-brillo--grid-one{
-    position: relative;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 30vw 30vw 30vw;
-    column-gap: 3vw;
-    grid-template-rows: 40vh 40vh;
-    row-gap: 5vh;
-    align-items: center;
-    background: #222222;
-    padding-top: 5%;
-    padding-bottom: 5%;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.laminados__colors-brillo--grid-three{
-    position: relative;
-    display: grid;
-    justify-content: center;
-    grid-template-columns: 30vw 30vw 30vw;
-    column-gap: 3vw;
-    grid-template-rows: 40vh 40vh 40vh 40vh;
-    row-gap: 5vh;
-    align-items: center;
-    background: #222222;
-    padding-top: 5%;
-    padding-bottom: 5%;
+.laminados__colors-brillo--grid{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    justify-content: space-evenly;
 }
 
 .laminados__colors-brillo--one-unit{
@@ -535,11 +532,17 @@ html{
 .laminados__colors-brillo--one{
     width: 30vw;
     height: 20vh;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
+    -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
 .laminados__colors-brillo--one-text{
     color:#F6F3EE;
     font-size: 20px;
+    margin-top: 5% ;
+    margin-bottom: 5% ;
 }
 
 /*BRILLO ONE*/
@@ -702,6 +705,10 @@ html{
     width: 300px;
     height: 100px;
     margin-top: 10vh;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
+    -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
 .laminados__woods--one-text{
@@ -951,32 +958,37 @@ html{
 @media screen and (max-width: 1024px){
     
     /* SECTION ONE */
-    .laminados__section-one{
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-    }
+.laminados__section-one{
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    min-height: 40vh;
+}
 
-    .laminados__section-one--image-container{
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-y: bottom;
-        width: 100vw;
-        height: 100vh;
-    }
-    
-    .laminados__section-one--header{
-        background: white;
-        width: 100vw;
-        height: fit-content;
-        padding-top: 10%;
-        padding-bottom: 5%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        position: absolute;
-    }
+.laminados__section-one--image-container{
+    display: flex;
+    align-self: flex-end;
+    min-width: 100vw;
+    height: fit-content;
+    border-radius: 0;
+}
+
+.laminados__section-one--image{
+    width: 100vw;
+    height: auto;
+}
+
+.laminados__section-one--header{
+    background: #F6F3EE;
+    width: 100vw;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+}
+  
     
     .laminados__section-one--header-content{
         transform: rotate(0deg);
@@ -992,57 +1004,45 @@ html{
 
     /* COLORS GRID */
 
-    .laminados__colores-mate--grid{
-        display: grid;
-        margin-left: 5%;
-        grid-template-columns: 15vw 15vw 15vw 15vw;
-        grid-template-rows: 10vh 10vh 10vh 10vh ;
-        column-gap: 10%;
-        row-gap: 20vh;
-        justify-content: center;
-    }
 
-    .laminados__colores{
-        height: 140vh;
+    .laminados__colores-header{
+        margin-bottom: 10%;
+        margin-top: 10%;
     }
 
     .laminados__colores-mate{
-        width: 20vw;
-        height: 20vw;
-        min-width: 75px;
-        min-height: 75px;
+        border: solid 1px;
+        border-radius: 100%;
+        width: 250px;
+        height: 250px;
+        margin: 50px;
+    }
+
+    .laminados__colores-mate-container{
+      width: fit-content;
+      margin: 0;
+    }
+
+    .laminados__colores-mate--grid{
+        display: flex;
+        height: fit-content;
+        flex-wrap: wrap;
+        margin-left: 0vw;
+        margin-right: 0vw;
+        justify-content: center;
     }
 
     .laminados__colores-container{
         text-align: center;
         height: fit-content;
-        font-size: calc(16px + 0.2vw);
+        font-size: calc();
         font-family: 'Abhaya Libre', serif;
         justify-content: center;
     }
 
-    .laminados__colores-mate--grid-two{
-        display: grid;
-        grid-template-columns: 16% 16%;
-        column-gap: 20%;
-        row-gap: 10%;
-        grid-template-rows: 25% 25%;
-        padding-bottom: 5%;
-        text-align: center;
-    }
+   
 
     /*COLORES BRILLO ONE*/
-    .laminados__colors-brillo--grid-one{
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 90vw;
-        column-gap: 5vw;
-        grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh;
-        row-gap: 10vh;
-        align-items: center;
-        background: #222222;
-        padding-top: 10vh;
-    }
 
     .laminados__colors-brillo--one{
         width: 80vw;
@@ -1054,54 +1054,20 @@ html{
     }
 
     /*COLORES BRILLO THREE*/
-    .laminados__colors-brillo--grid-three{
-        display: grid;
-        justify-content: center;
-        grid-template-columns: 90vw;
-        column-gap: 5vw;
-        grid-template-rows: 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh 20vh;
-        row-gap: 10vh;
-        align-items: center;
-        background: #222222;
-        padding-top: 10vh;
-    }
 
     .laminados__colors-brillo-header{
         font-size: calc(36px + 0.5vw);
         font-family: 'Abhaya Libre', serif;
         font-weight: 900;
-        margin-top: 8px;
+        padding-top: 10%;
+        margin-bottom: 10%;
         margin-left: 10%;
-        position: absolute;
         color: #F6F3EE;
-        z-index: 10;
     }
 }
 
 @media screen and (max-width: 280px){
-    .laminados__colores-mate--grid{
-        display: grid;
-        margin-left: 5%;
-        grid-template-columns: 25vw 25vw ;
-        grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
-        column-gap: 15vw;
-        row-gap: 3vh;
-        justify-content: center;  
-    }
-    
-    .laminados__colores{
-        height: 140vh;
-    }
 
-    .laminados__colores-mate--grid-two{
-        display: grid;
-        margin-left: 5%;
-        grid-template-columns: 25vw ;
-        grid-template-rows: 10vh 10vh 10vh 10vh 10vh 10vh;
-        column-gap: 15vw;
-        row-gap: 25vh; 
-        text-align: center;
-    }
 
     .laminados__woods--one{
         min-width: 250px;

@@ -4,46 +4,35 @@ import '../styles/TrabajosRealizadosUnit.scss'
 export default function TrabajosRealizadosUnit(props) {
 
     let {data}=props;
-    let [touchOrigin, setTouchOrigin] = useState({x:0,y:0})
-    let [touchEnding, setTouchEnding] = useState({x:0,y:0})
     let [index, setIndex] = useState(0)
-    let [swipper, setSide] = useState('original')
-    let [currentX,setX] = useState(0)
+    let [fadeOn, setFade] = useState('original')
     let inlineStyles={
         backgroundImage:`url(${data[index]})`,
-        transform:`translateX(${currentX})`,
         backgroundSize: 'cover',
     }
-
-
-    //SWIPE ON TOUCH
-    const handleTouchStart =(touchStartEvent)=>{
-        setTouchOrigin(touchOrigin={x:touchStartEvent.changedTouches[0].screenX,y:touchStartEvent.changedTouches[0].screenY})
-    }
-
-    const handleTouchEnd =(touchEndEvent)=>{
-        setTouchEnding(touchEnding={x:touchEndEvent.changedTouches[0].screenX,y:touchEndEvent.changedTouches[0].screenY})
-        let xOffset=(touchEnding['x']-touchOrigin['x']);
-        if (xOffset>75){setIndex(index===data.length-1? index=0:index=index+1); setSide('swipperRight')}
-        if (xOffset<-75){setIndex(index===0? index=data.length-1:index=index-1); setSide('swipperLeft')}
-        setTimeout(() => {setSide('original')}, 1000);
-    }
     
-    const handleTouchMove =(touchMoveEvent)=>{
-        setX(touchMoveEvent.changedTouches[0].screenX)
+    const handleClick=(mouseClickEvent)=>{
+
+        const halfWidth = (mouseClickEvent.target.offsetWidth)/2;
+        const offsetX = (mouseClickEvent.nativeEvent.offsetX)
+
+        if(offsetX>halfWidth*1.5){
+            setFade('fade')
+            setTimeout(() => {
+                setIndex(index===data.length-1? index=0:index=index+1)
+            }, 250);
+        }
+
+        if(offsetX<halfWidth*0.5){
+            setFade('fade')
+            setTimeout(() => {
+                setIndex(index===0? index=data.length-1:index=index-1)
+            }, 250);
+        }
     }
-  
-    //SWIPE ON MOUSE DOWN
-    const handleMouseDown =(mouseDownEvent)=>{
-        setTouchOrigin(touchOrigin={x:mouseDownEvent.clientX,y:mouseDownEvent.clientY})
-    }
-    
-    const handleMouseUp =(mouseUpEvent)=>{
-        setTouchEnding(touchEnding={x:mouseUpEvent.clientX,y:mouseUpEvent.clientY})
-        let xOffset=(touchEnding['x']-touchOrigin['x']);
-        if (xOffset>150){setIndex(index===data.length-1? index=0:index=index+1); setSide('swipperRight')}
-        if (xOffset<-150){setIndex(index===0? index=data.length-1:index=index-1); setSide('swipperLeft')}
-        setTimeout(() => {setSide('original')}, 1000);
+
+    const onAnimationEnd=()=>{
+       setFade('')
     }
 
     return (
@@ -58,18 +47,15 @@ export default function TrabajosRealizadosUnit(props) {
                 {
                     data.length>1? 
                     <div
-                onTouchStart={touchStartEvent => handleTouchStart(touchStartEvent)}
-                onTouchEnd={touchEndEvent => handleTouchEnd(touchEndEvent)}
-                onTouchMove={touchMoveEvent => handleTouchMove(touchMoveEvent)}
-                onMouseDown={mouseDownEvent => handleMouseDown(mouseDownEvent)}
-                onMouseUp={(mouseUpEvent) => handleMouseUp(mouseUpEvent)}
+                onClick={(mouseClickEvent)=>handleClick(mouseClickEvent)}
                 style={inlineStyles}
-                className={`testingSwipeEvents ${swipper}`}
+                className={`trabajos__realizados--image ${fadeOn}`}
+                onAnimationEnd={onAnimationEnd}
                 >
                 </div>:
                 <div 
                 style={inlineStyles}
-                className={`testingSwipeEvents ${swipper}`}>
+                className={`trabajos__realizados--image`}>
                 </div>
 
                 }

@@ -15,7 +15,7 @@ export default function Contact() {
                 <ul className="contact__details-list">
                     <li className="contact__details-list--element">Móvil: &nbsp;<div className="contact__details-list--bold"> 605 574 283 & 616 964 999</div></li>
                     <li className="contact__details-list--element">Email: &nbsp;<div className="contact__details-list--bold"> slopezkitchen@gmail.com</div></li>
-                    <li className="contact__details-list--element">Instagram: &nbsp;<div className="contact__details-list--bold"> @sl.cociluxdiseños</div></li>
+                    <li className="contact__details-list--element">Instagram: &nbsp;<div className="contact__details-list--bold"> @sl.cociluxdesign</div></li>
                 </ul>
                 <p className="contact__details-paragraph--two">Al momento de contactar con nosotros se ofrece al cliente concertar una visita a domicilio sin compromiso, en el horariom que mejor se adapte a sus necesidades. <br></br> Seguidamente medimos y realizamos un estudio previo sobre la superficie para la realización de un plano y proyecto en 3D.</p>
                 <p className="contact__details-paragraph--three">

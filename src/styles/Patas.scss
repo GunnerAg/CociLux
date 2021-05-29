@@ -68,7 +68,7 @@
     height: 25vh;
     display: flex;
     font-family: 'Abhaya Libre', serif;
-    font-size: calc(16px + 0.8vw);
+    font-size: calc(16px + 0.5vw);
     background-color: #222222;
     color: #F6F3EE;
     justify-content: center;
@@ -99,7 +99,7 @@
     height: 25vh;
     display: flex;
     font-family: 'Abhaya Libre', serif;
-    font-size: calc(16px + 0.8vw);
+    font-size: calc(16px + 0.5vw);
     background-color: #222222;
     color: whitesmoke;
     justify-content: center;
@@ -120,12 +120,14 @@
     display: flex;
     z-index: 10;
     font-family: 'Open Sans', sans-serif;
-    font-size: calc(16px + 0.8vw);
+    font-size: calc(16px + 0.5vw);
     color: #F6F3EE;
     background-color: #222222;
     height: 25vh;
     justify-content: center;
     align-items: center;
+    padding-right: 10%;
+    padding-left: 10%;
 }
 
 .patas__content--description-text{

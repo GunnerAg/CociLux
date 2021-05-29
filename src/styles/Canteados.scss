@@ -1,22 +1,27 @@
 .canteados__section-one{
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
 }
 
 .canteados__section-one--image-container{
-    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1621527958/DISE%C3%91OS%20Y%20MATERIALES/3.%20CANTEADO/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-CAN_1.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
     width: 80vw;
-    height: 100vh;
+    height: fit-content;
+    max-height: 80vh;
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
 }
+
+.canteados__section-one--image{
+    width: 80vw;
+    height: auto;
+}
+
 .canteados__section-one--header{
-    background:#F6F3EE;
+    background: #F6F3EE;
     width: 20vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -200,25 +205,29 @@
     /* SECTION ONE */
     .canteados__section-one{
         width: 100vw;
-        height: 100vh;
+        height: fit-content;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        min-height: 40vh;
     }
 
     .canteados__section-one--image-container{
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-y: bottom;
+        display: flex;
+        align-self: flex-end;
+        min-width: 100vw;
+        height: fit-content;
+        border-radius: 0;
+    }
+
+    .canteados__section-one--image{
         width: 100vw;
-        height: 100vh;
+        height: auto;
     }
     
     .canteados__section-one--header{
-        background: white;
+        background: #F6F3EE;
         width: 100vw;
         height: fit-content;
-        padding-top: 10%;
-        padding-bottom: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;

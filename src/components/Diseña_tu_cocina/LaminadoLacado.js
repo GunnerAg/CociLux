@@ -10,7 +10,9 @@ export default function LaminadoLacados() {
     let SectionOne=()=>{
         return (
                 <section className="melamina__section-one">
-                    <div className="melamina__section-one--image-container"></div>
+                     <div className="melamina__section-one--image-container">
+                        <img className="melamina__section-one--image" src="https://res.cloudinary.com/sl-cocilux/image/upload/v1620825706/DISE%C3%91OS%20Y%20MATERIALES/2.%20MELAMINA%20LACADA/COCINAS/Cocilux-Laminado_Lacado-Cocinas%20Madrid-1_MELAMINA.png" alt="test"/>
+                    </div>
                     <div className="melamina__section-one--header" >
                         <div className="melamina__section-one--header-content">
                             <p className="melamina__section-one--header--A">Estilo</p>

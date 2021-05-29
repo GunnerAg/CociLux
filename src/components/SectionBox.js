@@ -3,7 +3,7 @@ import '../styles/SectionBox.scss';
 
 export default function SectionBox(props) {
 
-    let {handleClicked, content, withDescription, description, redirection} = props
+    let {handleClicked, content, withDescription, description, redirection, } = props
 
     const[hoverOn,setHover]=useState(false)
 

@@ -61,6 +61,7 @@
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out;
    opacity: 1;
+   border-radius: 20px;
 
   display: grid;
   align-content: center;
@@ -89,7 +90,7 @@
     margin: 0;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 1024px){
     .slideSubtitle,
     .slideTitle {
       font-size: 1rem;
@@ -110,7 +111,7 @@
     letter-spacing: 0.2ch;
   }
 
-  @media screen and (max-width: 768px){
+  @media screen and (max-width: 1024px){
     .slideDescription {
       margin: 0;
       font-size: 0.7rem;
@@ -138,10 +139,12 @@
 .slide[data-active] {
   z-index: 2;
   pointer-events: auto;
+ 
 
   .slideBackground {
     opacity: 0.2;
     transform: none;
+    
   }
 
   .slideContentInner {
@@ -153,6 +156,7 @@
     --x: calc(var(--px) - 0.5);
     --y: calc(var(--py) - 0.5);
     opacity: 1;
+    border-radius: 20px;
 
     transform: perspective(1200px);
 

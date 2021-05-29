@@ -29,7 +29,7 @@
   background-color: rgba(0, 0, 0, 0.3)
 }
 
-.testingSwipeEvents{
+.trabajos__realizados--image{
     width: inherit;
     height: inherit;
     border: solid rgba(0, 0, 0, 0.3) 2px;
@@ -40,50 +40,58 @@
     transition:'ease-in-out 1s all';
 }
 
-.swipperRight {
-    -moz-animation: swipperRight 1s ease-in-out;
-    -webkit-animation: swipperRight 1s ease-in-out;
-    animation: swipperRight 1s ease-in-out;
-    -o-animation: swipperRight 1s ease-in-out;
-    animation-fill-mode: forwards;
-}
+// .swipperRight {
+//     -moz-animation: swipperRight 0.5s  ease-in-out;
+//     -webkit-animation: swipperRight 0.5s  ease-in-out;
+//     animation: swipperRight 0.5s  ease-in-out;
+//     -o-animation: swipperRight 0.5s  ease-in-out;
+//     animation-fill-mode: forwards;
+// }
 
-@keyframes swipperRight {
+@keyframes fade {
     0%{
-      transform: translateX(0px);
+      opacity: (1);
     }
 
     50% {
-      transform: translateX(+3000px) scale(0.5) rotate(15deg);
+      opacity: (0);
     }
 
     100% {
-      transform: translateX(0px);
+      opacity: (1);
     }
   }
 
-  .swipperLeft {
-    -moz-animation: swipperLeft 1s ease-in-out;
-    -webkit-animation: swipperLeft 1s ease-in-out;
-    animation: swipperLeft 1s ease-in-out;
-    -o-animation: swipperLeft 1s ease-in-out;
-    animation-fill-mode: forwards;
+//   .swipperLeft {
+//     -moz-animation: swipperLeft 0.5s ease-in-out;
+//     -webkit-animation: swipperLeft 0.5s ease-in-out;
+//     animation: swipperLeft 0.5s ease-in-out;
+//     -o-animation: swipperLeft 0.5s ease-in-out;
+//     animation-fill-mode: forwards;
+// }
+
+.fade{
+  -moz-animation: fade 0.5s ease-in-out;
+  -webkit-animation: fade 0.5s   ease-in-out;
+  animation: fade 0.5s  ease-in-out;
+  -o-animation: fade 0.5s  ease-in-out;
+  animation-fill-mode: forwards;
 }
 
 
-@keyframes swipperLeft {
-    0%{
-      transform: translateX(0px) ;
-    }
+// @keyframes swipperLeft {
+//     0%{
+//       transform: translateX(0px) ;
+//     }
 
-    50% {
-      transform: translateX(-3000px) scale(0.5) rotate(-15deg);
-    }
+//     50% {
+//       transform: translateX(-3000px) scale(0.5) rotate(-15deg);
+//     }
     
-    100% {
-      transform: translateX(0px);
-    } 
-}
+//     100% {
+//       transform: translateX(0px);
+//     } 
+// }
 
 @media screen and (max-width: 1024px){
 

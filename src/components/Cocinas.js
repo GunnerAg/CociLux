@@ -1,5 +1,4 @@
 import React, {useRef, useEffect, useReducer, useState} from 'react'
-import { Suspense } from 'react';
 import '../styles/Carousel.scss'
 import { laminado,melamina,canteado,polilaminado,lacado,madera } from './CocinaSlideData';
 
@@ -94,9 +93,6 @@ function Slide({ slide, offset }) {
         }}
       >
         <div className="slideContentInner">
-          <h2 className="slideTitle">{slide.title}</h2>
-          <h3 className="slideSubtitle">{slide.subtitle}</h3>
-          <p className="slideDescription">{slide.description}</p>
         </div>
       </div>
     </div>

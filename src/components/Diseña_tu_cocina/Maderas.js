@@ -10,7 +10,9 @@ export default function Maderas() {
     let SectionOne=()=>{
         return (
                 <section className="maderas__section-one">
-                    <div className="maderas__section-one--image-container"></div>
+                    <div className="maderas__section-one--image-container">
+                        <img className="maderas__section-one--image" src="https://res.cloudinary.com/sl-cocilux/image/upload/v1621531393/DISE%C3%91OS%20Y%20MATERIALES/7.%20MADERAS/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-MAD_1.png" alt="test"/>
+                    </div>
                     <div className="maderas__section-one--header" >
                         <div className="maderas__section-one--header-content">
                             <p className="maderas__section-one--header--A">Estilo</p>

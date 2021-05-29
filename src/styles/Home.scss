@@ -13,6 +13,9 @@
   background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1621522720/CANTEADO-06_pbow96.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  opacity: 0.5;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
   height: 100%;
   width: 100vw;
   background-position: center;

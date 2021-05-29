@@ -1,27 +1,27 @@
-html{
-    scroll-behavior: smooth;
-}
-
 .encimeras__section-one{
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
 }
 
 .encimeras__section-one--image-container{
-    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1621253243/DISE%C3%91OS%20Y%20MATERIALES/8.%20ENCIMERAS/ENCIMERA_aeuero.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
     width: 80vw;
-    height: 100vh;
+    height: fit-content;
+    max-height: 80vh;
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
+}
+
+.encimeras__section-one--image{
+    width: 80vw;
+    height: auto;
 }
 
 .encimeras__section-one--header{
     background: #F6F3EE;
     width: 20vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -105,6 +105,7 @@ html{
 // animation button //
 
 .encimeras__section-three--button {
+    z-index: 10;
     background: none;
     border: solid 5px #222222;
     border-radius: 100%;
@@ -277,7 +278,6 @@ html{
     align-items: center;
     justify-items: center;
     flex-wrap: wrap;
-    
 }
 
 .encimeras__formica-cuarzo--one-unit{
@@ -294,11 +294,15 @@ html{
     width: 25vw;
     height: 25vh;
     margin-top: 5vh;
+    border-radius: 20px;
+    -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
+    -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
 .encimeras__formica-cuarzo--one-text{
     margin-top: 2%;
-    font-size: 23px;
+    font-size: calc(16px + 0.5vw);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -1056,26 +1060,58 @@ html{
 
 /* MOBILE DISPLAYS */
 @media screen and (max-width: 1024px){
+
+    .clear{
+        color: #222222;
+        background: white;
+    }
     
+    .dark{
+        color: #222222;
+        background: white;
+    }
+
+    .encimeras__formica-cuarzo--one-unit>*{
+       border:solid black 1px;
+       border-radius: 20px;
+    }
+
+    .encimeras__formica-cuarzo--one-text{
+        border:none;
+        font-size: calc(16px + 0.5vw);
+        font-family: 'Open Sans', sans-serif;
+        color:#222222;
+        font-weight: 900;
+    }
+
+    .encimeras__formica-cuarzo--one{
+        transform: scale(0.8);
+    }
+
     /* SECTION ONE */
     .encimeras__section-one{
         width: 100vw;
-        height: 100vh;
+        height: fit-content;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        min-height: 40vh;
     }
 
     .encimeras__section-one--image-container{
-        background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1621253243/DISE%C3%91OS%20Y%20MATERIALES/8.%20ENCIMERAS/ENCIMERA_aeuero.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-y: bottom;
+        display: flex;
+        align-self: flex-end;
+        min-width: 100vw;
+        height: fit-content;
+        border-radius: 0;
+    }
+
+    .encimeras__section-one--image{
         width: 100vw;
-        height: 100vh;
+        height: auto;
     }
     
     .encimeras__section-one--header{
-        background: white;
+        background: #F6F3EE;
         width: 100vw;
         height: fit-content;
         display: flex;

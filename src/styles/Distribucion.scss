@@ -91,7 +91,7 @@
 .distribucion__section-three--image{
     width: 60vw;
     height: auto;
-    border-radius: 20px;
+    border-radius: 0 20px 20px 0;
     -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
     -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
     box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
@@ -135,6 +135,7 @@
     padding-right: 10%;
     padding-top: 10%;
     padding-bottom: 10%;
+    font-size: calc(16px + 0.5vw);
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -193,6 +194,7 @@
         height: auto;
         width: auto;
         transform: scale(1.5);
+        border-radius: 0;
     }
 
     .distribucion__section-three--description-header{

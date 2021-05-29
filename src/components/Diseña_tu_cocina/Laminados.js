@@ -31,7 +31,9 @@ export default function Laminados() {
     let SectionOne=()=>{
         return (
                 <section className="laminados__section-one" >
-                    <div className="laminados__section-one--image-container"></div>
+                    <div className="laminados__section-one--image-container">
+                        <img className="laminados__section-one--image" src="https://res.cloudinary.com/sl-cocilux/image/upload/v1620825490/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/COCINAS/Cocilux-%20Laminados-%20Cocinas%20Madrid-1_LAMINADA.jpg" alt="test"/>
+                    </div>
                     <div className="laminados__section-one--header" >
                         <div className="laminados__section-one--header-content">
                             <p className="laminados__section-one--header--A">Estilo</p>
@@ -80,24 +82,42 @@ export default function Laminados() {
                 <div className="laminados__colores-container">
                     <div className="laminados__colores-header">Colores Mate</div>
                     <div className="laminados__colores-mate--grid">
-                        <div className="laminados__colores-mate aluminio-arosa-soft"></div>
-                        <div>ALUMINIO AROSA SOFT</div>
-                        <div className="laminados__colores-mate verde-oliva-soft"></div>
-                        <div>VERDE OLIVA SOFT</div>
-                        <div className="laminados__colores-mate very-berry-soft"></div>
-                        <div>VERY BERRY SOFT</div>
-                        <div className="laminados__colores-mate negro-soft"></div>
-                        <div>NEGRO SOFT</div>
-                        <div className="laminados__colores-mate verde-arcilla-soft"></div>
-                        <div >VERDE ARCILLA SOFT</div>
-                        <div className="laminados__colores-mate rojo-pompeya-soft"></div>
-                        <div >ROJO POMPEYA SOFT</div>
-                        <div className="laminados__colores-mate gris-gu-soft"></div>
-                        <div >GRIS GU SOFT</div>
-                        <div className="laminados__colores-mate verde-salvia-soft"></div>
-                        <div>VERDE ARCILLA SOFT</div>
-                        <div className="laminados__colores-mate rosa-talco-soft"></div>
-                        <div >ROSA TALCO SOFT</div>
+                        <div className="laminados__colores-mate-container">
+                            <div className="laminados__colores-mate aluminio-arosa-soft"></div>
+                            <div>ALUMINIO AROSA SOFT</div>
+                        </div>
+                        <div className="laminados__colores-mate-container">
+                            <div className="laminados__colores-mate verde-oliva-soft"></div>
+                            <div>VERDE OLIVA SOFT</div>
+                        </div>
+                        <div className="laminados__colores-mate-container">
+                            <div className="laminados__colores-mate very-berry-soft"></div>
+                            <div>VERY BERRY SOFT</div>
+                        </div>
+                        <div className="laminados__colores-mate-container">
+                            <div className="laminados__colores-mate negro-soft"></div>
+                            <div>NEGRO SOFT</div>
+                        </div>
+                        <div className="laminados__colores-mate-container">
+                            <div className="laminados__colores-mate verde-arcilla-soft"></div>
+                            <div >VERDE ARCILLA SOFT</div>
+                        </div>
+                        <div className="laminados__colores-mate-container">
+                            <div className="laminados__colores-mate rojo-pompeya-soft"></div>
+                            <div >ROJO POMPEYA SOFT</div>
+                        </div>
+                        <div className="laminados__colores-mate-container">
+                            <div className="laminados__colores-mate gris-gu-soft"></div>
+                            <div >GRIS GU SOFT</div>
+                        </div>
+                        <div className="laminados__colores-mate-container">
+                            <div className="laminados__colores-mate verde-salvia-soft"></div>
+                            <div>VERDE ARCILLA SOFT</div>
+                        </div>
+                        <div className="laminados__colores-mate-container"> 
+                            <div className="laminados__colores-mate rosa-talco-soft"></div>
+                            <div >ROSA TALCO SOFT</div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,7 +201,7 @@ export default function Laminados() {
         return(
             <div className="laminados__colors-brillo--container-one">
                 <div className="laminados__colors-brillo-header"> Colores Brillo </div>
-                    <div className="laminados__colors-brillo--grid-one">
+                    <div className="laminados__colors-brillo--grid">
                         <div className="laminados__colors-brillo--one-unit">
                             <div className="laminados__colors-brillo--one blanco-brillo"></div>
                             <div className="laminados__colors-brillo--one-text">BLANCO BRILLO</div>
@@ -215,7 +235,7 @@ export default function Laminados() {
         return(
             <div className="laminados__colors-brillo--container-one">
                 <div className="laminados__colors-brillo-header"> Colores Brillo </div>
-                    <div className="laminados__colors-brillo--grid-one">
+                    <div className="laminados__colors-brillo--grid">
                         <div className="laminados__colors-brillo--one-unit">
                             <div className="laminados__colors-brillo--one storm-brillo"></div>
                             <div className="laminados__colors-brillo--one-text">STORM BRILLO</div>
@@ -249,7 +269,7 @@ export default function Laminados() {
         return(
             <div className="laminados__colors-brillo--container-one">
                 <div className="laminados__colors-brillo-header"> Colores Brillo </div>
-                    <div className="laminados__colors-brillo--grid-three">
+                    <div className="laminados__colors-brillo--grid">
                         <div className="laminados__colors-brillo--one-unit">
                             <div className="laminados__colors-brillo--one lemon-brillo"></div>
                             <div className="laminados__colors-brillo--one-text">LEMON BRILLO</div>
@@ -313,7 +333,7 @@ export default function Laminados() {
         {colorsToggle && <ColoresBrilloTwo/>}
         {colorsToggle && <ColoresBrilloThree/>}
         <Suspense fallback={<div ref={woods} style={woodStyle}><TransitionAnimation renderContent={renderContents}/></div>}>
-            {woodToggle && <div ref={woods} style={woodStyle}><WoodSection /></div>}
+            {woodToggle && <div ref={woods} style={woodStyle}><WoodSection/></div>}
         </Suspense>
      </div>
     

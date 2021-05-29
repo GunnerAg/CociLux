@@ -13,9 +13,10 @@ export default function Distribucion() {
         'Las formas en U resultan una distribución aún más confortable por su posición, el usuario dispone de bastante cercanía a los armarios, sin embargo, hay que contar con una anchura mínima de 2.40m para que no se transforme en un espacio estrecho y agobiante.',
         'Si disponemos de una cocina de grandes dimensiones podemos instalar una isla central, aunque debemos contar con un espacio mínimo alrededor de 90cm. Hay que tener en cuenta que para ello también hay que llevar a la parte central instalaciones de agua y luz.',
     ];
+    
     let urls=
     [
-        'https://res.cloudinary.com/sl-cocilux/image/upload/v1622135650/TIPOS%20DE%20DISTRIBUCI%C3%93N/POLILAMINADO_9_nyicvw.png',
+        'https://res.cloudinary.com/sl-cocilux/image/upload/v1621522720/CANTEADO-06_pbow96.jpg',
         'https://res.cloudinary.com/sl-cocilux/image/upload/v1622134684/TIPOS%20DE%20DISTRIBUCI%C3%93N/Cocilux-Trabajos_Realizados-Cocinas_Madrid-CAN_1_ayj6d1.jpg',
         'https://res.cloudinary.com/sl-cocilux/image/upload/v1622134683/TIPOS%20DE%20DISTRIBUCI%C3%93N/Cocilux-Trabajos_Realizados-Cocinas_Madrid-CAN_4_ujd7xe.jpg',
         'https://res.cloudinary.com/sl-cocilux/image/upload/v1622134683/TIPOS%20DE%20DISTRIBUCI%C3%93N/Cocilux-Trabajos_Realizados-Cocinas_Madrid-COCINA_U.jpg',

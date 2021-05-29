@@ -76,7 +76,7 @@
     width: 50vw;
     padding:5% 10% 5% 10%;
     font-family: 'Open Sans', sans-serif;
-    font-size: calc(16px + 1vw);
+    font-size: calc(16px + 0.5vw);
     background-color: #222222;
     color:#F6F3EE;
 }
@@ -130,7 +130,7 @@
         width: 100vw;
         height: fit-content;
         min-height: 70vh;
-        font-size: calc(26px + 1vw);
+        font-size: calc(16px + 0.5vw);
         height: fit-content;
         position: relative;
         padding-top: 10%;

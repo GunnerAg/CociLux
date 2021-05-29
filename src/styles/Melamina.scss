@@ -1,22 +1,27 @@
 .melamina__section-one{
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
 }
 
 .melamina__section-one--image-container{
-    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825706/DISE%C3%91OS%20Y%20MATERIALES/2.%20MELAMINA%20LACADA/COCINAS/Cocilux-Laminado_Lacado-Cocinas%20Madrid-1_MELAMINA.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
-    width: 74vw;
-    height: 100vh;
+    width: 80vw;
+    height: fit-content;
+    max-height: 80vh;
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
 }
+
+.melamina__section-one--image{
+    width: 80vw;
+    height: auto;
+}
+
 .melamina__section-one--header{
     background: #F6F3EE;
-    width: 26vw;
-    height: 100vh;
+    width: 20vw;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -206,6 +211,9 @@
     min-width: 100px;
     min-height: 100px;
     margin-right: 5px;
+    -webkit-box-shadow: 2px 2px 4px 6px rgba(0, 0, 0, 0.4);  
+    -moz-box-shadow:    2px 2px 4px 6px rgba(0, 0, 0, 0.4);
+    box-shadow:  7px 6px 10px 3px rgba(0, 0, 0, 0.4);
 }
 
 .melamina__colores--one-text{
@@ -394,9 +402,10 @@
     /* SECTION ONE */
     .melamina__section-one{
         width: 100vw;
-        height: 100vh;
+        height: fit-content;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        min-height: 40vh;
     }
 
     .melamina__colores--one-text{
@@ -407,20 +416,22 @@
     }
 
     .melamina__section-one--image-container{
-        background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620825706/DISE%C3%91OS%20Y%20MATERIALES/2.%20MELAMINA%20LACADA/COCINAS/Cocilux-Laminado_Lacado-Cocinas%20Madrid-1_MELAMINA.png");
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-y: bottom;
+        display: flex;
+        align-self: flex-end;
+        min-width: 100vw;
+        height: fit-content;
+        border-radius: 0;
+    }
+
+    .melamina__section-one--image{
         width: 100vw;
-        height: 100vh;
+        height: auto;
     }
     
     .melamina__section-one--header{
         background: #F6F3EE;
         width: 100vw;
         height: fit-content;
-        padding-top: 10%;
-        padding-bottom: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;

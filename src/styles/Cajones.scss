@@ -23,7 +23,7 @@
 }
 
 .cajones__header--text{
-    color: snow;
+    color: #F6F3EE;
     font-family: 'Abhaya Libre', serif;
     font-style: normal;
     font-size: calc(50px + 3.5vw);
@@ -33,8 +33,8 @@
 .cajones__separation-bar{
     width: calc(50px + 15vw);
     height: 1px;
-    border: solid white 2px;
-    background:white;
+    border: solid #F6F3EE 2px;
+    background:#F6F3EE;
     margin-right: calc(130px + 10vw);
 }
 
@@ -65,7 +65,7 @@
     font-size: calc(26px + 1.5vw);
     font-family: 'Abhaya Libre', serif;
     background-color: #222222;
-    color:whitesmoke;
+    color:#F6F3EE;
     text-align: center;
     letter-spacing: 6px;
 }
@@ -76,7 +76,7 @@
     padding:5% 10% 5% 10%;
     font-family: 'Open Sans', sans-serif;
     color:#222222;
-    font-size: calc(16px + 1vw);
+    font-size: calc(16px + 0.5vw);
 }
 
 .cajones__content--right-info-content--italic-bold{
@@ -136,7 +136,7 @@
         width: 100vw;
         height: fit-content;
         min-height: 70vh;
-        font-size: calc(26px + 1vw);
+        font-size: calc(16px + 0.5vw);
         height: fit-content;
         position: relative;
         color:#F6F3EE;

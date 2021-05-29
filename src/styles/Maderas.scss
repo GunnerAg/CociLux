@@ -1,22 +1,27 @@
 .maderas__section-one{
     width: 100vw;
-    height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
 }
 
 .maderas__section-one--image-container{
-    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1621531393/DISE%C3%91OS%20Y%20MATERIALES/7.%20MADERAS/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-MAD_1.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-y: bottom;
     width: 80vw;
-    height: 100vh;
+    height: fit-content;
+    max-height: 80vh;
+    border-radius: 0 20px 20px 0;
+    overflow: hidden;
 }
+
+.maderas__section-one--image{
+    width: 80vw;
+    height: auto;
+}
+
 .maderas__section-one--header{
     background: #F6F3EE;
     width: 20vw;
-    height: 100vh;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -194,30 +199,34 @@
 }
 
 // /* MOBILE DISPLAYS */
-@media screen and (max-width: 768px){
+@media screen and (max-width:  1024px){
     
     /* SECTION ONE */
     .maderas__section-one{
         width: 100vw;
-        height: 100vh;
+        height: fit-content;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        min-height: 40vh;
     }
 
     .maderas__section-one--image-container{
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position-y: bottom;
+        display: flex;
+        align-self: flex-end;
+        min-width: 100vw;
+        height: fit-content;
+        border-radius: 0;
+    }
+    
+    .maderas__section-one--image{
         width: 100vw;
-        height: 100vh;
+        height: auto;
     }
     
     .maderas__section-one--header{
-        background: white;
+        background: #F6F3EE;
         width: 100vw;
         height: fit-content;
-        padding-top: 10%;
-        padding-bottom: 5%;
         display: flex;
         flex-direction: column;
         justify-content: center;

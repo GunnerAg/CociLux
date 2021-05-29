@@ -11,7 +11,9 @@ export default function Canteados() {
     let SectionOne=()=>{
         return (
                 <section className="canteados__section-one">
-                    <div className="canteados__section-one--image-container"></div>
+                    <div className="canteados__section-one--image-container">
+                        <img className="canteados__section-one--image" src="https://res.cloudinary.com/sl-cocilux/image/upload/v1621527958/DISE%C3%91OS%20Y%20MATERIALES/3.%20CANTEADO/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-CAN_1.jpg" alt="test"/>
+                    </div>
                     <div className="canteados__section-one--header" >
                         <div className="canteados__section-one--header-content">
                             <p className="canteados__section-one--header--A">Estilo</p>

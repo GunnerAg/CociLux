@@ -11,7 +11,9 @@ export default function Lacados() {
     let SectionOne=()=>{
         return (
                 <section className="lacados__section-one">
-                    <div className="lacados__section-one--image-container"></div>
+                    <div className="lacados__section-one--image-container">
+                        <img className="lacados__section-one--image" src="https://res.cloudinary.com/gunnerag/image/upload/v1620727588/Andrea/LACADOS_esnhqj.png" alt="test"/>
+                    </div>
                     <div className="lacados__section-one--header" >
                         <div className="lacados__section-one--header-content">
                             <p className="lacados__section-one--header--A">Estilo</p>
