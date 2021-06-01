@@ -12,7 +12,7 @@ export default function Polilaminados() {
         return (
                 <section className="polilaminados__section-one">
                     <div className="polilaminados__section-one--image-container">
-                        <img className="polilaminados__section-one--image" src="https://res.cloudinary.com/sl-cocilux/image/upload/v1621528368/DISE%C3%91OS%20Y%20MATERIALES/4.%20POLILAMINADOS/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-MODEPOL_1.png" alt="test"/>
+                        <img className="polilaminados__section-one--image" src="https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1621528368/DISE%C3%91OS%20Y%20MATERIALES/4.%20POLILAMINADOS/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-MODEPOL_1.png" alt="background cocina estilo polilaminado"/>
                     </div>
                     <div className="polilaminados__section-one--header" >
                         <div className="polilaminados__section-one--header-content">

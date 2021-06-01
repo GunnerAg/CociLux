@@ -60,13 +60,13 @@
 }
 
 .polilaminados__section-two--header{
-    font-size: calc(26px + 0.5vw);
+    font-size: calc(26px + 0.6vw);
     font-family: 'Abhaya Libre', serif;
     color: #222222;
 }
 
 .polilaminados__section-two--caracteristicas{
-    font-size: calc(16px + 0.5vw);
+    font-size: calc(16px + 0.3vw);
     font-family: 'Open Sans', sans-serif;
     color: #222222;
 }
@@ -87,7 +87,7 @@
 }
 
 .polilaminados__section-three--image-container{
-    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1621528368/DISE%C3%91OS%20Y%20MATERIALES/4.%20POLILAMINADOS/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-MODEPOL_1.png");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1621528368/DISE%C3%91OS%20Y%20MATERIALES/4.%20POLILAMINADOS/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-MODEPOL_1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -142,6 +142,7 @@
     align-items: center;
     justify-items: center;
     flex-wrap: wrap;
+   
  }
 
 .polilaminados--grid-unit-container{
@@ -231,6 +232,7 @@
         flex-direction: column;
         justify-content: center;
         position: absolute;
+        padding-top: 2%;
     }
     
     .polilaminados__section-one--header-content{
@@ -243,6 +245,11 @@
     
     .polilaminados__section-one--header--B{
         font-size: 36px;
+    }
+
+    .polilaminados--grid{
+        margin-left: 3%;
+        margin-right: 3%;
     }
 
 }

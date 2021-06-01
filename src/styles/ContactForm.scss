@@ -3,7 +3,7 @@
     justify-content: flex-start;
     flex-direction: column;
     width: 90%;
-    height: 90%;
+    height: fit-content;
     margin:5%;
     font-size: calc(10px + 0.7vw);
 }
@@ -15,8 +15,9 @@
 }
 .contact__form-text--area{
     border: none;
-    background-color: rgba(128, 128, 128, 0.3);
-    height: 20vh;
+    background-color: rgba(128, 128, 128, 0.2);
+    min-height: 10vh;
+    height: fit-content;
     margin-bottom: 2%;
 }
 .contact__form-button--enable{
@@ -27,7 +28,7 @@
     border-radius: 5px;
     display: block;
     margin:auto;
-    height: 5vh;
+    height: fit-content;
     width: 20%;
 }
 

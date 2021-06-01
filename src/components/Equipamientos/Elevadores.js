@@ -3,7 +3,7 @@ import '../../styles/Elevadores.scss';
 
 export default function Elevadores() {
     return (
-        <div>
+        <div style={{maxWidth:'100vw',overflow:'hidden'}}>
             <section className="elevadores__header">
 
                 <div className="elevadores__header--image"></div>
@@ -21,7 +21,6 @@ export default function Elevadores() {
                     <div className="elevadores__content--right-info-container">
                         <div className="elevadores__content--right-info-header">Apertura sencilla y cierre agradable</div>
                         <div className="elevadores__content--right-info-content--mobile">
-                            <div className="elevadores__content--right-info-content--background-mobile"></div>
                             <div className="elevadores__content--right-info-content">
                             El sistema de compases abatibles o trampones ofrecen una gran comodidad de movimientos en armarios elevados, incluso armarios grandes y pesados. 
                             <br/><br/>

@@ -60,13 +60,13 @@
 }
 
 .lacados__section-two--header{
-    font-size: calc(26px + 0.5vw);
+    font-size: calc(26px + 0.6vw);
     font-family: 'Abhaya Libre', serif;
     color: #222222;
 }
 
 .lacados__section-two--caracteristicas{
-    font-size: calc(16px + 0.5vw);
+    font-size: calc(16px + 0.3vw);
     font-family: 'Open Sans', sans-serif;
     color: #222222;
 }
@@ -87,7 +87,7 @@
 }
 
 .lacados__section-three--image-container{
-    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620727588/Andrea/LACADOS_esnhqj.png");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1621528924/DISE%C3%91OS%20Y%20MATERIALES/5.%20LACADOS/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-LAC_1.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position-y: center;
@@ -232,6 +232,7 @@
         flex-direction: column;
         justify-content: center;
         position: absolute;
+        padding-top: 2%;
     }
     
     .lacados__section-one--header-content{
@@ -268,4 +269,8 @@
         border-radius: 20px;
     }
 
+    .lacados--grid{
+        margin-left: 3%;
+        margin-right: 3%;
+    }
 }

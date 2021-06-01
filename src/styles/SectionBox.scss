@@ -3,6 +3,7 @@
     flex-direction: column;
     margin-bottom: 10vh;
     margin-top: 10vh;
+    height: fit-content;
 }
 
 .containerInner{
@@ -31,7 +32,8 @@
     border: solid  #F6F3EE 2px;
     border-bottom-right-radius: 10px;
     border-top-right-radius: 10px;
-    transition: all ease-in-out 0.5s
+    transition: all ease-in-out 0.5s;
+
 }
 
 .underLineBoxIn{
@@ -61,7 +63,6 @@
     opacity: 0;
     transform: translateY(calc(-100px - 12vw));
     transition: all ease-in-out 0.5s;
-    
 }
 
 .descriptionIn{
@@ -72,6 +73,7 @@
     margin-top: 2vw;
     opacity: 1;
     transition: all ease-in-out 0.5s;
+    font-family: 'Open Sans', sans-serif;
     color: #E4E1DC;
     display: flex;
     align-items: center;
@@ -83,27 +85,49 @@
 
 @media screen and (max-width: 1024px){
 
+    .mainBoxContainer{
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        margin-top: 10vh;
+        margin-bottom: 0;
+    }
+
+    .descriptionOut{
+        display: none;
+        height: 0;
+    }
+    
+    .descriptionIn{
+        display: none;
+        height: 0;
+    }
+
     .containerInner{
-        height: 20vw;
-        width: 20vw;
-        min-width: 150px;
-        min-height: 150px;
-        background-color: #222222;
-        margin: 10px
+        width: 250px;
+        height: 250px;
+        display: flex;
+        align-items: center;
+        margin-top: 0;
+        padding-top: 0;
+        margin-right: 5vw;
+        margin-left: 5vw;
     }
 
     .contentInner{
-        margin-top: 30%;
-        font-size: 12px;
+        margin-top: 0%;
+        font-size: calc(15px + 0.8vw);
+        font-family: 'Abhaya Libre', serif;
         color:#E4E1DC;
         padding-left: 5%;
         padding-right: 5%;
     }
 
-    .mainBoxContainer{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 0vh;
-        margin-top: 0vh;
+    .underLineBoxOut{
+        margin-left: -5vw;
+    }
+
+    .underLineBoxIn{
+        margin-left: -5vw;
     }
 }

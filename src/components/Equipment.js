@@ -1,24 +1,9 @@
 import React from 'react';
-import {useHistory} from 'react-router-dom'
 import '../styles/Equipment.scss';
 import MainMenu from '../components/Diseña_tu_cocina/MainMenu';
 
 
 export default function Equipment() {
-
-    let history = useHistory();
-    let isTouchScreen = (('ontouchstart' in window) ||(navigator.MaxTouchPoints > 0) ||(navigator.msMaxTouchPoints > 0))
-
-    let handleClick=(redirection)=>{
-        console.log(isTouchScreen)
-        isTouchScreen? 
-        (
-            setTimeout(() => {
-                history.push(`/${redirection}`)
-            }, 500)
-        ):
-        (history.push(`/${redirection}`))
-    }
 
     let data =[
         'BISAGRA',

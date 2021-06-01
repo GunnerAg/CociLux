@@ -41,7 +41,7 @@ function useTilt(active) {
     return () => {
       el.removeEventListener("mousemove", handleMouseMove);
     };
-  }, [active,slides]);
+  }, [active]);
 
   return ref;
 }
@@ -86,14 +86,14 @@ function Slide({ slide, offset }) {
       > <img className="slideBackground" src={slide.image} alt={`Cocina estilo ${slide.title}, ${slide.description}`} rel="preload" as="image"/></div>
 
       <div
+        rel="preload"
+        as="image"
         className="slideContent"
         style={{
           backgroundImage: `url('${slide.image}')`,
           backgroundPosition: 'bottom',
         }}
       >
-        <div className="slideContentInner">
-        </div>
       </div>
     </div>
   );
@@ -104,6 +104,7 @@ function Cocinas(props) {
   let [displayed, setSlides] = useState(displaySlides)
   const [state, dispatch] = useReducer(slidesReducer, initialState);
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/exhaustive-deps
     setSlides(displayed=displaySlides)
    state.slideIndex=0
   }, [displaySlides])
@@ -114,7 +115,7 @@ function Cocinas(props) {
   if(displayed==="LACADO"){slides=lacado}
   if(displayed==="MADERA"){slides=madera}
 
-  if (window.location.pathname==='/catalogo'){
+  if (window.location.pathname==='/galeria'){
     window.onkeydown=(event)=>{
       if(event.keyCode === 39){return dispatch({ type: "PREV" })}
       else if(event.keyCode === 37){return dispatch({ type: "NEXT" })}

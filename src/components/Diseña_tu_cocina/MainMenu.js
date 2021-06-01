@@ -10,10 +10,10 @@ export default function MainMenu(props) {
         return (
             <div className="main__menu--container">
                 {data.map((data,i)=>{return(
-                    <Link to={links[i]} className="main__menu--link">
+                <Link to={links[i]}  key={`MainMenuLinkClear${i}`}  className="main__menu--link">
                     <button name={data} className="main__menu--button-clear main__menu-spin-clear main__menu-circle-clear" style={{outline:"none"}} onClick={handleClick}>
-                    {data} 
-                </button>
+                        {data.includes(' ')? (data.split(' ').map((elem)=>{return(<div>{elem}<br/></div>)})):(data)} 
+                    </button>
                 </Link>
                 )})}            
         </div>
@@ -22,9 +22,9 @@ export default function MainMenu(props) {
         return (
             <div className="main__menu--container">
                 {data.map((data,i)=>{return(
-                    <Link to={links[i]} className="main__menu--link">
+                    <Link to={links[i]} key={`MainMenuLinkDark${i}`} className="main__menu--link">
                     <button style={{outline:"none"}} className="main__menu--button main__menu-spin main__menu-circle">
-                        {data} 
+                        {data.includes(' ')? (data.split(' ').map((elem)=>{return(<div>{elem}<br/></div>)})):(data)} 
                     </button>
                 </Link>
                 )})}
@@ -32,9 +32,9 @@ export default function MainMenu(props) {
     )}
     else return (
         <div className="main__menu--container-linkless">
-            {data.map((data)=>{return(
-                <button name={data} className="main__menu--button main__menu-spin main__menu-circle" style={{outline:"none"}} onClick={handleClick}>
-                {data} 
+            {data.map((data,i)=>{return(
+                <button key={`MainMenuButton${i}`} name={data} className="main__menu--button main__menu-spin main__menu-circle" style={{outline:"none"}} onClick={handleClick}>
+                {data.includes(' ')? (data.split(' ').map((elem)=>{return(<div>{elem}<br/></div>)})):(data)} 
             </button>
             )})}            
     </div>

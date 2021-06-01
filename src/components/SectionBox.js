@@ -7,18 +7,16 @@ export default function SectionBox(props) {
 
     const[hoverOn,setHover]=useState(false)
 
-    let handleClick=(event)=>{
+    let handleClick=()=>{
         setHover(true)
         handleClicked(redirection)
     }
 
     let handleHoverOn=()=>{
-        console.log('inside')
         setHover(true)
     }
 
     let handleHoverOff =()=>{
-        console.log('outside')
         setHover(false)
     }
 

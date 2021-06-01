@@ -7,7 +7,7 @@
 
 .cajones__header--image{
     position: absolute;
-    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620827987/EQUIPAMIENTOS/2.%20CAJONES/IMG_CAJONES_lngmcn.png");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620827987/EQUIPAMIENTOS/2.%20CAJONES/IMG_CAJONES_lngmcn.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -18,8 +18,11 @@
 .cajones__header--content-container{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-top: 40vh;
+    justify-items: center;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 .cajones__header--text{
@@ -28,6 +31,7 @@
     font-style: normal;
     font-size: calc(50px + 3.5vw);
     position: relative;
+    
 }
 
 .cajones__separation-bar{
@@ -40,6 +44,7 @@
 
 .cajones__content{
     width: 100vw;
+    min-height: 100vh;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -47,30 +52,32 @@
 
 .cajones__content--right-info{
     width: 50vw;
+    min-height: 100vh;
     height: fit-content;
 }
 
 .cajones__content--right-info-container{
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 
 .cajones__content--right-info-header{
     display: flex;
+    min-height: 50vh;
     height: fit-content;
     width: 50vw;
     justify-content: center;
     align-items: center;
     padding:10%;
-    font-size: calc(26px + 1.5vw);
+    font-size: calc(36px + 2vw);
     font-family: 'Abhaya Libre', serif;
     background-color: #222222;
     color:#F6F3EE;
-    text-align: center;
-    letter-spacing: 6px;
 }
 
 .cajones__content--right-info-content{
+    min-height: 50vh;
     height: fit-content;
     width: 50vw;
     padding:5% 10% 5% 10%;
@@ -88,7 +95,7 @@
 .cajones__content--left-image{
     width: 50vw;
     height: auto;
-    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620903385/EQUIPAMIENTOS/2.%20CAJONES/Cocilux-Equipamientos-Cajones-ARCITECH-1.jpg");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620903385/EQUIPAMIENTOS/2.%20CAJONES/Cocilux-Equipamientos-Cajones-ARCITECH-1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -102,6 +109,7 @@
 
     .cajones__header--text{
         color: #222222;
+        font-size: calc(36px + 3.5vw);
     }
     
     .cajones__separation-bar{
@@ -111,14 +119,23 @@
 
     .cajones__header--image{
         height: 50vh;
-        background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620903385/EQUIPAMIENTOS/2.%20CAJONES/Cocilux-Equipamientos-Cajones-ARCITECH-1.jpg");
+        width: 100vw;
+        position: absolute;
+        background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620903385/EQUIPAMIENTOS/2.%20CAJONES/Cocilux-Equipamientos-Cajones-ARCITECH-1.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
     }
 
     .cajones__header--content-container{
-        padding-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        justify-items: flex-start;
+        min-height: 50vh;
+        height: fit-content;
+        padding-top: 10%;
     }
 
     .cajones__content{

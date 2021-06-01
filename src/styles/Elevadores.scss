@@ -7,7 +7,7 @@
 
 .elevadores__header--image{
     position: absolute;
-    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620910206/Andrea/IMG_ELEVADORES_mjofcz.png");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620828111/EQUIPAMIENTOS/6.%20ELEVADORES/IMG_ELEVADORES_yuhxvy.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -20,7 +20,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40vh;
+    justify-items: center;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 .elevadores__header--text{
@@ -41,6 +43,7 @@
 
 .elevadores__content{
     width: 100vw;
+    min-height: 100vh;
     height: fit-content;
     display: flex;
     flex-direction: row;
@@ -48,30 +51,32 @@
 
 .elevadores__content--right-info{
     width: 50vw;
+    min-height: 100vh;
     height: fit-content;
 }
 
 .elevadores__content--right-info-container{
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 
 .elevadores__content--right-info-header{
     display: flex;
+    min-height: 50vh;
     height: fit-content;
     width: 50vw;
     justify-content: center;
     align-items: center;
     padding:10%;
-    font-size: calc(26px + 1.5vw);
+    font-size: calc(36px + 2vw);
     font-family: 'Abhaya Libre', serif;
-    color: #222222;
-    text-align: center;
-    letter-spacing: 6px;
-    background-color: #F6F3EE;
+    color:#222222;
+    background-color: #E4E1DC;
 }
 
 .elevadores__content--right-info-content{
+    min-height: 50vh;
     height: fit-content;
     width: 50vw;
     padding:5% 10% 5% 10%;
@@ -90,7 +95,7 @@
 .elevadores__content--left-image{
     width: 50vw;
     height: auto;
-    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620910207/Andrea/Blum_KLA0621_AA_FOT_FO_BAU_-SALL_-AL_-V1_Enlarged_dpuri1.jpg");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620828112/EQUIPAMIENTOS/6.%20ELEVADORES/Cocilux-Equipamientos-Elevadores-Cocinas%20Madrid-MODELO_ELEV_1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: left;
@@ -103,16 +108,29 @@
 
     }
 
+    .elevadores__header--text{
+        font-size: calc(36px + 3.5vw);
+    }
+
     .elevadores__header--image{
         height: 50vh;
-        background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620910207/Andrea/Blum_KLA0621_AA_FOT_FO_BAU_-SALL_-AL_-V1_Enlarged_dpuri1.jpg");
+        width: 100vw;
+        position: absolute;
+        background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620828112/EQUIPAMIENTOS/6.%20ELEVADORES/Cocilux-Equipamientos-Elevadores-Cocinas%20Madrid-MODELO_ELEV_1.jpg");
         background-size: cover;
         background-position: left;
         background-repeat: no-repeat;
     }
 
     .elevadores__header--content-container{
-        padding-top: 10vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        justify-items: flex-start;
+        min-height: 50vh;
+        height: fit-content;
+        padding-top: 10%;
     }
 
     .elevadores__content{
@@ -138,19 +156,6 @@
 
     .elevadores__content--right-info-content--mobile{
         position: relative;
-    }
-
-    .elevadores__content--right-info-content--background-mobile{
-        width: 100vw;
-        height: 100%;
-        position: absolute;
-        background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620900945/Andrea/2_IMG_elevadores_q8hoj3.png");
-        background-repeat: no-repeat;
-        background-size: cover;
-        filter: blur(3px);
-        -webkit-filter: blur(3px);
-        opacity: 0.6;
-        background-position: center;
     }
 
     .elevadores__content--right-info-header{

@@ -7,7 +7,7 @@
 
 .bisagras__header--image{
     position: absolute;
-    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620828007/EQUIPAMIENTOS/1.%20BISAGRAS/1_IMG_m8lyfe.png");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620828007/EQUIPAMIENTOS/1.%20BISAGRAS/1_IMG_m8lyfe.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -20,7 +20,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40vh;
+    justify-items: center;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 .bisagras__header--text{
@@ -41,24 +43,28 @@
 
 .bisagras__content{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
 }
 
 .bisagras__content--left-info{
     width: 60vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 .bisagras__content--left-info-container{
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 
 .bisagras__content--left-info-header{
     display: flex;
-    height: 50vh;
+    min-height: 50vh;
+    height: fit-content;
     width: 60vw;
     justify-content: center;
     align-items: center;
@@ -70,7 +76,8 @@
 }
 
 .bisagras__content--left-info-content{
-    height: 50vh;
+    min-height: 50vh;
+    height: fit-content;
     width: 60vw;
     padding:5% 10% 5% 10%;
     font-family: 'Open Sans', sans-serif;
@@ -84,9 +91,9 @@
 }
 
 .bisagras__content--right-image{
-    width: 40vw;
-    height: 100vh;
-    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620828006/EQUIPAMIENTOS/1.%20BISAGRAS/Cocilux-Equipamientos-Bisagras-Cocinas%20Madrid-MODELO_BISAGRAS.jpg");
+    width: 50vw;
+    height: auto;
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620828006/EQUIPAMIENTOS/1.%20BISAGRAS/Cocilux-Equipamientos-Bisagras-Cocinas%20Madrid-MODELO_BISAGRAS.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -101,6 +108,7 @@
 
     .bisagras__header--text{
         color: #222222;
+        font-size: calc(36px + 3.5vw);
     }
     
     .bisagras__separation-bar{
@@ -108,16 +116,26 @@
         background:#222222;
     }
 
+   
     .bisagras__header--image{
-        height: 50vh;
-        background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620828006/EQUIPAMIENTOS/1.%20BISAGRAS/Cocilux-Equipamientos-Bisagras-Cocinas%20Madrid-MODELO_BISAGRAS.jpg");
-        background-position: center;
+        position: absolute;
+        background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620828006/EQUIPAMIENTOS/1.%20BISAGRAS/Cocilux-Equipamientos-Bisagras-Cocinas%20Madrid-MODELO_BISAGRAS.jpg");
         background-repeat: no-repeat;
         background-size: cover;
-    }
+        height: 50vh;
+        width: 100vw;
+        background-position: center;
+    } 
 
     .bisagras__header--content-container{
-        padding-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        justify-items: flex-start;
+        min-height: 50vh;
+        height: fit-content;
+        padding-top: 10%;
     }
 
     .bisagras__content{

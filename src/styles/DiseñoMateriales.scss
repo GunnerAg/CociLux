@@ -1,11 +1,10 @@
+
 .design-and-materials__header{
-    display: flex;
     position: fixed;
     flex-direction: column;
-    justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1617627371/Andrea/1._IMG_rz1pbv.png");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1622450719/1._IMG_1_zssl9g.png");
     background-size:cover;
     background-repeat: no-repeat;
     filter: blur(3px);
@@ -13,23 +12,24 @@
 }
 
 .design-and-materials__content-container{
+    display:flex;
     width:100vw;
     height: fit-content;
+    min-height: 100vh;
+    padding-bottom: 10%;
+    align-items: center;
+    justify-content: center;
  }
 
 /* MAIN MENU COMPONENT */
 .design-and-materials__main-menu{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
 }
 
 .design-and-materials__main-menu__header{
     display: flex;
     justify-content: center;
-    align-content: center;
-    padding-top: 15%;
     padding-bottom: 5%;
     color:#F6F3EE;
     font-size: calc(2vw + 25px);

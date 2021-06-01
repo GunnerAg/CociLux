@@ -10,10 +10,11 @@ export default function Encimeras() {
     let [cuarzoToggle,setCuarzoToggled]=useState(false);
     const formica = useRef();
     const cuarzo = useRef();
-    const executeScroll=()=>formicaToggle===true && formica.current.scrollIntoView()||cuarzoToggle===true && cuarzo.current.scrollIntoView()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    const executeScroll=()=>formicaToggle===true? formica.current.scrollIntoView(): cuarzoToggle===true? cuarzo.current.scrollIntoView():null
     useEffect(() => {
         executeScroll()
-    }, [formicaToggle,cuarzoToggle])
+    }, [formicaToggle,cuarzoToggle,executeScroll])
     // let isTouchScreen = (('ontouchstart' in window) ||(navigator.MaxTouchPoints > 0) ||(navigator.msMaxTouchPoints > 0));
 
     const displayContent=(e)=>{
@@ -26,7 +27,7 @@ export default function Encimeras() {
         return (
                 <section className="encimeras__section-one" >
                      <div className="encimeras__section-one--image-container">
-                        <img className="encimeras__section-one--image" src="https://res.cloudinary.com/sl-cocilux/image/upload/v1622197364/DISE%C3%91OS%20Y%20MATERIALES/8.%20ENCIMERAS/ENCIMERA_aeuero.png" alt="test"/>
+                        <img className="encimeras__section-one--image" src="https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620825491/DISE%C3%91OS%20Y%20MATERIALES/1.%20LAMINADOS/COCINAS/Cocilux-Laminados-Cocinas%20Madrid-3_LAMINADA.jpg" alt="background encimeras"/>
                     </div>
                     <div className="encimeras__section-one--header" >
                         <div className="encimeras__section-one--header-content">
@@ -41,7 +42,7 @@ export default function Encimeras() {
         return (
             <section className="encimeras__section-two" >
                 <div >
-                    <div className="encimeras__section-two--header">ENCIMERAS</div>
+                    <div className="encimeras__section-two--header">Encimeras</div>
                     <div className="encimeras__section-two--separation-bar"></div>
                     <br/><br/>
                     <div className="encimeras__section-two--caracteristicas">Las encimeras de cocina son, por así decirlo, la esencia de esta, ya que es el material que más espacio abarca y es una pieza clave e indispensable en la misma.

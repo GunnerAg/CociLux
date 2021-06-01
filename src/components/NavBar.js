@@ -20,10 +20,10 @@ export default function NavBar(props) {
                         </div>
                         <div className="navBar__burgermenu">
                             <Link to='/' className="navBar__link">Inicio</Link>
-                            <Link to='/catalogo' className="navBar__link">Catalogo</Link>
-                            <Link to='/diseña_tu_cocina' className="navBar__link">Diseña tu cocina</Link>
+                            <Link to='/productos' className="navBar__link" >Diseña tu cocina</Link>
+                            <Link to='/galeria' className="navBar__link">Galería</Link>
                             <Link to='/contacto' className="navBar__link">Contacto</Link>  
-                            <Logo/>
+                            <div className="navBar__logo"><Logo white={true} /></div>
                         </div>
                     </div>
                     :               

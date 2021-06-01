@@ -7,7 +7,7 @@
 
 .colgadores__header--image{
     position: absolute;
-    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620828040/EQUIPAMIENTOS/3.%20COLGADORES/IMG_COLGADORES_llmnzb.png");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620828040/EQUIPAMIENTOS/3.%20COLGADORES/IMG_COLGADORES_llmnzb.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -20,7 +20,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40vh;
+    justify-items: center;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 .colgadores__header--text{
@@ -41,40 +43,43 @@
 
 .colgadores__content{
     width: 100vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
 }
 
 .colgadores__content--right-info{
     width: 70vw;
-    height: 100vh;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 .colgadores__content--right-info-container{
     display: flex;
     flex-direction: column;
+    height: fit-content;
 }
 
 .colgadores__content--right-info-header{
     display: flex;
-    height: 40vh;
+    min-height: 40vh;
+    height: fit-content;
     width: 70vw;
     justify-content: center;
     align-items: center;
     padding:10%;
-    font-size: calc(26px + 1.5vw);
+    font-size: calc(36px + 2vw);
     font-family: 'Abhaya Libre', serif;
     background-color: #222222;
     color:#F6F3EE;
-    text-align: center;
-    letter-spacing: 6px;
 }
 
 .colgadores__content--right-info-content{
-    height: 60vh;
+    min-height: 60vh;
+    height: fit-content;
     width: 70vw;
-    padding: 10% 10% 5% 10%;
+    padding:5% 10% 5% 10%;
     font-family: 'Open Sans', sans-serif;
     color:#222222;
     font-size: calc(16px + 0.5vw);
@@ -90,7 +95,7 @@
 .colgadores__content--left-image{
     width: 30vw;
     height: auto;
-    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620828040/EQUIPAMIENTOS/3.%20COLGADORES/Cocilux-Equipamientos-Colgadores-Cocinas%20Madrid-MODELO_1.png");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620828040/EQUIPAMIENTOS/3.%20COLGADORES/Cocilux-Equipamientos-Colgadores-Cocinas%20Madrid-MODELO_1.png");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -111,7 +116,9 @@
 
     .colgadores__header--image{
         height: 50vh;
-        background: url("https://res.cloudinary.com/sl-cocilux/image/upload/v1620828040/EQUIPAMIENTOS/3.%20COLGADORES/Cocilux-Equipamientos-Colgadores-Cocinas%20Madrid-MODELO_1.png");
+        width: 100vw;
+        position: absolute;
+        background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620828040/EQUIPAMIENTOS/3.%20COLGADORES/Cocilux-Equipamientos-Colgadores-Cocinas%20Madrid-MODELO_1.png");
         background-size: cover;
         background-position: right;
         background-repeat: no-repeat;
@@ -119,6 +126,7 @@
 
     .colgadores__header--text{
         color: #222222;
+        font-size: calc(36px + 3.5vw);
     }
 
     .colgadores__separation-bar{
@@ -127,7 +135,14 @@
     }
 
     .colgadores__header--content-container{
-        padding-top: 5vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        justify-items: flex-start;
+        min-height: 50vh;
+        height: fit-content;
+        padding-top: 10%;
     }
 
     .colgadores__content{

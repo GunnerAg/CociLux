@@ -6,7 +6,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    
 }
 
 .trabajos__realizados--unit{
@@ -40,14 +39,6 @@
     transition:'ease-in-out 1s all';
 }
 
-// .swipperRight {
-//     -moz-animation: swipperRight 0.5s  ease-in-out;
-//     -webkit-animation: swipperRight 0.5s  ease-in-out;
-//     animation: swipperRight 0.5s  ease-in-out;
-//     -o-animation: swipperRight 0.5s  ease-in-out;
-//     animation-fill-mode: forwards;
-// }
-
 @keyframes fade {
     0%{
       opacity: (1);
@@ -62,14 +53,6 @@
     }
   }
 
-//   .swipperLeft {
-//     -moz-animation: swipperLeft 0.5s ease-in-out;
-//     -webkit-animation: swipperLeft 0.5s ease-in-out;
-//     animation: swipperLeft 0.5s ease-in-out;
-//     -o-animation: swipperLeft 0.5s ease-in-out;
-//     animation-fill-mode: forwards;
-// }
-
 .fade{
   -moz-animation: fade 0.5s ease-in-out;
   -webkit-animation: fade 0.5s   ease-in-out;
@@ -77,21 +60,6 @@
   -o-animation: fade 0.5s  ease-in-out;
   animation-fill-mode: forwards;
 }
-
-
-// @keyframes swipperLeft {
-//     0%{
-//       transform: translateX(0px) ;
-//     }
-
-//     50% {
-//       transform: translateX(-3000px) scale(0.5) rotate(-15deg);
-//     }
-    
-//     100% {
-//       transform: translateX(0px);
-//     } 
-// }
 
 @media screen and (max-width: 1024px){
 

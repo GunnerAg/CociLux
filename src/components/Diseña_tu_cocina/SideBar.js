@@ -12,7 +12,7 @@ export default function SideBar(){
             </Link>
             <Link to="/melamina_lacada" style={{textDecoration:"none"}} className="design-and-materials__section-link">
                 <button style={{background: 'none', color: 'none', border: 'none', outline: 'none'}}  className="design-and-materials__button" >
-                    <p className="design-and-materials__content">MELAMINA</p>
+                    <p className="design-and-materials__content">LAMINADO LACADO</p>
                 </button>
             </Link>
             <Link to="/canteado" style={{textDecoration:"none"}} className="design-and-materials__section-link">

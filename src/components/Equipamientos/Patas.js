@@ -3,7 +3,7 @@ import '../../styles/Patas.scss';
 
 export default function Patas() {
     return (
-        <div>
+        <div style={{maxWidth:'100vw',overflow:'hidden'}}>
             <section className="patas__header">
 
                 <div className="patas__header--image"></div>

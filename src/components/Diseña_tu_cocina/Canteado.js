@@ -12,7 +12,7 @@ export default function Canteados() {
         return (
                 <section className="canteados__section-one">
                     <div className="canteados__section-one--image-container">
-                        <img className="canteados__section-one--image" src="https://res.cloudinary.com/sl-cocilux/image/upload/v1621527958/DISE%C3%91OS%20Y%20MATERIALES/3.%20CANTEADO/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-CAN_1.jpg" alt="test"/>
+                        <img className="canteados__section-one--image" src="https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1621527958/DISE%C3%91OS%20Y%20MATERIALES/3.%20CANTEADO/COCINAS/Cocilux-Trabajos_Realizados-Cocinas_Madrid-CAN_1.jpg" alt="background cocina estilo canteado"/>
                     </div>
                     <div className="canteados__section-one--header" >
                         <div className="canteados__section-one--header-content">
@@ -33,7 +33,7 @@ export default function Canteados() {
                     <br/><br/>
                     <div className="canteados__section-two--caracteristicas">El canteado láser consiste en un proceso en el que se aplica sobre los tableros un haz de láser que calienta la cinta de cantear por el lado donde existen agentes absorbentes. Esto provoca que la cinta se una con el tablero quedando ambas partes soldadas, ofreciendo un aspecto muy estético y altamente funcional. Con este proceso evitamos la utilización de colas las cuales pueden ensuciar el trabajo de montaje o pueden dar problemas de unión al cabo del tiempo.
                     <br/> El canteado láser ofrece un mejor sellado entre el canto y el tablero, esto ofrece una disminución de filtraciones de agua hacia el interior e incrementa la vida útil de la cocina.
-                    <br/><br/>Estéticamente, el diseño de estos diseños son espectaculares y elegantes, ya que a simple vista, no se aprecia separación entre el
+                    <br/><br/>Estéticamente, el diseño de estos son espectaculares y elegantes, ya que a simple vista, no se aprecia separación entre el
                     tablero y la cinta, es decir, la junta es invisible, proporcionando un
                     acabado excepcional del arco.
                     </div>

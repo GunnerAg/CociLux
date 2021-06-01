@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React from 'react';
 import {useHistory} from 'react-router-dom'
 import '../styles/Products.scss';
 import SectionBox from './SectionBox';
@@ -9,7 +9,6 @@ export default function Products() {
     let isTouchScreen = (('ontouchstart' in window) ||(navigator.MaxTouchPoints > 0) ||(navigator.msMaxTouchPoints > 0))
 
     let handleClick=(redirection)=>{
-        console.log(isTouchScreen)
         isTouchScreen? 
         (
             setTimeout(() => {
@@ -18,8 +17,6 @@ export default function Products() {
         ):
         (history.push(`/${redirection}`))
     }
-
-    let [style,setBackground]=useState({})
 
     let contents =[
         'DISEÑOS Y MATERIALES',

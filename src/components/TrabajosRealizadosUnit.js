@@ -39,7 +39,7 @@ export default function TrabajosRealizadosUnit(props) {
         <div className="trabajos__realizados--unit-container">
                 <div className="trabajos__realizados--unit">
                 {   data.map((d, i)=>{
-                        return (<div className={index===i? `trabajos__realizados--index active`:`trabajos__realizados--index`}>
+                        return (<div key={`TrabajosRealizados${i}`} className={index===i? `trabajos__realizados--index active`:`trabajos__realizados--index`}>
                         </div>)
                 })}
                 </div>

@@ -7,7 +7,7 @@
 
 .patas__header--image{
     position: absolute;
-    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620907201/Andrea/IMG_PATAS_nwrwpm.png");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620828090/EQUIPAMIENTOS/5.%20PATAS/IMG_PATAS_rqjgev.png");
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
@@ -20,7 +20,9 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 40vh;
+    justify-items: center;
+    min-height: 100vh;
+    height: fit-content;
 }
 
 .patas__header--text{
@@ -42,6 +44,7 @@
 .patas__content{
     width: 100vw;
     height: fit-content;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -57,7 +60,7 @@
 .patas__content--image-one{
     width: 50vw;
     height: 50vh;
-    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620907530/Andrea/PATA_140MM_tysiyr.jpg");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620828089/EQUIPAMIENTOS/5.%20PATAS/Cocilux-Equipamientos-Patas-Cocinas%20Madrid-MODELO_PATA_140.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -88,7 +91,7 @@
 .patas__content--image-two{
     width: 50vw;
     height: 50vh;
-    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620907529/Andrea/PATA_190_fbucet.jpg");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620828089/EQUIPAMIENTOS/5.%20PATAS/Cocilux-Equipamientos-Patas-Cocinas%20Madrid-MODELO_PATA_190.jpg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
@@ -143,12 +146,26 @@
     .patas__header {
         height: 50vh;
     }
+
     .patas__header--image{
         height: 50vh;
     }
+
     .patas__header--content-container{
-        padding-top: 20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        justify-items: flex-start;
+        min-height: 50vh;
+        height: fit-content;
+        padding-top: 10%;
     }
+
+    .patas__header--text{
+        font-size: calc(36px + 3.5vw);
+    }
+
 
     .patas__content{
         width: 100vw;

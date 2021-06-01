@@ -3,7 +3,7 @@ import '../../styles/Tiradores.scss';
 
 export default function Tiradores() {
     return (
-        <div>
+        <div style={{maxWidth:'100vw',overflow:'hidden'}}>
             <section className="tiradores__header">
 
                 <div className="tiradores__header--image"></div>

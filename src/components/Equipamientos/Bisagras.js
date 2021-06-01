@@ -3,7 +3,7 @@ import '../../styles/Bisagras.scss';
 
 export default function Bisagras() {
     return (
-        <div>
+        <div style={{maxWidth:'100vw',overflow:'hidden'}}>
 
             <section className="bisagras__header">
 

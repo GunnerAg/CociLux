@@ -1,12 +1,9 @@
-
 .equipamientos__header{
-    display: flex;
     position: fixed;
     flex-direction: column;
-    justify-content: center;
     width: 100vw;
     height: 100vh;
-    background: url("https://res.cloudinary.com/gunnerag/image/upload/v1620893225/Andrea/EQUIPAMIENTOS_mbkjcu.png");
+    background: url("https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1620828058/EQUIPAMIENTOS/4.%20TIRADORES/Cocilux-Equipamientos-Colgadores-Cocinas%20Madrid-MODELO_TIRADOR_U%C3%91ERO.png");
     background-size:cover;
     background-repeat: no-repeat;
     filter: blur(3px);
@@ -14,22 +11,23 @@
 }
 
 .equipamientos__content-container{
+    display:flex;
     width:100vw;
     height: fit-content;
+    min-height: 100vh;
+    padding-bottom: 10%;
+    align-items: center;
+    justify-content: center;
  }
     
  .equipamientos__main-menu{
     display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
 }
 
 .equipamientos__main-menu__header{
     display: flex;
     justify-content: center;
-    align-content: center;
-    padding-top: 10%;
     padding-bottom: 5%;
     color:#F6F3EE;
     font-size: calc(2vw + 25px);

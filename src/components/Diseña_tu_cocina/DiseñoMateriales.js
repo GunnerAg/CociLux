@@ -6,11 +6,11 @@ export default function DiseñoMateriales() {
 
 
     let redirections = ["/laminado","/melamina_lacada","/canteado","/polilaminado","/lacado","/madera","/encimera"]
-    let data = ["LAMINADO", "MELAMINA", " CANTEADO", "POLILAMINADO", "LACADO", "MADERA", "ENCIMERAS"]
+    let data = ["LAMINADO", "LAMINADO LACADO", "CANTEADO", "POLILAMINADO", "LACADO", "MADERA", "ENCIMERAS"]
 
  
     return (
-        <div >
+        <div>
                 <div className="design-and-materials__header"></div>
                 <div className="design-and-materials__content-container">
                     <div className="design-and-materials__main-menu">

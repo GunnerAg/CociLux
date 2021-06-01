@@ -5,28 +5,26 @@ require('dotenv').config();
 
 
 
-export default function ContactForm() {
+export default function ContactForm({sendStatus,setFormStatus}) {
 
-  const [sendStatus,setFormStatus]=useState(false)
   const [formInputs,setFormValues]=useState({name:'',email:'',phone:'',message:''})
 
   const{
     REACT_APP_EMAILJS_USERID: userId,
     REACT_APP_EMAILJS_TEMPLATEID: templateId,
     REACT_APP_EMAILJS_SERVICEID: serviceId,
-    REACT_APP_EMAILJS_RECEIVER: email,
   }=process.env
 
 
   let handleChange=(e)=>{
     const{user_email,user_name,user_phone,message}=e.currentTarget;
     setFormValues({name:user_name.value,email:user_email.value,phone:user_phone.value,message:message.value})
-    console.log(formInputs)
+ 
   }
 
-  function validateEmail(mail) 
+  function validateEmail(email) 
     {
-      if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(mail))
+      if (/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/.test(email))
         {
           return (true)
         }
@@ -34,15 +32,14 @@ export default function ContactForm() {
           return (false)
     }
 
-  function validateNotEmpty(input) 
+  function validateNotEmpty(message) 
     {
-      if (input.length>10)
+      if (message.length===0)
         {
-          return (true)
-        }
           alert("Introduce un mensaje que explique tu motivo de contacto")
-          console.log('here input', input.length)
           return (false)
+        }
+          return (true)
     }
 
   function validatePhone(phone) 

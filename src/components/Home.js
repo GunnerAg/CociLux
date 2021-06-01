@@ -6,7 +6,7 @@ import {faArrowDown,faArrowUp} from '@fortawesome/free-solid-svg-icons'
 import {motion, useViewportScroll, useTransform, } from 'framer-motion'
 
 
-export default function Home(props) {   
+export default function Home(props) {
     
     const section1 = useRef();
     const section2 = useRef();
@@ -19,11 +19,11 @@ export default function Home(props) {
     const [scrollY, setScrollY] = useState(0);
     const {scrollYProgress} = useViewportScroll();
 
-    const yRange1 = useTransform(scrollYProgress, [0, 0.15], [3000,0]);
-    const yRange2 = useTransform(scrollYProgress, [0.15, 0.35], [-2000,0]);
-    const yRange3 = useTransform(scrollYProgress, [0, 0.15], [-2000,0]);
-    const yRange4 = useTransform(scrollYProgress, [0.15, 0.35], [3000,0]);
-    const yRange5 = useTransform(scrollYProgress, [0.35, 0.55], [3000,0]);
+    const yRange1 = useTransform(scrollYProgress, [0, 0.15], [1000,0]);
+    const yRange2 = useTransform(scrollYProgress, [0.10, 0.35], [-1000,0]);
+    const yRange3 = useTransform(scrollYProgress, [0, 0.18], [-1000,0]);
+    const yRange4 = useTransform(scrollYProgress, [0.15, 0.35], [1000,0]);
+    const yRange5 = useTransform(scrollYProgress, [0.20, 0.55], [1000,0]);
 
     useEffect(() => {
         function watchScroll() {
@@ -41,18 +41,16 @@ export default function Home(props) {
     }
 
     function scrollSection(){
-        console.log('here!',scrollYProgress.current)
-                if (scrollYProgress.current<1/5){
+                if (scrollYProgress.current<0.18){
                     section2.current.scrollIntoView({behavior: 'smooth'})
                 }
-                else if (scrollYProgress.current<2/5){
+                else if (scrollYProgress.current<0.37){
                     section3.current.scrollIntoView({behavior: 'smooth'})
                 }
-                else if (scrollYProgress.current<3/5){
+                else if (scrollYProgress.current<0.56){
                     section4.current.scrollIntoView({behavior: 'smooth'})
                 }
-                else if (scrollYProgress.current<4/5){
-                    console.log(scrollYProgress)
+                else if (scrollYProgress.current<0.75){
                     section5.current.scrollIntoView({behavior: 'smooth'})
                 }
                 else if (scrollYProgress.current<=0.9){
@@ -69,21 +67,23 @@ export default function Home(props) {
             <div className="arrow bounce"><FontAwesomeIcon icon={sectionIcon}/></div>
         </button>
 
-        <section className="home__section-one" style={{height:window.innerHeight}} ref={section1}>
+        <section style={{minHeight:window.innerHeight}}  className="home__section-one" ref={section1}>
             <div className="home__section-one--background"> </div>
-            <motion.h3 className="home__section-one--title" initial={{x: -1000}} animate={{x: 0}} transition={{duration:1}} > COCILUX · Diseño de cocinas </motion.h3>
-            <motion.div initial={{x: 3000}} animate={{x: 0}} transition={{duration:1}}  >
-            <h1 className="home__section-one--slogan">LO ÚLTIMO EN DISEÑO <br></br> Y FUNCIONALIDAD</h1>
-            <h4 className="home__section-one--text">Te ayudamos a conseguir la cocina que <br></br> mejor se adapte a sus necesidades a <br></br> precios de fábrica</h4>
+            <div className="home__section-one--title-container">
+                <div className="home__section-one--logo-png"> <Logo black={true}/></div>
+                <motion.h3 className="home__section-one--title" initial={{x: -1500}} animate={{x: 0}} transition={{duration:1}} > COCILUX · Diseño de cocinas </motion.h3>
+            </div>
+            <motion.div initial={{x: 1500}} animate={{x: 0}} transition={{duration:1}}  >
+            <h1 className="home__section-one--slogan">LO ÚLTIMO EN DISEÑO Y FUNCIONALIDAD</h1>
+            <h4 className="home__section-one--text">Te ayudamos a conseguir la cocina que mejor se adapte a sus necesidades a precios de fábrica</h4>
             </motion.div>
-                <div className={!props.activeBurger? "home__section-one--logo-png":"home__section-one--logo-png--hidden"}><Logo /></div>:
         </section> 
 
-        <section className="home__section-two" style={{height:window.innerHeight}} ref={section2}>
+        <section className="home__section-two" ref={section2}>
             <div className="home__section-two--background"> </div>
             
                 <motion.div style={{x:yRange1}}>
-                <h3 className="home__section-two--slogan">UNA NUEVA Y SOFISTICADA VISIÓN DEL ESPACIO <br></br> PARA SU COCINA</h3>
+                <h3 className="home__section-two--slogan">Una nueva y sofisticada visión del espacio para su cocina.</h3>
                 </motion.div>
 
                 <motion.div style={{x:yRange3}} >
@@ -95,7 +95,7 @@ export default function Home(props) {
                 </motion.div>   
         </section>
 
-        <section className="home__section-three" style={{height:window.innerHeight}} ref={section3}>
+        <section className="home__section-three" ref={section3}>
             <div className="home__section-three--background"> </div>
             <motion.div style={{x:yRange2}}>
             <h1 className="home__section-three--slogan">Compromiso <br></br> Medioambiental </h1>
@@ -110,14 +110,14 @@ export default function Home(props) {
             </motion.div>
         </section>
 
-        <section className="home__section-four" style={{height:window.innerHeight}} ref={section4}>
+        <section className="home__section-four"  ref={section4}>
             <div className="home__section-four--background"> </div>
                 <motion.div style={{x:yRange5}}>
-                    <h1 className="home__section-four--slogan bounceSlogan">Quiénes somos</h1>
+                    <h1 className="home__section-four--slogan">Quiénes somos</h1>
                 </motion.div>
         </section>
 
-        <section className="home__section-four--active" style={{height:window.innerHeight}} ref={section5}>
+        <section className="home__section-four--active" ref={section5}>
                     <div className="home__section-four--active-background"> </div>
                         <div className="home__section-four--active-header">
                             <h5 className="home__section-four--active-header--content">En SL Cocilux fabricamos y realizamos cocinas a medida, que buscan principalmente la comodidad, la estética y la funcionalidad que mejor se adapte al espacio y a sus necesidades con una amplia gama de materiales</h5>
@@ -129,14 +129,14 @@ export default function Home(props) {
                             </div>
                         </div>
                 </section>
-                <section className="home__section-five--active" style={{height:window.innerHeight}} ref={section6}>
+                <section className="home__section-five--active"  ref={section6}>
                     <div className="home__section-five--active-background"> </div>
                         <div className="home__section-five--active-header"> 
                             <h5 className="home__section-five--active-header--content">Compromiso y fiabilidad</h5>
                         </div>
                         <div className="home__section-five--active-inner">
                             <div className="home__section-five--compromiso">
-                                <h6 className="home__porque-nosotros--content">Como fabricantes de muebles de cocina; medimos, presupuestamos y montamos en su casa directamente y sin intermediarios. 
+                                <h6 className="home__porque-nosotros--content">Como fabricantes de muebles de cocina; medimos, presupuestamos y montamos en su casa directamente y sin intermediarios. <br></br><br></br> 
                                 Esto nos permite realizar grandes descuentos en el material ya que proviene directamente de fábrica. Como resultado obtenemos la cocina que más se adapte a sus necesidades a precios competentes. <br></br><br></br> Todo el inmobiliario cuenta con un seguro y una garantía de fábrica, tanto de materiales como de instalación.<br></br><br></br> Dispondrá de un plazo estimado para que se solucione todo aquello que haya podido sufrir daños, errores de medición o imperfectos de fábrica.<br></br><br></br> Nuestro trabajo experimentado garantiza la calidad del producto y el servicio postventa por si hubiera algún material defectuoso.</h6>
                             </div>
                             <div className="home__section-five--image-container"></div>

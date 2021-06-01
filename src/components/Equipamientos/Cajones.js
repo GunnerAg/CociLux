@@ -3,7 +3,7 @@ import '../../styles/Cajones.scss';
 
 export default function Cajones() {
     return (
-        <div>
+        <div style={{maxWidth:'100vw',overflow:'hidden'}}>
             <section className="cajones__header">
 
                 <div className="cajones__header--image"></div>

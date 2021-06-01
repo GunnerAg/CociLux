@@ -16,11 +16,11 @@ export default function Distribucion() {
     
     let urls=
     [
-        'https://res.cloudinary.com/sl-cocilux/image/upload/v1621522720/CANTEADO-06_pbow96.jpg',
-        'https://res.cloudinary.com/sl-cocilux/image/upload/v1622134684/TIPOS%20DE%20DISTRIBUCI%C3%93N/Cocilux-Trabajos_Realizados-Cocinas_Madrid-CAN_1_ayj6d1.jpg',
-        'https://res.cloudinary.com/sl-cocilux/image/upload/v1622134683/TIPOS%20DE%20DISTRIBUCI%C3%93N/Cocilux-Trabajos_Realizados-Cocinas_Madrid-CAN_4_ujd7xe.jpg',
-        'https://res.cloudinary.com/sl-cocilux/image/upload/v1622134683/TIPOS%20DE%20DISTRIBUCI%C3%93N/Cocilux-Trabajos_Realizados-Cocinas_Madrid-COCINA_U.jpg',
-        'https://res.cloudinary.com/sl-cocilux/image/upload/v1622134684/TIPOS%20DE%20DISTRIBUCI%C3%93N/Cocilux-Trabajos_Realizados-Cocinas_Madrid-POL_6_ubgy70.png',
+        'https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1621522720/CANTEADO-06_pbow96.jpg',
+        'https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1622134684/TIPOS%20DE%20DISTRIBUCI%C3%93N/Cocilux-Trabajos_Realizados-Cocinas_Madrid-CAN_1_ayj6d1.jpg',
+        'https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1622134683/TIPOS%20DE%20DISTRIBUCI%C3%93N/Cocilux-Trabajos_Realizados-Cocinas_Madrid-CAN_4_ujd7xe.jpg',
+        'https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1622134683/TIPOS%20DE%20DISTRIBUCI%C3%93N/Cocilux-Trabajos_Realizados-Cocinas_Madrid-COCINA_U.jpg',
+        'https://res.cloudinary.com/sl-cocilux/image/upload/f_auto/v1622134684/TIPOS%20DE%20DISTRIBUCI%C3%93N/Cocilux-Trabajos_Realizados-Cocinas_Madrid-POL_6_ubgy70.png',
     ]
 
     let SectionOne=()=>{
@@ -72,10 +72,10 @@ export default function Distribucion() {
     }
     
     return (
-        <div>
+        <div >
             <SectionOne/>
             <SectionTwo/>
-            {index.map((index,i)=>{return (<SectionThree i={i}/>)})}
+            {index.map((index,i)=>{return (<SectionThree key={`Distribucciones${i}`} i={i}/>)})}
         </div>
     )
 }

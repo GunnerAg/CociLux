@@ -1,0 +1,27 @@
+.socials__container{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  flex-direction: row;
+  bottom: 1%;
+  right: 1%;
+  z-index: 500;
+  position: fixed;
+}
+
+.policy__container{
+  display: flex;
+  height: 50px;
+  width: 50px;
+  flex-direction: row;
+  bottom: 1%;
+  left: 1%;
+  z-index: 500;
+  position: fixed;
+}
+
+.whatsapp__icon-img{
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}

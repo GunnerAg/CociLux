@@ -1,7 +1,7 @@
 .transition__logo--main{
     overflow: hidden;
     width: 100vw;
-    height: 100vh;
+    height: auto;
 }
 
 .transition__logo--container{
@@ -21,14 +21,6 @@
     rotate(+4deg)
     scale(2.5);
     align-self: center;
-    padding-bottom: 10%;
-}
-
-.transition__logo--branding{
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 56px;
-    color: whitesmoke;
-    text-align: center;
 }
 
 .animated {

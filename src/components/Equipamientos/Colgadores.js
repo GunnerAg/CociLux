@@ -3,7 +3,7 @@ import '../../styles/Colgadores.scss';
 
 export default function Colgadores() {
     return (
-        <div>
+        <div style={{maxWidth:'100vw',overflow:'hidden'}}>
             <section className="colgadores__header">
 
                 <div className="colgadores__header--image"></div>
