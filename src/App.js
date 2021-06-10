@@ -227,6 +227,8 @@ const cacheImages= async(srcArray)=>{
         <Route path="*" render={(routeProps)=>{
           return <Error404 {...routeProps}/>
         }}/>
+
+      
         
       </Switch>
      

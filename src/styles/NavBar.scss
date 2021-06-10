@@ -17,7 +17,7 @@
     border-radius: 20px;
     margin-top: 5px;
     align-items: center;
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 .navBar__expanded1{
@@ -28,7 +28,7 @@
     border-radius: 10px;
     margin-top: 5px;
     transform: rotate(45deg) translateY(2px) translateX(2px);
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 .navBar__expanded2{
@@ -39,7 +39,7 @@
     border-radius: 10px;
     margin-top: 5px;
     transform: rotate(-45deg) translateY(-3px) translateX(2px);
-    transition: all 0.5s;
+    transition: all 0.2s;
 }
 
 .navBar__container{
@@ -70,7 +70,7 @@
     padding-left: 50px;
     padding-top: 5vh;
     transform: translateX(-100px) rotate(4deg);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .navBar__burgermenuHide{
@@ -85,14 +85,14 @@
     padding-left: 50px;
     overflow:hidden;
     transform: translateX(+250px);
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .navBar__link{
     margin-top: 10vh;
     text-decoration: none;
     color:#F6F3EE;
-    transition: all 0.5s ease-in-out;
+    transition: all 0.2s ease-in-out;
     transform: rotate(-4deg);
     max-width:100px
 }
@@ -103,7 +103,6 @@
     color:#F6F3EE;
     transform: scale(1.2);
     transition: 0.2s ease-in-out;
-
 }
 
 .navBar__logo{

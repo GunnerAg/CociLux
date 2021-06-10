@@ -71,9 +71,9 @@ export default function Home(props) {
             <div className="home__section-one--background"> </div>
             <div className="home__section-one--title-container">
                 <div className="home__section-one--logo-png"> <Logo black={true}/></div>
-                <motion.h3 className="home__section-one--title" initial={{x: -1500}} animate={{x: 0}} transition={{duration:1}} > COCILUX · Diseño de cocinas </motion.h3>
+                <motion.h3 className="home__section-one--title" initial={{x: -1500}} animate={{x: 0}} transition={{duration:0.2}} > COCILUX · Diseño de cocinas </motion.h3>
             </div>
-            <motion.div initial={{x: 1500}} animate={{x: 0}} transition={{duration:1}}  >
+            <motion.div initial={{x: 1500}} animate={{x: 0}} transition={{duration:0.2}}  >
             <h1 className="home__section-one--slogan">LO ÚLTIMO EN DISEÑO Y FUNCIONALIDAD</h1>
             <h4 className="home__section-one--text">Te ayudamos a conseguir la cocina que mejor se adapte a sus necesidades a precios de fábrica</h4>
             </motion.div>

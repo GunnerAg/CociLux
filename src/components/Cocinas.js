@@ -109,7 +109,7 @@ function Cocinas(props) {
    state.slideIndex=0
   }, [displaySlides])
   if(displayed==="LAMINADO"){slides=laminado}
-  if(displayed==="MELAMINA"){slides=melamina}
+  if(displayed==="LAMINADO LACADO"){slides=melamina}
   if(displayed==="CANTEADO"){slides=canteado}
   if(displayed==="POLILAMINADO"){slides=polilaminado}
   if(displayed==="LACADO"){slides=lacado}

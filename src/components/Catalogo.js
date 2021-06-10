@@ -1,9 +1,7 @@
-import React, {useState, Suspense} from 'react'
+import React, {useState} from 'react'
 import Cocinas from './Cocinas'
 import "../styles/Catalogue.scss"
 import MainMenu from '../components/Diseña_tu_cocina/MainMenu';
-
-const TransitionAnimation = React.lazy(() => import('./TransitionAnimation'));
 
 
 export default function Catalogo() {
@@ -15,11 +13,8 @@ export default function Catalogo() {
         setData(currentData=e.currentTarget.name)
     }
 
-  
-
     return (
-        <Suspense fallback={<div><TransitionAnimation/></div>}>
-                    <div style={{height:'100vh'}}>
+            <div style={{height:'100vh'}}>
                 <div  className="catalogo__header">
                     <MainMenu data={data} withLink={false} handleClick={handleClick} initialState={initialState}/>
                 </div>
@@ -27,7 +22,6 @@ export default function Catalogo() {
                     <div><Cocinas displaySlides={currentData}/></div>
                 </div>
             </div>
-        </Suspense>
     )
 }
 

@@ -29,7 +29,7 @@ export default function Equipment() {
                 <div className="equipamientos__content-container">
                     <div className="equipamientos__main-menu">
                         <div className="equipamientos__main-menu__header">Equipamientos</div>
-                            <MainMenu data={data} links={redirections} withLinks={true} clear={true}/>
+                            <MainMenu data={data} links={redirections} withLinks={true} clear={false}/>
                     </div>
                 </div>
         </div>

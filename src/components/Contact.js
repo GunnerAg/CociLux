@@ -17,18 +17,18 @@ export default function Contact() {
                 <p className="contact__details-paragraph--one">Puede contactar con nosotros por teléfono, vía email o rellenando el formulario y nos pondremos en contacto con usted en la mayor brevedad posible.</p>
                 <ul className="contact__details-list">
                     <li className="contact__details-list--element">
-                        <a href="https://wa.me/34605574283">
+                        <a href="https://wa.me/34722630050">
                             <img className="contact__details-logo bounce-ico2" src="/whatsapp.png" alt="whatsapp"/>
                         </a>
                          &nbsp;
-                        <div className="contact__details-list--bold"> 605 574 283 & 616 964 999</div>
+                        <div className="contact__details-list--bold">722 63 00 50</div>
                     </li>
                     <li className="contact__details-list--element">
                         <a href="https://instagram.com/sl.cociluxdesign?utm_medium=copy_link">
                             <img className="contact__details-logo bounce-ico" src="/instagram.png" alt="instagram"/>
                         </a>
                         &nbsp;
-                        <div className="contact__details-list--bold"> @sl.cociluxdesign</div>
+                        <div className="contact__details-list--bold">@sl.cociluxdesign</div>
                     </li>
                     <li className="contact__details-list--element">
                         <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@slcocilux.com">
